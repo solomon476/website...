@@ -108,6 +108,15 @@ a:hover {
   font-size: 0.8125rem;
 }
 
+/* Mobile menu button */
+.ms-mobile-menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
 /* Buttons */
 .ms-btn {
   display: inline-block;
@@ -406,17 +415,53 @@ video.ms-banner-img {
 }
 
 @media (max-width: 768px) {
-  .ms-nav-links, .ms-navbar-right {
+  .ms-navbar-right {
     display: none;
+  }
+  .ms-nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 100%;
+    background-color: var(--ms-white);
+    padding: 20px 5%;
+    border-bottom: 1px solid var(--ms-light-gray);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .ms-nav-links.open {
+    display: flex;
+  }
+  .ms-nav-links a {
+    padding: 12px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--ms-light-gray);
+  }
+  .ms-nav-links a:last-child {
+    border-bottom: none;
+  }
+  .ms-mobile-menu-btn {
+    display: block;
+  }
+  .ms-hero-img, video.ms-hero-img {
+    min-height: 500px;
   }
   .ms-hero-box {
     padding: 24px;
+    max-width: 100%;
+  }
+  .ms-quick-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 32px 5%;
   }
   .ms-grid {
     grid-template-columns: 1fr;
   }
   .ms-grid-5 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .ms-footer-links {
     grid-template-columns: 1fr;
@@ -425,5 +470,14 @@ video.ms-banner-img {
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .ms-grid-5 {
+    grid-template-columns: 1fr;
+  }
+  .ms-hero-title {
+    font-size: 1.8rem;
   }
 }

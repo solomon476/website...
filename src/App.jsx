@@ -17,15 +17,16 @@ import ianImg from './assets/ian.jpg';
 import hillaryImg from './assets/hillary.jpg';
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
   return (
     <nav className="ms-navbar">
       <div className="ms-navbar-container">
         <div className="ms-navbar-left">
-          <div className="ms-logo-container">
+          <Link to="/" className="ms-logo-container">
             <img src={logoImg} alt="Solian Wolves Logo" className="ms-logo-img" />
             <div className="ms-logo">Solian Wolves</div>
-          </div>
-          <div className="ms-nav-links">
+          </Link>
+          <div className={`ms-nav-links ${menuOpen ? 'open' : ''}`}>
             <a href="#microsoft365">Management Systems</a>
             <a href="#teams">ERP Solutions</a>
             <a href="#windows">Consulting</a>
@@ -36,6 +37,9 @@ function Navbar() {
           <a href="#search" className="ms-nav-item">Search</a>
           <a href="#cart" className="ms-nav-item">Cart</a>
           <a href="#signin" className="ms-nav-item">Sign in</a>
+        </div>
+        <div className="ms-mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? '✕' : '☰'}
         </div>
       </div>
     </nav>
@@ -68,39 +72,40 @@ function Hero() {
 function QuickLinks() {
   return (
     <section className="ms-quick-links">
-      <div className="ms-quick-link">
+      <Link to="/services/full-cycle-development" className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <path d="M12 20h16M20 12v16" stroke="#0067b8" strokeWidth="2.5" strokeLinecap="round"/>
           <rect x="14" y="14" width="12" height="12" rx="2" stroke="#0067b8" strokeWidth="2"/>
         </svg>
-        <a href="#link1">Choose your ERP</a>
-      </div>
-      <div className="ms-quick-link">
+        <span>Choose your ERP</span>
+      </Link>
+      <Link to="/contact" className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <path d="M10 28 L20 12 L30 28 Z" stroke="#0067b8" strokeWidth="2" fill="none" strokeLinejoin="round"/>
           <circle cx="20" cy="22" r="3" fill="#0067b8"/>
         </svg>
-        <a href="#link2">School Management</a>
-      </div>
-      <div className="ms-quick-link">
+        <span>School Management</span>
+      </Link>
+      <Link to="/services/architectural-scaling" className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <circle cx="20" cy="20" r="8" stroke="#0067b8" strokeWidth="2"/>
           <path d="M20 12 Q28 16 28 20 Q28 24 20 28 Q12 24 12 20 Q12 16 20 12Z" stroke="#0067b8" strokeWidth="2" fill="none"/>
           <line x1="12" y1="20" x2="28" y2="20" stroke="#0067b8" strokeWidth="2"/>
         </svg>
-        <a href="#link3">Cloud Architecture</a>
-      </div>
-      <div className="ms-quick-link">
+        <span>Cloud Architecture</span>
+      </Link>
+      <Link to="/services/surgical-audit" className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <circle cx="20" cy="20" r="6" stroke="#0067b8" strokeWidth="2"/>
-          <path d="M20 10 L20 14 M20 26 L20 30 M10 20 L14 20 M26 20 L30 20" stroke="#0067b8" strokeWidth="2" strokeLinecap="round"/>
+          <path d="M26 14 L32 8" stroke="#0067b8" strokeWidth="2" strokeLinecap="round"/>
+          <path d="M14 26 L8 32" stroke="#0067b8" strokeWidth="2" strokeLinecap="round"/>
         </svg>
-        <a href="#link4">Technical Audit</a>
-      </div>
+        <span>Technical Audit</span>
+      </Link>
     </section>
   );
 }
