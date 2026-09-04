@@ -1,0 +1,30 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../../pages.css';
+import solomonImg from '../../assets/solomon.jpg';
+
+export default function Solomon() {
+  return (
+    <div className="page-wrapper">
+      <nav className="page-nav">
+        <Link to="/" className="page-nav-logo">← Solian Wolves</Link>
+      </nav>
+      <div className="bio-page">
+        <div className="bio-image-col">
+          <img src={solomonImg} alt="Solomon Nyangweso Omwenga" className="bio-portrait" />
+        </div>
+        <div className="bio-content-col">
+          <span className="page-tag" style={{ background: '#0067b8' }}>Chief Technology Officer</span>
+          <h1>Solomon Nyangweso Omwenga</h1>
+          <p className="bio-lead">Directs technical architecture, enterprise software engineering, infrastructure development, and innovation.</p>
+          <div className="bio-body">
+            <p>Solomon is the Chief Technology Officer of Solian Wolves, responsible for the technical vision and execution across all software products — both internal platforms and client-facing systems.</p>
+            <p>He oversees system engineering, cybersecurity protocols, and development deployments. He manages technical team workflows, quality assurance processes, and ongoing product updates to ensure every system Solian Wolves ships meets the highest standard.</p>
+            <p>When engagements involve outsourcing, Solomon leads and manages the outsourced team and project, maintaining Solian Wolves' quality standards regardless of where the engineering takes place.</p>
+          </div>
+          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>Work with us</Link>
+        </div>
+      </div>
+    </div>
+  );
+}
