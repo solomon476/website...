@@ -33,6 +33,13 @@ export default function Contact() {
         console.error('Failed to parse response as JSON:', responseText);
       }
 
+      // In local development (localhost), Vite does not run Vercel serverless functions (/api/contact) by default.
+      if (!response.ok && window.location.hostname === 'localhost') {
+        console.log('Local development mode: simulated contact form submission:', data);
+        setSubmitted(true);
+        return;
+      }
+
       if (response.ok) {
         setSubmitted(true);
       } else {
@@ -40,6 +47,11 @@ export default function Contact() {
       }
     } catch (err) {
       console.error('Fetch error:', err);
+      if (window.location.hostname === 'localhost') {
+        console.log('Local development mode fallback: simulated contact form submission:', data);
+        setSubmitted(true);
+        return;
+      }
       setError('An error occurred while sending your message. Please try again.');
     } finally {
       setIsSubmitting(false);
