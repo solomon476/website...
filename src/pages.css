@@ -308,8 +308,8 @@
 
 /* Careers Page Styles */
 .careers-page {
-  background-color: #000;
-  color: #fff;
+  background-color: #ffffff;
+  color: #242424;
   min-height: 100vh;
 }
 
@@ -317,30 +317,21 @@
   box-sizing: border-box;
 }
 
-/* Ensure all sections within careers page inherit the dark background */
+/* Ensure all sections within careers page have white background */
 .careers-page section,
 .careers-page .section-padding {
-  background-color: #000;
-}
-
-.careers-page .dark-nav {
-  background: #000;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-
-.careers-page .dark-nav .page-nav-logo {
-  color: #fff;
+  background-color: #ffffff;
 }
 
 .careers-hero {
   padding: 10rem 0 4rem;
-  background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+  background: linear-gradient(160deg, #f0f4ff 0%, #ffffff 60%);
 }
 
 .hero-badge {
   display: inline-block;
   margin-bottom: 1.5rem;
-  color: #777;
+  color: #0067b8;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -351,17 +342,17 @@
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   margin-bottom: 1.5rem;
   line-height: 1.1;
-  color: #fff;
+  color: #0f1115;
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #0067b8 0%, #3b82f6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .careers-subtitle {
-  color: #a1a1aa;
+  color: #555555;
   font-size: 1.25rem;
   line-height: 1.7;
 }
@@ -369,7 +360,7 @@
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #fff;
+  color: #0f1115;
 }
 
 .roles-container {
@@ -379,8 +370,8 @@
 }
 
 .role-card {
-  background: #0d0d0d;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 2.5rem;
   display: flex;
@@ -390,20 +381,19 @@
 }
 
 .role-card:hover {
-  border-color: rgba(59, 130, 246, 0.4);
-  background: #111;
+  border-color: #0067b8;
   transform: translateY(-3px);
-  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 103, 184, 0.1);
 }
 
 .role-info h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #0f1115;
 }
 
 .role-meta {
-  color: #a1a1aa;
+  color: #6b7280;
   font-size: 0.9rem;
   display: flex;
   gap: 1rem;
@@ -418,9 +408,9 @@
 
 .btn-outline {
   padding: 0.8rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #0067b8;
   background: transparent;
-  color: #fff;
+  color: #0067b8;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -428,14 +418,15 @@
 }
 
 .btn-outline:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #0067b8;
+  color: #ffffff;
 }
 
 .pitch-card {
   margin-top: 4rem;
   padding: 3rem;
-  background: #0a0f1e;
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: #f0f4ff;
+  border: 1px solid #c7d8f0;
   border-radius: 8px;
   text-align: center;
 }
@@ -443,16 +434,16 @@
 .pitch-card h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #0f1115;
 }
 
 .pitch-card p {
-  color: #a1a1aa;
+  color: #555555;
   margin-bottom: 2rem;
 }
 
 .btn-blue {
-  background: #3b82f6;
+  background: #0067b8;
   color: #fff;
   padding: 1rem 2.5rem;
   border-radius: 100px;
@@ -463,7 +454,7 @@
 }
 
 .btn-blue:hover {
-  background: #2563eb;
+  background: #005a9e;
 }
 
 /* Modal Styles */
@@ -473,7 +464,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
@@ -483,8 +474,8 @@
 }
 
 .careers-modal-content {
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   width: 100%;
   max-width: 600px;
@@ -492,7 +483,8 @@
   overflow-y: auto;
   position: relative;
   padding: 2rem;
-  color: #fff;
+  color: #242424;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 .careers-modal-close {
@@ -501,18 +493,18 @@
   right: 1rem;
   background: transparent;
   border: none;
-  color: #a1a1aa;
+  color: #6b7280;
   font-size: 1.5rem;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .careers-modal-close:hover {
-  color: #fff;
+  color: #0f1115;
 }
 
 .modal-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #e5e7eb;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -520,6 +512,7 @@
 .modal-header h2 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  color: #0f1115;
 }
 
 .modal-section {
@@ -527,7 +520,7 @@
 }
 
 .modal-section h4 {
-  color: #a1a1aa;
+  color: #6b7280;
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 0.1em;
@@ -535,7 +528,7 @@
 }
 
 .modal-section p, .modal-section li {
-  color: #d4d4d8;
+  color: #404040;
   line-height: 1.6;
 }
 
@@ -550,14 +543,14 @@
 .modal-footer {
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #e5e7eb;
 }
 
 .btn-primary-full {
   display: block;
   width: 100%;
   padding: 1rem;
-  background: #3b82f6;
+  background: #0067b8;
   color: #fff;
   text-align: center;
   border-radius: 8px;
@@ -569,7 +562,7 @@
 }
 
 .btn-primary-full:hover {
-  background: #2563eb;
+  background: #005a9e;
 }
 
 @media (max-width: 768px) {
@@ -579,3 +572,4 @@
     gap: 1.5rem;
   }
 }
+
