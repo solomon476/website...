@@ -71,21 +71,21 @@ export default function Contact() {
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
-                <input id="name" name="name" type="text" placeholder="e.g. Jane Mwangi" required />
+                <input id="name" name="name" type="text" required />
               </div>
               <div className="form-group">
                 <label htmlFor="org">Organisation / Company *</label>
-                <input id="org" name="org" type="text" placeholder="e.g. Nairobi Academy" required />
+                <input id="org" name="org" type="text" required />
               </div>
             </div>
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="email">Email Address *</label>
-                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                <input id="email" name="email" type="email" required />
               </div>
               <div className="form-group">
                 <label htmlFor="phone">Phone Number</label>
-                <input id="phone" name="phone" type="tel" placeholder="+254 7XX XXX XXX" />
+                <input id="phone" name="phone" type="tel" />
               </div>
             </div>
             <div className="form-group">
