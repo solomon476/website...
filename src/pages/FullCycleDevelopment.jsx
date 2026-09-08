@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageNav from '../components/PageNav.jsx';
 import '../pages.css';
 
 export default function FullCycleDevelopment() {
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
-        <Link to="/" className="page-nav-logo">← Solian Wolves</Link>
+        <PageNav />
       </nav>
       <div className="page-hero" style={{ background: 'linear-gradient(135deg, #0067b8 0%, #003f6e 100%)' }}>
         <div className="page-hero-content">
@@ -41,7 +42,7 @@ export default function FullCycleDevelopment() {
         <section className="page-cta">
           <h2>Ready to build?</h2>
           <p>Let's discuss your project scope and get a timeline going.</p>
-          <Link to="/#contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
         </section>
       </div>
     </div>

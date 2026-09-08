@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageNav from '../components/PageNav.jsx';
 import '../pages.css';
 
 export default function ArchitecturalScaling() {
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
-        <Link to="/" className="page-nav-logo">← Solian Wolves</Link>
+        <PageNav />
       </nav>
       <div className="page-hero" style={{ background: 'linear-gradient(135deg, #003f6e 0%, #00b4d8 100%)' }}>
         <div className="page-hero-content">
@@ -41,7 +42,7 @@ export default function ArchitecturalScaling() {
         <section className="page-cta">
           <h2>Scale without limits.</h2>
           <p>Tell us where you are and where you need to go — we'll architect the path.</p>
-          <Link to="/#contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
         </section>
       </div>
     </div>

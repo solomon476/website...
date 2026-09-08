@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageNav from '../components/PageNav.jsx';
 import '../pages.css';
 
 export default function WhiteCollarPartner() {
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
-        <Link to="/" className="page-nav-logo">← Solian Wolves</Link>
+        <PageNav />
       </nav>
       <div className="page-hero" style={{ background: 'linear-gradient(135deg, #242424 0%, #0067b8 100%)' }}>
         <div className="page-hero-content">
@@ -41,7 +42,7 @@ export default function WhiteCollarPartner() {
         <section className="page-cta">
           <h2>Join the Pack.</h2>
           <p>A limited number of White Collar Partner slots are available per quarter. Enquire now to check availability.</p>
-          <Link to="/#contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
         </section>
       </div>
     </div>

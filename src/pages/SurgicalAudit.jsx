@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageNav from '../components/PageNav.jsx';
 import '../pages.css';
 
 export default function SurgicalAudit() {
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
-        <Link to="/" className="page-nav-logo">← Solian Wolves</Link>
+        <PageNav />
       </nav>
       <div className="page-hero" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #0067b8 100%)' }}>
         <div className="page-hero-content">
@@ -41,7 +42,7 @@ export default function SurgicalAudit() {
         <section className="page-cta">
           <h2>Book your audit today.</h2>
           <p>Most organisations save more than the cost of the audit in the first month of fixes.</p>
-          <Link to="/#contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary">Secure Your Consultation</Link>
         </section>
       </div>
     </div>

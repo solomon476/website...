@@ -13,6 +13,15 @@ import Hillary from './pages/team/Hillary.jsx'
 import Alice from './pages/team/Alice.jsx'
 import Noella from './pages/team/Noella.jsx'
 import Solomon from './pages/team/Solomon.jsx'
+import Amillia from './pages/team/Amillia.jsx'
+import Portal from './pages/Portal.jsx'
+import Insights from './pages/Insights.jsx'
+import Careers from './pages/Careers.jsx'
+import About from './pages/About.jsx'
+import ClientDashboard from './pages/ClientDashboard.jsx'
+import Methodology from './pages/Methodology.jsx'
+import Industries from './pages/Industries.jsx'
+import Labs from './pages/Labs.jsx'
 
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
@@ -26,6 +35,15 @@ const router = createBrowserRouter([
   { path: '/team/alice', element: <Alice /> },
   { path: '/team/noella', element: <Noella /> },
   { path: '/team/solomon', element: <Solomon /> },
+  { path: '/team/amillia', element: <Amillia /> },
+  { path: '/portal', element: <Portal /> },
+  { path: '/insights', element: <Insights /> },
+  { path: '/careers', element: <Careers /> },
+  { path: '/about', element: <About /> },
+  { path: '/dashboard', element: <ClientDashboard /> },
+  { path: '/methodology', element: <Methodology /> },
+  { path: '/industries', element: <Industries /> },
+  { path: '/labs', element: <Labs /> },
 ])
 
 createRoot(document.getElementById('root')).render(

@@ -305,3 +305,266 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Careers Page Styles */
+.careers-page {
+  background-color: #000;
+  color: #fff;
+}
+
+.careers-page .dark-nav {
+  background: #000;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.careers-page .dark-nav .page-nav-logo {
+  color: #fff;
+}
+
+.careers-hero {
+  padding: 10rem 0 4rem;
+  background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #777;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.careers-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.careers-subtitle {
+  color: #a1a1aa;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.roles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.role-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.role-card:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-3px);
+}
+
+.role-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.role-meta {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.role-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-outline {
+  padding: 0.8rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.pitch-card {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pitch-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.pitch-card p {
+  color: #a1a1aa;
+  margin-bottom: 2rem;
+}
+
+.btn-blue {
+  background: #3b82f6;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-blue:hover {
+  background: #2563eb;
+}
+
+/* Modal Styles */
+.careers-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.careers-modal-content {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+  color: #fff;
+}
+
+.careers-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #a1a1aa;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.careers-modal-close:hover {
+  color: #fff;
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-section {
+  margin-bottom: 2rem;
+}
+
+.modal-section h4 {
+  color: #a1a1aa;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+}
+
+.modal-section p, .modal-section li {
+  color: #d4d4d8;
+  line-height: 1.6;
+}
+
+.modal-section ul {
+  padding-left: 1.2rem;
+}
+
+.modal-section li {
+  margin-bottom: 0.5rem;
+}
+
+.modal-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary-full {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #3b82f6;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary-full:hover {
+  background: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .role-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}

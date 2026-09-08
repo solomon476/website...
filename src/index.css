@@ -92,11 +92,50 @@ a:hover {
 .ms-nav-links {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
-.ms-nav-links a {
+.ms-nav-links a, .ms-nav-dropdown-toggle {
   font-size: 0.8125rem;
   color: var(--ms-dark-gray);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.ms-nav-links a:hover, .ms-nav-dropdown-toggle:hover {
+  color: var(--ms-black);
+}
+
+.ms-nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.ms-nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--ms-white);
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid var(--ms-light-gray);
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 8px 0;
+}
+.ms-nav-dropdown:hover .ms-nav-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+.ms-nav-dropdown-menu a {
+  padding: 10px 16px;
+  display: block;
+  font-weight: 400;
+}
+.ms-nav-dropdown-menu a:hover {
+  background-color: #f0f6ff;
+  color: var(--ms-blue);
 }
 
 .ms-navbar-right {
@@ -224,7 +263,45 @@ video.ms-hero-img {
 
 /* Sections & Grid */
 .ms-section {
-  padding-bottom: 48px;
+  padding: 48px 5%;
+}
+
+/* Tech Partners Section */
+.ms-tech-section {
+  padding: 24px 5% 48px;
+  text-align: center;
+}
+.ms-tech-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ms-dark-gray);
+  margin-bottom: 32px;
+}
+.ms-tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.ms-tech-badge {
+  background-color: var(--ms-white);
+  border: 1px solid var(--ms-light-gray);
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ms-mid-gray);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+.ms-tech-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-color: var(--ms-blue);
+  color: var(--ms-blue);
 }
 
 .ms-section-title {
@@ -243,6 +320,12 @@ video.ms-hero-img {
 .ms-grid-5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.ms-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
 }
 
@@ -348,34 +431,29 @@ video.ms-banner-img {
 }
 
 .ms-footer-links {
-  max-width: 1600px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 24px;
-  padding-bottom: 32px;
+  gap: 32px;
+  margin-bottom: 48px;
 }
-
 .ms-footer-col {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
-
 .ms-footer-col h4 {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--ms-mid-gray);
-  margin-bottom: 4px;
+  font-size: 0.95rem;
+  color: var(--ms-black);
+  margin-bottom: 8px;
 }
-
-.ms-footer-col a {
-  color: var(--ms-mid-gray);
+.ms-footer-col a, .ms-footer-col .footer-static {
+  color: #616161;
+  text-decoration: none;
+  font-size: 0.85rem;
 }
-
 .ms-footer-col a:hover {
   text-decoration: underline;
-  color: var(--ms-dark-gray);
+  color: var(--ms-black);
 }
 
 .ms-footer-bottom {
@@ -400,6 +478,12 @@ video.ms-banner-img {
 .ms-footer-legal a:hover {
   color: var(--ms-dark-gray);
   text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .ms-grid-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 1080px) {
@@ -463,8 +547,11 @@ video.ms-banner-img {
   .ms-grid-5 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .ms-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .ms-footer-links {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .ms-footer-bottom {
     flex-direction: column;
@@ -477,7 +564,24 @@ video.ms-banner-img {
   .ms-grid-5 {
     grid-template-columns: 1fr;
   }
+  .ms-grid-6 {
+    grid-template-columns: 1fr;
+  }
+  .ms-footer-links {
+    grid-template-columns: 1fr;
+  }
   .ms-hero-title {
     font-size: 1.8rem;
   }
+}
+
+/* Typing Cursor */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }

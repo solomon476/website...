@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
 import solomonImg from '../../assets/solomon.jpg';
 
@@ -7,7 +8,7 @@ export default function Solomon() {
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
-        <Link to="/" className="page-nav-logo">← Solian Wolves</Link>
+        <PageNav />
       </nav>
       <div className="bio-page">
         <div className="bio-image-col">

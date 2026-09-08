@@ -15,6 +15,7 @@ import aliceImg from './assets/alice.jpg';
 import solomonImg from './assets/solomon.jpg';
 import ianImg from './assets/ian.jpg';
 import hillaryImg from './assets/hillary.jpg';
+import amilliaImg from './assets/amillia.jpg';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -27,16 +28,31 @@ function Navbar() {
             <div className="ms-logo">Solian Wolves</div>
           </Link>
           <div className={`ms-nav-links ${menuOpen ? 'open' : ''}`}>
-            <a href="#microsoft365">Management Systems</a>
-            <a href="#teams">ERP Solutions</a>
-            <a href="#windows">Consulting</a>
-            <a href="#surface">Support</a>
+            <div className="ms-nav-dropdown">
+              <span className="ms-nav-dropdown-toggle">Company ▾</span>
+              <div className="ms-nav-dropdown-menu">
+                <Link to="/about">About Us</Link>
+                <Link to="/methodology">Methodology</Link>
+                <Link to="/careers">Careers</Link>
+                <Link to="/contact">Contact</Link>
+              </div>
+            </div>
+            <div className="ms-nav-dropdown">
+              <span className="ms-nav-dropdown-toggle">Solutions ▾</span>
+              <div className="ms-nav-dropdown-menu">
+                <Link to="/services/full-cycle-development">Full-Cycle Development</Link>
+                <Link to="/services/architectural-scaling">Architectural Scaling</Link>
+                <Link to="/services/surgical-audit">The Surgical Audit</Link>
+                <Link to="/services/white-collar-partner">White Collar Partner</Link>
+                <Link to="/industries">Industries</Link>
+                <Link to="/labs">Alpha Labs</Link>
+              </div>
+            </div>
+            <Link to="/insights">Insights</Link>
           </div>
         </div>
         <div className="ms-navbar-right">
-          <a href="#search" className="ms-nav-item">Search</a>
-          <a href="#cart" className="ms-nav-item">Cart</a>
-          <a href="#signin" className="ms-nav-item">Sign in</a>
+          <Link to="/portal" className="ms-nav-item">Sign in</Link>
         </div>
         <div className="ms-mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? '✕' : '☰'}
@@ -46,7 +62,40 @@ function Navbar() {
   );
 }
 
+function useTypewriter(words, speed = 100, deleteSpeed = 50, delay = 2000) {
+  const [text, setText] = React.useState('');
+  const [isDeleting, setIsDeleting] = React.useState(false);
+  const [loopNum, setLoopNum] = React.useState(0);
+
+  React.useEffect(() => {
+    let timer;
+    const currentWord = words[loopNum % words.length];
+
+    if (isDeleting) {
+      setText(currentWord.substring(0, text.length - 1));
+      timer = setTimeout(() => {}, deleteSpeed);
+    } else {
+      setText(currentWord.substring(0, text.length + 1));
+      timer = setTimeout(() => {}, speed);
+    }
+
+    if (!isDeleting && text === currentWord) {
+      timer = setTimeout(() => setIsDeleting(true), delay);
+    } else if (isDeleting && text === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+    }
+
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, loopNum, words, speed, deleteSpeed, delay]);
+
+  return text;
+}
+
 function Hero() {
+  const phrases = ["Custom Software.", "AI tools & Automation.", "Mobile App development."];
+  const typingText = useTypewriter(phrases);
+
   return (
     <section className="ms-hero">
       <video
@@ -60,7 +109,7 @@ function Hero() {
       />
       <div className="ms-hero-content">
         <div className="ms-hero-box">
-          <h1 className="ms-hero-title">Building the Future of Digital Systems.</h1>
+          <h1 className="ms-hero-title">Building the Future of<br/> <span style={{ color: '#66b2ff' }}>{typingText}</span><span className="cursor">|</span></h1>
           <p className="ms-hero-subtitle">We engineer high-performance software, custom ERPs, and mission-critical business systems tailored for ambitious organisations — from schools to enterprises.</p>
           <Link to="/contact" className="ms-btn ms-btn-primary">Secure Consultation</Link>
         </div>
@@ -72,23 +121,23 @@ function Hero() {
 function QuickLinks() {
   return (
     <section className="ms-quick-links">
-      <Link to="/services/full-cycle-development" className="ms-quick-link">
+      <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <path d="M12 20h16M20 12v16" stroke="#0067b8" strokeWidth="2.5" strokeLinecap="round"/>
           <rect x="14" y="14" width="12" height="12" rx="2" stroke="#0067b8" strokeWidth="2"/>
         </svg>
         <span>Choose your ERP</span>
-      </Link>
-      <Link to="/contact" className="ms-quick-link">
+      </div>
+      <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <path d="M10 28 L20 12 L30 28 Z" stroke="#0067b8" strokeWidth="2" fill="none" strokeLinejoin="round"/>
           <circle cx="20" cy="22" r="3" fill="#0067b8"/>
         </svg>
         <span>School Management</span>
-      </Link>
-      <Link to="/services/architectural-scaling" className="ms-quick-link">
+      </div>
+      <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <circle cx="20" cy="20" r="8" stroke="#0067b8" strokeWidth="2"/>
@@ -96,8 +145,8 @@ function QuickLinks() {
           <line x1="12" y1="20" x2="28" y2="20" stroke="#0067b8" strokeWidth="2"/>
         </svg>
         <span>Cloud Architecture</span>
-      </Link>
-      <Link to="/services/surgical-audit" className="ms-quick-link">
+      </div>
+      <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
           <circle cx="20" cy="20" r="6" stroke="#0067b8" strokeWidth="2"/>
@@ -105,7 +154,52 @@ function QuickLinks() {
           <path d="M14 26 L8 32" stroke="#0067b8" strokeWidth="2" strokeLinecap="round"/>
         </svg>
         <span>Technical Audit</span>
-      </Link>
+      </div>
+    </section>
+  );
+}
+
+function TechPartners() {
+  const partners = [
+    "AWS Advanced Partner", "Microsoft Azure Certified", "React & React Native", 
+    "Node.js Enterprise", "Python / Django", "PostgreSQL", "Docker & Kubernetes", "Vercel"
+  ];
+  return (
+    <section className="ms-tech-section">
+      <h3 className="ms-tech-title">Technologies & Partnerships</h3>
+      <div className="ms-tech-grid">
+        {partners.map(p => (
+          <div key={p} className="ms-tech-badge">{p}</div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CaseStudies() {
+  return (
+    <section className="ms-section" style={{ backgroundColor: '#f0f6ff', padding: '64px 5%', marginTop: '48px' }}>
+      <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
+        <h2 className="ms-section-title">Client Success & Case Studies</h2>
+        <div className="ms-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+          <div className="ms-card" style={{ background: '#fff' }}>
+            <div className="ms-card-content">
+              <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>FINANCE</span>
+              <h3 className="ms-card-title">Scaling a National Bank's Infrastructure</h3>
+              <p className="ms-card-desc">How we migrated 2 million legacy records to a secure headless architecture with zero downtime.</p>
+              <Link to="/insights" className="ms-card-link">Read full case study ➔</Link>
+            </div>
+          </div>
+          <div className="ms-card" style={{ background: '#fff' }}>
+            <div className="ms-card-content">
+              <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>EDUCATION</span>
+              <h3 className="ms-card-title">The Future of Educational ERPs</h3>
+              <p className="ms-card-desc">We partnered with top institutions to build a custom modular scaling system replacing legacy monoliths.</p>
+              <Link to="/insights" className="ms-card-link">View insights ➔</Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
@@ -131,7 +225,7 @@ function Card({ image, title, description, linkText, to, portrait }) {
 }
 
 function CardGrid({ sectionTitle, cards, columns = 4 }) {
-  const gridClass = columns === 5 ? "ms-grid-5" : "ms-grid";
+  const gridClass = columns === 6 ? "ms-grid-6" : columns === 5 ? "ms-grid-5" : "ms-grid";
   return (
     <section className="ms-section">
       {sectionTitle && <h2 className="ms-section-title">{sectionTitle}</h2>}
@@ -170,41 +264,59 @@ function Footer() {
     <footer className="ms-footer">
       <div className="ms-footer-links">
         <div className="ms-footer-col">
-          <h4>What's new</h4>
-          <a href="#1">SomoBloom Portal</a>
-          <a href="#2">Parent App</a>
-          <a href="#3">Student Dashboard</a>
+          <h4>Enterprise Solutions</h4>
+          <Link to="/services/full-cycle-development">Custom ERP Development</Link>
+          <Link to="/services/full-cycle-development">School Management Systems</Link>
+          <Link to="/services/full-cycle-development">Financial Software</Link>
+          <Link to="/services/full-cycle-development">Healthcare Logistics</Link>
         </div>
         <div className="ms-footer-col">
-          <h4>Software & Services</h4>
-          <a href="#1">Custom Engineering</a>
-          <a href="#2">Cloud Architecture</a>
-          <a href="#3">Technical Rescue</a>
+          <h4>Cloud & Infrastructure</h4>
+          <Link to="/services/architectural-scaling">Serverless Architecture</Link>
+          <Link to="/services/architectural-scaling">Database Migration</Link>
+          <Link to="/services/architectural-scaling">AWS / Azure Integration</Link>
+          <Link to="/services/architectural-scaling">Scalability Audits</Link>
         </div>
         <div className="ms-footer-col">
-          <h4>Education</h4>
-          <a href="#1">School Management</a>
-          <a href="#2">ERP Solutions</a>
-          <a href="#3">Educator Resources</a>
+          <h4>Consulting & Advisory</h4>
+          <Link to="/services/white-collar-partner">Fractional CTO</Link>
+          <Link to="/services/white-collar-partner">IT Strategy</Link>
+          <Link to="/services/surgical-audit">Technical Debt Rescue</Link>
+          <Link to="/services/surgical-audit">Security Audits</Link>
+        </div>
+        <div className="ms-footer-col">
+          <h4>Insights & Research</h4>
+          <Link to="/insights">The Solian Wolves Blog</Link>
+          <Link to="/insights">Whitepapers</Link>
+          <Link to="/insights">Case Studies</Link>
+          <Link to="/insights">Engineering Metrics</Link>
         </div>
         <div className="ms-footer-col">
           <h4>Company</h4>
-          <a href="#1">Careers</a>
-          <a href="#2">About Solian Wolves</a>
-          <a href="#3">Company News</a>
-          <a href="#4">Investors</a>
+          <Link to="/careers">Careers</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/insights">Newsroom</Link>
+          <Link to="/contact">Investor Relations</Link>
+        </div>
+        <div className="ms-footer-col">
+          <h4>Global Offices</h4>
+          <span className="footer-static">Nairobi, KE</span>
+          <span className="footer-static">London, UK</span>
+          <span className="footer-static">Dubai, UAE</span>
         </div>
       </div>
       <div className="ms-footer-bottom">
         <div className="ms-footer-locale">
-          <span>&#127758; English (United States)</span>
+          <span>&#127758; English (Global)</span>
         </div>
         <div className="ms-footer-legal">
-          <a href="#a">Sitemap</a>
-          <a href="#b">Contact Solian Wolves</a>
-          <a href="#c">Privacy</a>
-          <a href="#d">Terms of use</a>
-          <a href="#e">Trademarks</a>
+          <Link to="/">Sitemap</Link>
+          <Link to="/contact">Contact Solian Wolves</Link>
+          <Link to="/">Privacy Policy</Link>
+          <Link to="/">Terms of Service</Link>
+          <Link to="/">Cookie Policy</Link>
+          <Link to="/">Trademarks</Link>
+          <Link to="/">Accessibility</Link>
           <span className="copyright">&copy; Solian Wolves 2026</span>
         </div>
       </div>
@@ -286,6 +398,14 @@ function App() {
       linkText: "Read bio",
       to: "/team/solomon",
       portrait: true
+    },
+    {
+      image: amilliaImg,
+      title: "Amillia Rehan",
+      description: "Sales Manager. Drives enterprise client acquisition, strategic deal execution, and global revenue growth initiatives.",
+      linkText: "Read bio",
+      to: "/team/amillia",
+      portrait: true
     }
   ];
 
@@ -295,11 +415,13 @@ function App() {
       <Hero />
       <div className="ms-container">
         <QuickLinks />
+        <TechPartners />
         <CardGrid cards={serviceCards} />
       </div>
       <Banner />
+      <CaseStudies />
       <div className="ms-container">
-        <CardGrid sectionTitle="Our Leadership Team" cards={teamCards} columns={5} />
+        <CardGrid sectionTitle="Our Leadership Team" cards={teamCards} columns={6} />
       </div>
       <Footer />
     </div>
