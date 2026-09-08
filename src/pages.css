@@ -310,6 +310,17 @@
 .careers-page {
   background-color: #000;
   color: #fff;
+  min-height: 100vh;
+}
+
+.careers-page * {
+  box-sizing: border-box;
+}
+
+/* Ensure all sections within careers page inherit the dark background */
+.careers-page section,
+.careers-page .section-padding {
+  background-color: #000;
 }
 
 .careers-page .dark-nav {
@@ -368,21 +379,21 @@
 }
 
 .role-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   padding: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
 }
 
 .role-card:hover {
-  border-color: rgba(59, 130, 246, 0.3);
-  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(59, 130, 246, 0.4);
+  background: #111;
   transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.08);
 }
 
 .role-info h3 {
@@ -423,8 +434,8 @@
 .pitch-card {
   margin-top: 4rem;
   padding: 3rem;
-  background: rgba(59, 130, 246, 0.05);
-  border: 1px solid rgba(59, 130, 246, 0.1);
+  background: #0a0f1e;
+  border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 8px;
   text-align: center;
 }
