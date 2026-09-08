@@ -89,7 +89,7 @@ export default function Careers() {
 
   return (
     <div className="page-wrapper careers-page">
-      <PageNav dark={true} />
+      <PageNav />
 
       <section className="careers-hero section-padding">
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
