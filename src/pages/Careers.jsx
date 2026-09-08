@@ -89,9 +89,7 @@ export default function Careers() {
 
   return (
     <div className="page-wrapper careers-page">
-      <nav className="page-nav dark-nav">
-        <PageNav label="← Solian Wolves" />
-      </nav>
+      <PageNav dark={true} />
 
       <section className="careers-hero section-padding">
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
