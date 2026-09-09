@@ -12,7 +12,7 @@ import bannerVideo from './assets/9.mp4';
 import logoImg from './assets/logo.jpg';
 import noellaImg from './assets/noella.jpg';
 import aliceImg from './assets/alice.jpg';
-import solomonImg from './assets/solomon.jpg';
+import solomonImg from './assets/solomon2.png';
 import ianImg from './assets/ian.jpg';
 import hillaryImg from './assets/hillary.jpg';
 import amilliaImg from './assets/amillia.jpg';
