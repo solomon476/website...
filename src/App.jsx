@@ -12,7 +12,7 @@ import bannerVideo from './assets/9.mp4';
 import logoImg from './assets/logo.jpg';
 import noellaImg from './assets/noella.jpg';
 import aliceImg from './assets/alice.jpg';
-import solomonImg from './assets/solomon.jpg';
+import solomonImg from './assets/solomon_new.png';
 import ianImg from './assets/ian.jpg';
 import hillaryImg from './assets/hillary.jpg';
 import amilliaImg from './assets/amillia.jpg';
@@ -176,26 +176,26 @@ function TechPartners() {
   );
 }
 
-function CaseStudies() {
+function IndustrySolutions() {
   return (
     <section className="ms-section" style={{ backgroundColor: '#f0f6ff', padding: '64px 5%', marginTop: '48px' }}>
       <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
-        <h2 className="ms-section-title">Client Success & Case Studies</h2>
+        <h2 className="ms-section-title">Industry Solutions</h2>
         <div className="ms-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
           <div className="ms-card" style={{ background: '#fff' }}>
             <div className="ms-card-content">
               <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>FINANCE</span>
-              <h3 className="ms-card-title">Scaling a National Bank's Infrastructure</h3>
-              <p className="ms-card-desc">How we migrated 2 million legacy records to a secure headless architecture with zero downtime.</p>
-              <Link to="/insights" className="ms-card-link">Read full case study ➔</Link>
+              <h3 className="ms-card-title">Scaling Financial Infrastructure</h3>
+              <p className="ms-card-desc">We work with financial institutions to migrate legacy records to secure headless architectures with zero downtime.</p>
+              <Link to="/insights" className="ms-card-link">View solutions ➔</Link>
             </div>
           </div>
           <div className="ms-card" style={{ background: '#fff' }}>
             <div className="ms-card-content">
               <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>EDUCATION</span>
-              <h3 className="ms-card-title">The Future of Educational ERPs</h3>
-              <p className="ms-card-desc">We partnered with top institutions to build a custom modular scaling system replacing legacy monoliths.</p>
-              <Link to="/insights" className="ms-card-link">View insights ➔</Link>
+              <h3 className="ms-card-title">Next-Gen Educational ERPs</h3>
+              <p className="ms-card-desc">We build custom modular scaling systems that replace legacy monoliths for large educational networks.</p>
+              <Link to="/insights" className="ms-card-link">View solutions ➔</Link>
             </div>
           </div>
         </div>
@@ -288,7 +288,7 @@ function Footer() {
           <h4>Insights & Research</h4>
           <Link to="/insights">The Solian Wolves Blog</Link>
           <Link to="/insights">Whitepapers</Link>
-          <Link to="/insights">Case Studies</Link>
+          <Link to="/insights">Industry Solutions</Link>
           <Link to="/insights">Engineering Metrics</Link>
         </div>
         <div className="ms-footer-col">
@@ -419,7 +419,7 @@ function App() {
         <CardGrid cards={serviceCards} />
       </div>
       <Banner />
-      <CaseStudies />
+      <IndustrySolutions />
       <div className="ms-container">
         <CardGrid sectionTitle="Our Leadership Team" cards={teamCards} columns={6} />
       </div>

@@ -17,17 +17,63 @@
   height: 54px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav.dark {
+  background: #000;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.page-nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav-right {
+  display: flex;
+  align-items: center;
 }
 
 .page-nav-logo {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #0067b8;
   text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.01em;
 }
 
 .page-nav-logo:hover {
   text-decoration: underline;
+}
+
+.page-nav.dark .page-nav-logo {
+  color: #ffffff;
+}
+
+.page-nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #242424;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.page-nav-link:hover {
+  color: #0067b8;
+}
+
+.page-nav.dark .page-nav-link {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.page-nav.dark .page-nav-link:hover {
+  opacity: 1;
 }
 
 /* Hero banner on detail pages */

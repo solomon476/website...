@@ -63,7 +63,6 @@ export default function Portal() {
                 id="portal-email"
                 type="email"
                 required
-                placeholder="name@company.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 style={{ padding: '10px 14px', border: '1px solid #d1d1d1', borderRadius: '2px', fontSize: '1rem', outline: 'none' }}

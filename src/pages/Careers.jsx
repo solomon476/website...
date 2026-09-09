@@ -3,65 +3,7 @@ import { Link } from 'react-router-dom';
 import PageNav from '../components/PageNav.jsx';
 import '../pages.css';
 
-const roles = [
-  {
-    id: 'lead-systems-architect',
-    title: 'Lead Systems Architect',
-    location: 'Remote (Global)',
-    type: 'Full-Time',
-    overview: 'As a Lead Systems Architect, you will design and oversee the development of highly scalable, mission-critical infrastructure for our enterprise clients. You will work on solving the most complex architectural problems and setting engineering standards.',
-    responsibilities: [
-      'Design distributed system architectures and microservices.',
-      'Lead technical discovery and define engineering roadmaps.',
-      'Mentorship of senior engineering pods.',
-      'Ensure zero-downtime deployments and system resiliency.'
-    ],
-    requirements: [
-      '8+ years of software engineering experience.',
-      'Deep expertise in AWS/GCP/Azure cloud ecosystems.',
-      'Proven track record of architecting high-throughput systems.',
-      'Strong communication skills for C-suite technical translation.'
-    ]
-  },
-  {
-    id: 'senior-backend-engineer',
-    title: 'Senior Backend Engineer (Node)',
-    location: 'Hybrid (US)',
-    type: 'Full-Time',
-    overview: 'We are seeking an elite Senior Backend Engineer to build robust, scalable APIs and services. You will be responsible for the core logic that powers our custom enterprise solutions.',
-    responsibilities: [
-      'Develop and maintain high-performance Node.js backend services.',
-      'Optimize database queries and data models (PostgreSQL/MongoDB).',
-      'Integrate with third-party enterprise APIs and legacy systems.',
-      'Implement strict security and data protection protocols.'
-    ],
-    requirements: [
-      '5+ years of backend development experience.',
-      'Expertise in Node.js, TypeScript, and modern backend frameworks.',
-      'Solid understanding of database internals and caching strategies.',
-      'Experience with CI/CD and containerized environments.'
-    ]
-  },
-  {
-    id: 'technical-product-manager',
-    title: 'Technical Product Manager',
-    location: 'Remote (EU/UK)',
-    type: 'Contract',
-    overview: 'The Technical Product Manager will bridge the gap between client strategy and engineering execution. You will translate complex business needs into precise architectural requirements and manage the agile delivery lifecycle.',
-    responsibilities: [
-      'Translate client requirements into actionable engineering epics.',
-      'Prioritize product backlogs and manage sprint execution.',
-      'Coordinate between design, engineering, and client stakeholders.',
-      'Ensure delivery timelines align with strategic business goals.'
-    ],
-    requirements: [
-      '4+ years in technical product management.',
-      'Strong understanding of software development lifecycles.',
-      'Ability to fluently discuss architecture and APIs with engineers.',
-      'Exceptional organizational and agile management skills.'
-    ]
-  }
-];
+const roles = [];
 
 export default function Careers() {
   const [selectedRole, setSelectedRole] = useState(null);
