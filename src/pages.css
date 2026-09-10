@@ -2,8 +2,9 @@
 
 .page-wrapper {
   min-height: 100vh;
-  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #242424;
+  font-family: var(--font-family);
+  color: var(--ms-text-main);
+  background-color: var(--ms-bg-main);
 }
 
 /* Top nav bar on detail pages */
@@ -11,18 +12,19 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #ffffff;
-  border-bottom: 1px solid #f2f2f2;
+  background: var(--ms-nav-bg);
+  border-bottom: 1px solid var(--ms-border);
   padding: 0 5%;
   height: 54px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(8px);
 }
 
 .page-nav.dark {
-  background: #000;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  background: var(--ms-nav-bg);
+  border-bottom: 1px solid var(--ms-border);
 }
 
 .page-nav-left {
@@ -38,7 +40,7 @@
 .page-nav-logo {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #0067b8;
+  color: var(--ms-blue);
   text-decoration: none;
   background: none;
   border: none;
@@ -56,15 +58,15 @@
 }
 
 .page-nav-link {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #242424;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ms-text-main);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .page-nav-link:hover {
-  color: #0067b8;
+  color: var(--ms-blue);
 }
 
 .page-nav.dark .page-nav-link {
@@ -127,14 +129,14 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #000000;
+  color: var(--ms-text-main);
 }
 
 .page-section > p {
   font-size: 1.1rem;
   line-height: 1.7;
   max-width: 800px;
-  color: #404040;
+  color: var(--ms-text-muted);
 }
 
 /* 4-column feature cards */
@@ -145,9 +147,21 @@
   padding-top: 40px;
 }
 
+.stat-card {
+  background: var(--ms-card-bg);
+  padding: 32px;
+  border-radius: 8px;
+  text-align: center;
+  border-top: 4px solid var(--ms-blue);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--ms-border);
+}
+
 .page-card {
-  border: 1px solid #f2f2f2;
+  background: var(--ms-card-bg);
+  border: 1px solid var(--ms-border);
   padding: 32px 24px;
+  border-radius: 8px;
   transition: box-shadow 0.2s;
 }
 
@@ -159,18 +173,20 @@
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #000;
+  color: var(--ms-text-main);
 }
 
 .page-card p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--ms-text-muted);
 }
 
 /* CTA section at bottom */
 .page-cta {
-  background: #f2f2f2;
+  background: var(--ms-card-bg);
+  border: 1px solid var(--ms-border);
+  border-radius: 8px;
   padding: 60px 48px;
   margin-top: 60px;
   text-align: center;
@@ -180,11 +196,12 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 12px;
+  color: var(--ms-text-main);
 }
 
 .page-cta p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--ms-text-muted);
   margin-bottom: 32px;
 }
 
@@ -201,7 +218,7 @@
 }
 
 .ms-btn-primary {
-  background-color: #0067b8;
+  background-color: var(--ms-blue);
   color: #ffffff;
 }
 
@@ -256,12 +273,12 @@
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #000;
+  color: var(--ms-text-main);
 }
 
 .bio-lead {
   font-size: 1.15rem;
-  color: #0067b8;
+  color: var(--ms-blue);
   font-weight: 600;
   margin-bottom: 24px;
   line-height: 1.5;
@@ -270,7 +287,7 @@
 .bio-body p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #404040;
+  color: var(--ms-text-muted);
   margin-bottom: 16px;
 }
 
@@ -322,25 +339,27 @@
 .form-group label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #242424;
+  color: var(--ms-text-main);
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  border: 1px solid #d1d1d1;
+  border: 1px solid var(--ms-border);
   padding: 10px 14px;
   font-size: 1rem;
   font-family: inherit;
   border-radius: 2px;
   outline: none;
   transition: border-color 0.2s;
+  background: var(--ms-card-bg);
+  color: var(--ms-text-main);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #0067b8;
+  border-color: var(--ms-blue);
 }
 
 .form-submit {
@@ -353,12 +372,15 @@
   margin: 80px auto;
   text-align: center;
   padding: 60px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--ms-border);
+  background: var(--ms-card-bg);
+  border-radius: var(--radius-md);
 }
 
 .contact-success h2 {
   font-size: 2rem;
   margin-bottom: 16px;
+  color: var(--ms-text-main);
 }
 
 @media (max-width: 600px) {
@@ -369,8 +391,8 @@
 
 /* Careers Page Styles */
 .careers-page {
-  background-color: #ffffff;
-  color: #242424;
+  background-color: var(--ms-bg-main);
+  color: var(--ms-text-main);
   min-height: 100vh;
 }
 
@@ -381,18 +403,18 @@
 /* Ensure all sections within careers page have white background */
 .careers-page section,
 .careers-page .section-padding {
-  background-color: #ffffff;
+  background-color: var(--ms-card-bg);
 }
 
 .careers-hero {
   padding: 10rem 0 4rem;
-  background: linear-gradient(160deg, #f0f4ff 0%, #ffffff 60%);
+  background: linear-gradient(160deg, var(--ms-card-bg) 0%, var(--ms-bg-main) 60%);
 }
 
 .hero-badge {
   display: inline-block;
   margin-bottom: 1.5rem;
-  color: #0067b8;
+  color: var(--ms-blue);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -403,17 +425,17 @@
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   margin-bottom: 1.5rem;
   line-height: 1.1;
-  color: #0f1115;
+  color: var(--ms-text-main);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #0067b8 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, var(--ms-blue) 0%, #3b82f6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .careers-subtitle {
-  color: #555555;
+  color: var(--ms-text-muted);
   font-size: 1.25rem;
   line-height: 1.7;
 }
@@ -421,7 +443,7 @@
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #0f1115;
+  color: var(--ms-text-main);
 }
 
 .roles-container {
@@ -430,9 +452,24 @@
   gap: 1.5rem;
 }
 
+.job-card {
+  background-color: var(--ms-card-bg);
+  border: 1px solid var(--ms-border);
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  border-color: var(--ms-blue);
+}
+
 .role-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--ms-card-bg);
+  border: 1px solid var(--ms-border);
   border-radius: 8px;
   padding: 2.5rem;
   display: flex;
@@ -442,7 +479,7 @@
 }
 
 .role-card:hover {
-  border-color: #0067b8;
+  border-color: var(--ms-blue);
   transform: translateY(-3px);
   box-shadow: 0 8px 32px rgba(0, 103, 184, 0.1);
 }
@@ -450,11 +487,11 @@
 .role-info h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #0f1115;
+  color: var(--ms-text-main);
 }
 
 .role-meta {
-  color: #6b7280;
+  color: var(--ms-text-muted);
   font-size: 0.9rem;
   display: flex;
   gap: 1rem;
@@ -469,9 +506,9 @@
 
 .btn-outline {
   padding: 0.8rem 2rem;
-  border: 1px solid #0067b8;
+  border: 1px solid var(--ms-blue);
   background: transparent;
-  color: #0067b8;
+  color: var(--ms-blue);
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -479,15 +516,15 @@
 }
 
 .btn-outline:hover {
-  background: #0067b8;
+  background: var(--ms-blue);
   color: #ffffff;
 }
 
 .pitch-card {
   margin-top: 4rem;
   padding: 3rem;
-  background: #f0f4ff;
-  border: 1px solid #c7d8f0;
+  background: var(--ms-card-bg);
+  border: 1px solid var(--ms-border);
   border-radius: 8px;
   text-align: center;
 }
@@ -495,16 +532,16 @@
 .pitch-card h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #0f1115;
+  color: var(--ms-text-main);
 }
 
 .pitch-card p {
-  color: #555555;
+  color: var(--ms-text-muted);
   margin-bottom: 2rem;
 }
 
 .btn-blue {
-  background: #0067b8;
+  background: var(--ms-blue);
   color: #fff;
   padding: 1rem 2.5rem;
   border-radius: 100px;
@@ -535,8 +572,8 @@
 }
 
 .careers-modal-content {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--ms-card-bg);
+  border: 1px solid var(--ms-border);
   border-radius: 12px;
   width: 100%;
   max-width: 600px;
@@ -544,7 +581,7 @@
   overflow-y: auto;
   position: relative;
   padding: 2rem;
-  color: #242424;
+  color: var(--ms-text-main);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
@@ -554,18 +591,18 @@
   right: 1rem;
   background: transparent;
   border: none;
-  color: #6b7280;
+  color: var(--ms-text-muted);
   font-size: 1.5rem;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .careers-modal-close:hover {
-  color: #0f1115;
+  color: var(--ms-text-main);
 }
 
 .modal-header {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--ms-border);
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
 }

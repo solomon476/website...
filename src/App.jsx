@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import ThemeToggle from './components/ThemeToggle.jsx';
 import './App.css';
 import heroBg from './assets/1.jpg';
 import bannerBg from './assets/2.jpg';
@@ -30,22 +32,62 @@ function Navbar() {
           <div className={`ms-nav-links ${menuOpen ? 'open' : ''}`}>
             <div className="ms-nav-dropdown">
               <span className="ms-nav-dropdown-toggle">Company ▾</span>
-              <div className="ms-nav-dropdown-menu">
-                <Link to="/about">About Us</Link>
-                <Link to="/methodology">Methodology</Link>
-                <Link to="/careers">Careers</Link>
-                <Link to="/contact">Contact</Link>
+              <div className="ms-nav-dropdown-menu mega-menu">
+                <div className="mega-menu-grid">
+                  <Link to="/about">
+                    <h4>About Us</h4>
+                    <p>Our story, mission, and leadership.</p>
+                  </Link>
+                  <Link to="/methodology">
+                    <h4>Methodology</h4>
+                    <p>How we engineer world-class systems.</p>
+                  </Link>
+                  <Link to="/careers">
+                    <h4>Careers</h4>
+                    <p>Join the pack and build the future.</p>
+                  </Link>
+                  <Link to="/contact">
+                    <h4>Contact</h4>
+                    <p>Get in touch with our global offices.</p>
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="ms-nav-dropdown">
               <span className="ms-nav-dropdown-toggle">Solutions ▾</span>
-              <div className="ms-nav-dropdown-menu">
-                <Link to="/services/full-cycle-development">Full-Cycle Development</Link>
-                <Link to="/services/architectural-scaling">Architectural Scaling</Link>
-                <Link to="/services/surgical-audit">The Surgical Audit</Link>
-                <Link to="/services/white-collar-partner">White Collar Partner</Link>
-                <Link to="/industries">Industries</Link>
-                <Link to="/labs">Alpha Labs</Link>
+              <div className="ms-nav-dropdown-menu mega-menu">
+                <div className="mega-menu-grid">
+                  <Link to="/services/full-cycle-development">
+                    <h4>Full-Cycle Development</h4>
+                    <p>Custom software and enterprise systems.</p>
+                  </Link>
+                  <Link to="/services/architectural-scaling">
+                    <h4>Architectural Scaling</h4>
+                    <p>Cloud infrastructure and database optimization.</p>
+                  </Link>
+                  <Link to="/services/surgical-audit">
+                    <h4>The Surgical Audit</h4>
+                    <p>Deep-dive performance and UX analysis.</p>
+                  </Link>
+                  <Link to="/services/white-collar-partner">
+                    <h4>White Collar Partner</h4>
+                    <p>Fractional CTO and strategic advisory.</p>
+                  </Link>
+                </div>
+                <div className="mega-menu-sidebar">
+                  <Link to="/industries" style={{ padding: 0 }}>
+                    <div style={{ padding: '16px', background: 'var(--ms-bg-alt)', borderRadius: '8px' }}>
+                      <h4 style={{ color: 'var(--ms-blue)' }}>Industries We Serve ➔</h4>
+                      <p style={{ marginTop: '4px' }}>Education, Finance, Healthcare, and Logistics.</p>
+                    </div>
+                  </Link>
+                  <Link to="/labs" style={{ padding: 0, marginTop: '16px', display: 'block' }}>
+                    <div style={{ padding: '16px', background: 'var(--ms-bg-alt)', borderRadius: '8px' }}>
+                      <h4 style={{ color: 'var(--ms-blue)' }}>Alpha Labs ➔</h4>
+                      <p style={{ marginTop: '4px' }}>R&D, experimental engineering, and open-source.</p>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
             <Link to="/insights">Insights</Link>
@@ -54,6 +96,7 @@ function Navbar() {
           </div>
         </div>
         <div className="ms-navbar-right">
+          <ThemeToggle />
           <Link to="/portal" className="ms-nav-item">Sign in</Link>
         </div>
         <div className="ms-mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -109,13 +152,19 @@ function Hero() {
         playsInline
         poster={heroBg}
       />
-      <div className="ms-hero-content">
+      <motion.div 
+        className="ms-hero-content"
+        initial={{ opacity: 0, y: 30 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="ms-hero-box">
-          <h1 className="ms-hero-title">Building the Future of<br/> <span style={{ color: '#66b2ff' }}>{typingText}</span><span className="cursor">|</span></h1>
+          <h1 className="ms-hero-title">Building the Future of<br/> <span style={{ color: 'var(--ms-blue)' }}>{typingText}</span><span className="cursor">|</span></h1>
           <p className="ms-hero-subtitle">We engineer high-performance software, custom ERPs, and mission-critical business systems tailored for ambitious organisations — from schools to enterprises.</p>
           <Link to="/contact" className="ms-btn ms-btn-primary">Secure Consultation</Link>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
@@ -164,15 +213,18 @@ function QuickLinks() {
 function TechPartners() {
   const partners = [
     "AWS Advanced Partner", "Microsoft Azure Certified", "React & React Native", 
-    "Node.js Enterprise", "Python / Django", "PostgreSQL", "Docker & Kubernetes", "Vercel"
+    "Node.js Enterprise", "Python / Django", "PostgreSQL", "Docker & Kubernetes", "Vercel",
+    "Supabase", "Cloudflare", "TailwindCSS", "Next.js"
   ];
   return (
     <section className="ms-tech-section">
       <h3 className="ms-tech-title">Technologies & Partnerships</h3>
-      <div className="ms-tech-grid">
-        {partners.map(p => (
-          <div key={p} className="ms-tech-badge">{p}</div>
-        ))}
+      <div className="marquee-container">
+        <div className="marquee-content">
+          {[...partners, ...partners].map((p, index) => (
+            <div key={index} className="ms-tech-badge">{p}</div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -180,21 +232,28 @@ function TechPartners() {
 
 function CaseStudies() {
   return (
-    <section className="ms-section" style={{ backgroundColor: '#f0f6ff', padding: '64px 5%', marginTop: '48px' }}>
+    <motion.section 
+      className="ms-section" 
+      style={{ backgroundColor: 'var(--ms-bg-alt)', padding: '64px 5%', marginTop: '48px' }}
+      initial={{ opacity: 0, y: 30 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
         <h2 className="ms-section-title">Client Success & Solutions</h2>
         <div className="ms-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-          <div className="ms-card" style={{ background: '#fff' }}>
+          <div className="ms-card" style={{ background: 'var(--ms-card-bg)' }}>
             <div className="ms-card-content">
-              <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>FINANCE</span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>FINANCE</span>
               <h3 className="ms-card-title">Scaling Financial Infrastructure</h3>
               <p className="ms-card-desc">How we can migrate legacy records to a secure headless architecture with zero downtime.</p>
               <Link to="/insights" className="ms-card-link">Read full solution ➔</Link>
             </div>
           </div>
-          <div className="ms-card" style={{ background: '#fff' }}>
+          <div className="ms-card" style={{ background: 'var(--ms-card-bg)' }}>
             <div className="ms-card-content">
-              <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>EDUCATION</span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>EDUCATION</span>
               <h3 className="ms-card-title">The Future of Educational ERPs</h3>
               <p className="ms-card-desc">Partnering with top institutions to build custom modular scaling systems replacing legacy monoliths.</p>
               <Link to="/insights" className="ms-card-link">View insights ➔</Link>
@@ -202,7 +261,7 @@ function CaseStudies() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
@@ -229,14 +288,20 @@ function Card({ image, title, description, linkText, to, portrait }) {
 function CardGrid({ sectionTitle, cards, columns = 4 }) {
   const gridClass = columns === 6 ? "ms-grid-6" : columns === 5 ? "ms-grid-5" : "ms-grid";
   return (
-    <section className="ms-section">
+    <motion.section 
+      className="ms-section"
+      initial={{ opacity: 0, y: 30 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       {sectionTitle && <h2 className="ms-section-title">{sectionTitle}</h2>}
       <div className={gridClass}>
         {cards.map((c, i) => (
           <Card key={i} {...c} />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 
