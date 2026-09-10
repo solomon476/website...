@@ -12,7 +12,7 @@ import bannerVideo from './assets/9.mp4';
 import logoImg from './assets/logo.jpg';
 import noellaImg from './assets/noella.jpg';
 import aliceImg from './assets/alice.jpg';
-import solomonImg from './assets/solomon2.png';
+import solomonImg from './assets/solomon.jpg';
 import ianImg from './assets/ian.jpg';
 import hillaryImg from './assets/hillary.jpg';
 import amilliaImg from './assets/amillia.jpg';
@@ -49,6 +49,8 @@ function Navbar() {
               </div>
             </div>
             <Link to="/insights">Insights</Link>
+            {/* Show Sign In link on mobile inside the menu since the top-right button is hidden */}
+            <Link to="/portal" className="ms-mobile-signin" style={{ color: '#0067b8', fontWeight: 'bold' }}>Portal Sign in ➔</Link>
           </div>
         </div>
         <div className="ms-navbar-right">
@@ -180,21 +182,21 @@ function CaseStudies() {
   return (
     <section className="ms-section" style={{ backgroundColor: '#f0f6ff', padding: '64px 5%', marginTop: '48px' }}>
       <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
-        <h2 className="ms-section-title">Client Success & Case Studies</h2>
+        <h2 className="ms-section-title">Client Success & Solutions</h2>
         <div className="ms-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
           <div className="ms-card" style={{ background: '#fff' }}>
             <div className="ms-card-content">
               <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>FINANCE</span>
-              <h3 className="ms-card-title">Scaling a National Bank's Infrastructure</h3>
-              <p className="ms-card-desc">How we migrated 2 million legacy records to a secure headless architecture with zero downtime.</p>
-              <Link to="/insights" className="ms-card-link">Read full case study ➔</Link>
+              <h3 className="ms-card-title">Scaling Financial Infrastructure</h3>
+              <p className="ms-card-desc">How we can migrate legacy records to a secure headless architecture with zero downtime.</p>
+              <Link to="/insights" className="ms-card-link">Read full solution ➔</Link>
             </div>
           </div>
           <div className="ms-card" style={{ background: '#fff' }}>
             <div className="ms-card-content">
               <span style={{ fontSize: '0.8rem', color: '#0067b8', fontWeight: 'bold' }}>EDUCATION</span>
               <h3 className="ms-card-title">The Future of Educational ERPs</h3>
-              <p className="ms-card-desc">We partnered with top institutions to build a custom modular scaling system replacing legacy monoliths.</p>
+              <p className="ms-card-desc">Partnering with top institutions to build custom modular scaling systems replacing legacy monoliths.</p>
               <Link to="/insights" className="ms-card-link">View insights ➔</Link>
             </div>
           </div>
