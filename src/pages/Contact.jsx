@@ -124,18 +124,18 @@ export default function Contact() {
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="name">Full Name *</label>
-                  <input id="name" name="name" type="text" required placeholder="John Smith" />
+                  <input id="name" name="name" type="text" required placeholder="Your full name" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="org">Organisation / Company *</label>
-                  <input id="org" name="org" type="text" required placeholder="Acme Ltd." />
+                  <input id="org" name="org" type="text" required placeholder="Your organisation" />
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="email">Email Address *</label>
-                  <input id="email" name="email" type="email" required placeholder="john@company.com" />
+                  <input id="email" name="email" type="email" required placeholder="Your email address" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="phone">Phone / WhatsApp</label>
@@ -160,14 +160,14 @@ export default function Contact() {
                   </select>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="budget">Estimated Budget</label>
+                  <label htmlFor="budget">Estimated Budget (KSh)</label>
                   <select id="budget" name="budget">
                     <option value="">-- Select a range --</option>
-                    <option>Under $5,000</option>
-                    <option>$5,000 – $15,000</option>
-                    <option>$15,000 – $50,000</option>
-                    <option>$50,000 – $100,000</option>
-                    <option>$100,000+</option>
+                    <option>Under KSh 500,000</option>
+                    <option>KSh 500,000 – KSh 1,500,000</option>
+                    <option>KSh 1,500,000 – KSh 5,000,000</option>
+                    <option>KSh 5,000,000 – KSh 10,000,000</option>
+                    <option>KSh 10,000,000+</option>
                     <option>Not sure yet</option>
                   </select>
                 </div>
