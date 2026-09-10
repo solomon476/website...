@@ -42,12 +42,29 @@ export default function About() {
         {/* Our Story */}
         <section className="page-section" style={{ background: '#fafafa', borderRadius: '8px', padding: '48px', marginBottom: '48px' }}>
           <h2 style={{ fontSize: '1.75rem', marginBottom: '24px' }}>Our Story</h2>
-          <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#444', maxWidth: '720px' }}>
-            Solian Wolves was founded with a clear conviction: that there was a gap between the quality of software being built and the ambition of institutions trying to grow. We saw schools struggling with outdated management systems, enterprises drowning in technical debt, and brilliant startups with no reliable engineering partner to help them scale.
-          </p>
-          <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#444', maxWidth: '720px', marginTop: '16px' }}>
-            We assembled a team of senior architects, product engineers, and C-suite advisors who shared one belief — that elite software engineering should not be a privilege of the Fortune 500. Today, we operate across Nairobi, London, and Dubai, delivering world-class digital infrastructure to institutions that demand the best.
-          </p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'center' }}>
+            <div>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#444' }}>
+                Solian Wolves was founded with a clear conviction: that there was a gap between the quality of software being built and the ambition of institutions trying to grow. We saw schools struggling with outdated management systems, enterprises drowning in technical debt, and brilliant startups with no reliable engineering partner to help them scale.
+              </p>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#444', marginTop: '16px' }}>
+                We assembled a team of senior architects, product engineers, and C-suite advisors who shared one belief — that elite software engineering should not be a privilege of the Fortune 500. Today, we operate across Nairobi, London, and Dubai, delivering world-class digital infrastructure to institutions that demand the best.
+              </p>
+            </div>
+            
+            <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 12px 32px rgba(0,0,0,0.1)' }}>
+              <img 
+                src="/team-culture.jpg" 
+                alt="Solian Wolves Team Member" 
+                style={{ width: '100%', height: 'auto', display: 'block' }} 
+              />
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(transparent, rgba(0,0,0,0.7))', padding: '24px', color: '#fff' }}>
+                <span style={{ fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#66b2ff' }}>The Pack</span>
+                <h3 style={{ margin: '4px 0 0', fontSize: '1.2rem', fontWeight: 600 }}>Building the future of African tech.</h3>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Core Values */}
