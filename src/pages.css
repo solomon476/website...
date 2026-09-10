@@ -283,6 +283,21 @@
   }
 }
 
+/* Contact form layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 /* Contact form */
 .contact-form {
   max-width: 800px;

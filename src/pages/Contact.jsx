@@ -68,7 +68,7 @@ export default function Contact() {
             </div>
           </div>
         ) : (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '64px', alignItems: 'start' }}>
+          <div className="contact-layout">
 
             {/* Left: Contact Info */}
             <div style={{ paddingTop: '8px' }}>
