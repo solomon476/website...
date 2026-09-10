@@ -3,7 +3,72 @@ import { Link } from 'react-router-dom';
 import PageNav from '../components/PageNav.jsx';
 import '../pages.css';
 
-const roles = [];
+const roles = [
+  {
+    id: 1,
+    title: 'Senior Full-Stack Engineer',
+    location: 'Nairobi, Kenya (Hybrid)',
+    type: 'Full-Time',
+    overview: 'We are looking for a senior full-stack engineer who can own entire product features from architecture to deployment. You will work on client-facing systems across education, finance, and healthcare.',
+    responsibilities: [
+      'Design and implement scalable backend services using Node.js / Python',
+      'Build high-performance React frontends for enterprise clients',
+      'Lead technical architecture discussions and code reviews',
+      'Collaborate directly with clients during discovery and delivery phases',
+      'Mentor junior engineers and maintain engineering standards',
+    ],
+    requirements: [
+      '5+ years of full-stack development experience',
+      'Expert-level React and Node.js / Python skills',
+      'Strong experience with PostgreSQL and cloud platforms (AWS/Azure/GCP)',
+      'Experience with Docker, CI/CD, and DevOps practices',
+      'Excellent communication skills — you will interact with clients directly',
+    ],
+  },
+  {
+    id: 2,
+    title: 'DevOps & Cloud Engineer',
+    location: 'Remote (Africa/Europe)',
+    type: 'Full-Time',
+    overview: 'We need a DevOps engineer to design, manage, and optimise cloud infrastructure across our client portfolio. You will own the reliability, security, and cost efficiency of every system we deploy.',
+    responsibilities: [
+      'Design and manage cloud infrastructure on AWS and Azure',
+      'Build and maintain CI/CD pipelines using GitHub Actions, Jenkins, or similar',
+      'Containerise applications using Docker and orchestrate with Kubernetes',
+      'Implement monitoring, alerting, and incident response workflows',
+      'Conduct infrastructure security reviews and cost optimisation audits',
+    ],
+    requirements: [
+      '3+ years of DevOps / SRE experience',
+      'Strong AWS or Azure certification preferred',
+      'Hands-on experience with Terraform, Docker, and Kubernetes',
+      'Understanding of networking, DNS, SSL, and cloud security best practices',
+      'Experience with monitoring tools (Datadog, CloudWatch, Grafana)',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Enterprise Sales Executive',
+    location: 'Nairobi, Kenya',
+    type: 'Full-Time',
+    overview: 'We are looking for an ambitious sales executive to drive new business across East Africa and the UK. You will be the first point of contact for new enterprise clients — schools, hospitals, financial institutions, and SMEs.',
+    responsibilities: [
+      'Identify and pursue enterprise software sales opportunities',
+      'Conduct discovery calls and present solutions to decision-makers',
+      'Manage the full sales cycle from lead to signed contract',
+      'Build and maintain relationships with C-suite stakeholders',
+      'Meet and exceed monthly and quarterly revenue targets',
+    ],
+    requirements: [
+      '3+ years of B2B enterprise software sales experience',
+      'Proven track record of closing deals above $10,000',
+      'Strong network in East African business and government sectors',
+      'Excellent presentation and negotiation skills',
+      'Understanding of software development — you do not need to code, but you must understand what we build',
+    ],
+  },
+];
+
 
 export default function Careers() {
   const [selectedRole, setSelectedRole] = useState(null);

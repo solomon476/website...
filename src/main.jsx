@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import WhatsAppButton from './components/WhatsAppButton.jsx'
 import './index.css'
 import App from './App.jsx'
 import FullCycleDevelopment from './pages/FullCycleDevelopment.jsx'
@@ -49,5 +50,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <WhatsAppButton phone="254700000000" />
   </StrictMode>,
 )
