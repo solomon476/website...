@@ -4,7 +4,7 @@ import React, { useState } from 'react';
  * Global floating WhatsApp button — appears on all pages.
  * Pulses to attract attention and shows a tooltip on hover.
  */
-export default function WhatsAppButton({ phone = '254700000000', message = "Hi Solian Wolves, I'd like to discuss a project." }) {
+export default function WhatsAppButton({ phone = '254714729996', message = "Hi Solian Wolves, I'd like to discuss a project." }) {
   const [hovered, setHovered] = useState(false);
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 

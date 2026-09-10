@@ -62,7 +62,7 @@ export default function Contact() {
             <p style={{ color: '#616161', marginBottom: '32px' }}>A senior member of our team will reach out to you within 24 hours to discuss your project.</p>
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link to="/" className="ms-btn ms-btn-primary">Back to Home</Link>
-              <a href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer" className="ms-btn" style={{ background: '#25D366', color: '#fff', border: 'none' }}>
+              <a href="https://wa.me/254714729996" target="_blank" rel="noopener noreferrer" className="ms-btn" style={{ background: '#25D366', color: '#fff', border: 'none' }}>
                 💬 Chat on WhatsApp
               </a>
             </div>
@@ -77,11 +77,11 @@ export default function Contact() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
                   <div style={{ fontWeight: 700, marginBottom: '4px', color: '#0f1115' }}>📧 Email</div>
-                  <a href="mailto:hello@solianwolves.com" style={{ color: '#0067b8' }}>hello@solianwolves.com</a>
+                  <a href="mailto:solianwolves@gmail.com" style={{ color: '#0067b8' }}>solianwolves@gmail.com</a>
                 </div>
                 <div>
                   <div style={{ fontWeight: 700, marginBottom: '4px', color: '#0f1115' }}>💬 WhatsApp</div>
-                  <a href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 600 }}>Chat with us directly →</a>
+                  <a href="https://wa.me/254714729996" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 600 }}>Chat with us directly →</a>
                 </div>
                 <div>
                   <div style={{ fontWeight: 700, marginBottom: '8px', color: '#0f1115' }}>🌍 Global Offices</div>
@@ -99,7 +99,7 @@ export default function Contact() {
 
               {/* Quick WhatsApp CTA */}
               <a
-                href="https://wa.me/254700000000?text=Hi%20Solian%20Wolves%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                href="https://wa.me/254714729996?text=Hi%20Solian%20Wolves%2C%20I%27d%20like%20to%20discuss%20a%20project."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

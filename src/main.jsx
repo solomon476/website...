@@ -50,6 +50,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-    <WhatsAppButton phone="254700000000" />
+    <WhatsAppButton phone="254714729996" />
   </StrictMode>,
 )

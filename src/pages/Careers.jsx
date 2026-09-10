@@ -135,7 +135,7 @@ export default function Careers() {
         <div className="pitch-card">
           <h3>Don't see a fit?</h3>
           <p>We are always hunting for exceptional talent. If you have what it takes to run with the pack, send us your portfolio.</p>
-          <a href="mailto:careers@solianwolves.com?subject=Talent Pitch - Joining The Pack" className="btn btn-blue">Pitch Yourself</a>
+          <a href="mailto:solianwolves@gmail.com?subject=Talent Pitch - Joining The Pack" className="btn btn-blue">Pitch Yourself</a>
         </div>
       </section>
 
@@ -181,7 +181,7 @@ export default function Careers() {
             </div>
 
             <div className="modal-footer">
-              <a href={`mailto:careers@solianwolves.com?subject=Application: ${selectedRole.title}`} className="btn btn-primary-full">Apply for this Mission</a>
+              <a href={`mailto:solianwolves@gmail.com?subject=Application: ${selectedRole.title}`} className="btn btn-primary-full">Apply for this Mission</a>
             </div>
           </div>
         </div>
