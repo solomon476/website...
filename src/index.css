@@ -828,3 +828,86 @@ video.ms-banner-img {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+/* =============================================
+   DARK MODE — Global inline-color safety net
+   Any hardcoded dark text buried in inline JSX
+   styles gets overridden here when dark is active.
+   ============================================= */
+.dark body,
+.dark .page-wrapper,
+.dark .ms-layout {
+  color: var(--ms-text-main);
+  background-color: var(--ms-bg-main);
+}
+
+/* Catch-all for any element that still has a near-black inline color */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: var(--ms-text-main) !important;
+}
+
+.dark p {
+  color: var(--ms-text-main) !important;
+}
+
+.dark span:not(.cursor):not(.page-tag):not(.hero-badge):not(.text-gradient) {
+  color: inherit;
+}
+
+/* Section and card backgrounds */
+.dark .page-section,
+.dark .page-body,
+.dark .page-wrapper {
+  background-color: var(--ms-bg-main);
+}
+
+.dark .page-card,
+.dark .stat-card,
+.dark .role-card,
+.dark .job-card,
+.dark .ms-card {
+  background-color: var(--ms-card-bg) !important;
+  border-color: var(--ms-border) !important;
+}
+
+/* Muted text (things like '#616161', '#444', '#475569') */
+.dark [style*="color: '#616161'"],
+.dark [style*="color: '#444'"],
+.dark [style*="color: '#475569'"],
+.dark [style*="color: '#555'"],
+.dark [style*="color: '#999'"],
+.dark [style*="color: '#0f1115'"],
+.dark [style*="color: '#242424'"] {
+  color: var(--ms-dark-gray) !important;
+}
+
+/* Force form inputs/selects to be dark-aware */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: var(--ms-card-bg) !important;
+  color: var(--ms-text-main) !important;
+  border-color: var(--ms-border) !important;
+}
+
+/* Force the quick-links, footer, and other bg sections */
+.dark .ms-footer {
+  background-color: var(--ms-bg-alt) !important;
+}
+
+.dark .ms-footer-col a,
+.dark .ms-footer-col .footer-static,
+.dark .ms-footer-legal a,
+.dark .ms-footer-legal span {
+  color: var(--ms-dark-gray) !important;
+}
+
+.dark .ms-footer-col h4 {
+  color: var(--ms-text-main) !important;
+}
+
+/* Contact page info labels */
+.dark .contact-layout div[style*="color: '#0f1115'"] {
+  color: var(--ms-text-main) !important;
+}
+
