@@ -479,7 +479,7 @@ function App() {
       <Banner />
       <CaseStudies />
       <div className="ms-container">
-        <CardGrid sectionTitle="Our Leadership Team" cards={teamCards} columns={6} />
+        <CardGrid sectionTitle="Our Leadership Team" cards={teamCards} columns={5} />
       </div>
       <Footer />
     </div>
