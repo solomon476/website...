@@ -98,8 +98,13 @@ function Navbar() {
           <ThemeToggle />
           <Link to="/portal" className="ms-nav-item">Sign in</Link>
         </div>
-        <div className="ms-mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? '✕' : '☰'}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }} className="ms-mobile-controls">
+          <div className="ms-mobile-theme">
+            <ThemeToggle />
+          </div>
+          <div className="ms-mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? '✕' : '☰'}
+          </div>
         </div>
       </div>
     </nav>
