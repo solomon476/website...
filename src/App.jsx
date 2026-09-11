@@ -98,7 +98,7 @@ function Navbar() {
           <ThemeToggle />
           <Link to="/portal" className="ms-nav-item">Sign in</Link>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }} className="ms-mobile-controls">
+        <div className="ms-mobile-controls">
           <div className="ms-mobile-theme">
             <ThemeToggle />
           </div>

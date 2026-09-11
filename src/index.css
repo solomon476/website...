@@ -247,6 +247,10 @@ a:hover {
 }
 
 /* Mobile menu button */
+.ms-mobile-controls {
+  display: none;
+}
+
 .ms-mobile-theme {
   display: none;
 }
@@ -759,6 +763,11 @@ video.ms-banner-img {
   }
   .mega-menu p {
     display: none;
+  }
+  .ms-mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
   .ms-mobile-menu-btn {
     display: block;
