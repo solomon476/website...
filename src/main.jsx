@@ -15,7 +15,7 @@ import Hillary from './pages/team/Hillary.jsx'
 import Alice from './pages/team/Alice.jsx'
 import Noella from './pages/team/Noella.jsx'
 import Solomon from './pages/team/Solomon.jsx'
-import Amillia from './pages/team/Amillia.jsx'
+// import Amillia from './pages/team/Amillia.jsx'
 import Portal from './pages/Portal.jsx'
 import Insights from './pages/Insights.jsx'
 import Careers from './pages/Careers.jsx'
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       { path: '/team/alice', element: <Alice /> },
       { path: '/team/noella', element: <Noella /> },
       { path: '/team/solomon', element: <Solomon /> },
-      { path: '/team/amillia', element: <Amillia /> },
+      // { path: '/team/amillia', element: <Amillia /> },
       { path: '/portal', element: <Portal /> },
       { path: '/insights', element: <Insights /> },
       { path: '/careers', element: <Careers /> },

@@ -17,7 +17,7 @@ import aliceImg from './assets/alice.jpg';
 import solomonImg from './assets/solomon.jpg';
 import ianImg from './assets/ian.jpg';
 import hillaryImg from './assets/hillary.jpg';
-import amilliaImg from './assets/amillia.jpg';
+// import amilliaImg from './assets/amillia.jpg';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -464,14 +464,6 @@ function App() {
       description: "Chief Technology Officer. Directs technical architecture, enterprise software engineering, and infrastructure development.",
       linkText: "Read bio",
       to: "/team/solomon",
-      portrait: true
-    },
-    {
-      image: amilliaImg,
-      title: "Amillia Rehan",
-      description: "Sales Manager. Drives enterprise client acquisition, strategic deal execution, and global revenue growth initiatives.",
-      linkText: "Read bio",
-      to: "/team/amillia",
       portrait: true
     }
   ];
