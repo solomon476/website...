@@ -17,7 +17,6 @@ import aliceImg from './assets/alice.jpg';
 import solomonImg from './assets/solomon.jpg';
 import ianImg from './assets/ian.jpg';
 import hillaryImg from './assets/hillary.jpg';
-// import amilliaImg from './assets/amillia.jpg';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = React.useState(false);
