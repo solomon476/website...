@@ -57,7 +57,7 @@ export default function ArchitecturalScaling() {
         </section>
 
         {/* Core Services */}
-        <section className="page-section" style={{ background: '#fafafa', borderRadius: '12px', padding: '48px' }}>
+        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '12px', padding: '48px' }}>
           <h2 style={{ marginBottom: '8px' }}>Core Engineering Services</h2>
           <p style={{ marginBottom: '32px', color: '#616161' }}>Our scaling practice covers every layer of your system:</p>
           <div className="page-section page-cards" style={{ paddingTop: 0 }}>

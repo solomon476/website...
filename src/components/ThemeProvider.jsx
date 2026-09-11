@@ -7,7 +7,7 @@ const ThemeContext = createContext({
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'system'
+    () => localStorage.getItem('theme') || 'light'
   );
 
   useEffect(() => {
@@ -15,14 +15,8 @@ export function ThemeProvider({ children }) {
     root.classList.remove('light', 'dark');
 
     if (theme === 'system') {
-      const mq = window.matchMedia('(prefers-color-scheme: dark)');
-      const apply = (e) => {
-        root.classList.remove('light', 'dark');
-        root.classList.add(e.matches ? 'dark' : 'light');
-      };
-      apply(mq);
-      mq.addEventListener('change', apply);
-      return () => mq.removeEventListener('change', apply);
+      root.classList.add('light');
+      return;
     }
 
     root.classList.add(theme);

@@ -40,7 +40,7 @@ export default function About() {
         </section>
 
         {/* Our Story */}
-        <section className="page-section" style={{ background: '#fafafa', borderRadius: '8px', padding: '48px', marginBottom: '48px' }}>
+        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '8px', padding: '48px', marginBottom: '48px' }}>
           <h2 style={{ fontSize: '1.75rem', marginBottom: '24px' }}>Our Story</h2>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'center' }}>

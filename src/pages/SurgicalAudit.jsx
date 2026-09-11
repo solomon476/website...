@@ -57,7 +57,7 @@ export default function SurgicalAudit() {
         </section>
 
         {/* What we examine */}
-        <section className="page-section" style={{ background: '#fafafa', borderRadius: '12px', padding: '48px' }}>
+        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '12px', padding: '48px' }}>
           <h2 style={{ marginBottom: '8px' }}>What We Examine</h2>
           <p style={{ marginBottom: '32px', color: '#616161' }}>Every audit covers six core diagnostic pillars:</p>
           <div className="page-section page-cards" style={{ paddingTop: 0 }}>

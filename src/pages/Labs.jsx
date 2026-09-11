@@ -106,7 +106,7 @@ export default function Labs() {
         </section>
 
         {/* Active Experiments */}
-        <section className="page-section" style={{ background: '#fafafa', borderRadius: '12px', padding: '48px' }}>
+        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '12px', padding: '48px' }}>
           <h2 style={{ marginBottom: '8px' }}>Active Experiments</h2>
           <p style={{ color: '#616161', marginBottom: '32px' }}>Projects currently running inside Alpha Labs:</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>

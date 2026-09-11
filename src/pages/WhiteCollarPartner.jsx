@@ -57,7 +57,7 @@ export default function WhiteCollarPartner() {
         </section>
 
         {/* What partners do */}
-        <section className="page-section" style={{ background: '#fafafa', borderRadius: '12px', padding: '48px' }}>
+        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '12px', padding: '48px' }}>
           <h2 style={{ marginBottom: '8px' }}>What Our Partners Do</h2>
           <p style={{ marginBottom: '32px', color: '#616161' }}>Every engagement is tailored, but here is what a typical White Collar Partner delivers:</p>
           <div className="page-section page-cards" style={{ paddingTop: 0 }}>

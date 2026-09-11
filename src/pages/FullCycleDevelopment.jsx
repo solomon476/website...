@@ -63,7 +63,7 @@ export default function FullCycleDevelopment() {
         </section>
 
         {/* Process */}
-        <section className="page-section" style={{ background: '#fafafa', borderRadius: '12px', padding: '48px' }}>
+        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '12px', padding: '48px' }}>
           <h2 style={{ marginBottom: '40px' }}>Our Development Process</h2>
           <div className="page-section page-cards" style={{ paddingTop: 0 }}>
             {[
