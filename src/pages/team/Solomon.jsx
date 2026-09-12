@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
-import solomonImg from '../../assets/solomon.jpg';
+import solomonImg1 from '../../assets/solomon-1-cropped.jpg';
+import solomonImg2 from '../../assets/solomon-2-cropped.jpg';
 
 export default function Solomon() {
   return (
@@ -12,7 +13,8 @@ export default function Solomon() {
       </nav>
       <div className="bio-page">
         <div className="bio-image-col">
-          <img src={solomonImg} alt="Solomon Nyangweso Omwenga" className="bio-portrait" />
+          <img src={solomonImg1} alt="Solomon Nyangweso Omwenga - Image 1" className="bio-portrait" style={{ marginBottom: '24px' }} />
+          <img src={solomonImg2} alt="Solomon Nyangweso Omwenga - Image 2" className="bio-portrait" />
         </div>
         <div className="bio-content-col">
           <span className="page-tag" style={{ background: '#0067b8' }}>Chief Technology Officer</span>
