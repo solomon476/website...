@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ThemeToggle from './components/ThemeToggle.jsx';
+import SEO from './components/SEO.jsx';
 import './App.css';
 import heroBg from './assets/1.jpg';
 import bannerBg from './assets/2.jpg';
@@ -474,6 +475,7 @@ function App() {
 
   return (
     <div className="ms-layout">
+      <SEO />
       <Navbar />
       <Hero />
       <div className="ms-container">

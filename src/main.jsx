@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, Outlet, ScrollRestoration } from 'react-router-dom'
 import { ThemeProvider } from './components/ThemeProvider.jsx'
+import { HelmetProvider } from 'react-helmet-async'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
 import './index.css'
 import App from './App.jsx'
@@ -26,10 +27,12 @@ import Labs from './pages/Labs.jsx'
 
 const RootLayout = () => {
   return (
-    <ThemeProvider>
-      <ScrollRestoration />
-      <Outlet />
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <ScrollRestoration />
+        <Outlet />
+      </ThemeProvider>
+    </HelmetProvider>
   )
 }
 
