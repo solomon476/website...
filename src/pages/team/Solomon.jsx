@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
-import solomonImg from '../../assets/solomon.jpg';
+import solomonImg from '../../assets/solomon-mirror-cropped.jpg';
 
 export default function Solomon() {
   return (

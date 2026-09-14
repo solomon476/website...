@@ -15,7 +15,7 @@ import bannerVideo from './assets/9.mp4';
 import logoImg from './assets/logo.jpg';
 import noellaImg from './assets/noella.jpg';
 import aliceImg from './assets/alice.jpg';
-import solomonImg from './assets/solomon.jpg';
+import solomonImg from './assets/solomon-mirror-cropped.jpg';
 import ianImg from './assets/ian-new-cropped.jpg';
 import hillaryImg from './assets/hillary.jpg';
 
