@@ -16,7 +16,7 @@ import logoImg from './assets/logo.jpg';
 import noellaImg from './assets/noella.jpg';
 import aliceImg from './assets/alice.jpg';
 import solomonImg from './assets/solomon.jpg';
-import ianImg from './assets/ian.jpg';
+import ianImg from './assets/ian-new-cropped.jpg';
 import hillaryImg from './assets/hillary.jpg';
 
 function Navbar() {

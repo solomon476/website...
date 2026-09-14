@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
-import ianImg from '../../assets/ian.jpg';
+import ianImg from '../../assets/ian-new-cropped.jpg';
 
 export default function Ian() {
   return (
