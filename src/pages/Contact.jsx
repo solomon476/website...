@@ -95,7 +95,7 @@ export default function Contact() {
                   <div style={{ fontWeight: 700, marginBottom: '8px', color: '#0f1115' }}>🌐 Social Media</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem', color: '#616161' }}>
                     <a href="https://x.com/solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>X: @solianwolves</a>
-                    <a href="https://instagram.com/solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>Instagram: @solianwolves</a>
+                    <a href="https://instagram.com/thesolianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>Instagram: @thesolianwolves</a>
                     <a href="https://facebook.com/solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>Facebook: @solianwolves</a>
                     <a href="https://tiktok.com/@solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>TikTok: @solianwolves</a>
                   </div>
