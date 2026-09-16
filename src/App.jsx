@@ -376,6 +376,13 @@ function Footer() {
           <span className="footer-static">London, UK</span>
           <span className="footer-static">Dubai, UAE</span>
         </div>
+        <div className="ms-footer-col">
+          <h4>Follow Us</h4>
+          <a href="https://x.com/solianwolves" target="_blank" rel="noopener noreferrer">X: @solianwolves</a>
+          <a href="https://instagram.com/solianwolves" target="_blank" rel="noopener noreferrer">Instagram: @solianwolves</a>
+          <a href="https://facebook.com/solianwolves" target="_blank" rel="noopener noreferrer">Facebook: @solianwolves</a>
+          <a href="https://tiktok.com/@solianwolves" target="_blank" rel="noopener noreferrer">TikTok: @solianwolves</a>
+        </div>
       </div>
       <div className="ms-footer-bottom">
         <div className="ms-footer-locale">
