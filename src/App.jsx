@@ -10,7 +10,7 @@ import card1Img from './assets/3.jpg';
 import card2Img from './assets/4.jpg';
 import card3Img from './assets/5.jpg';
 import card4Img from './assets/6.jpg';
-import heroVideo from './assets/8.mp4';
+import abstractBg from './assets/abstract-bg.jpg';
 import bannerVideo from './assets/9.mp4';
 import logoImg from './assets/logo.jpg';
 import noellaImg from './assets/noella.jpg';
@@ -148,14 +148,10 @@ function Hero() {
 
   return (
     <section className="ms-hero">
-      <video
+      <img
         className="ms-hero-img"
-        src={heroVideo}
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster={heroBg}
+        src={abstractBg}
+        alt="Abstract Technology Background"
       />
       <motion.div 
         className="ms-hero-content"
