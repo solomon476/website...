@@ -371,8 +371,9 @@ function Footer() {
         <div className="ms-footer-col">
           <h4>Follow Us</h4>
           <a href="https://x.com/solianwolves" target="_blank" rel="noopener noreferrer">X: @solianwolves</a>
+          <a href="https://linkedin.com/company/solianwolves" target="_blank" rel="noopener noreferrer">LinkedIn: Solian Wolves</a>
+          <a href="https://reddit.com/r/solianwolves" target="_blank" rel="noopener noreferrer">Reddit: r/solianwolves</a>
           <a href="https://instagram.com/thesolianwolves" target="_blank" rel="noopener noreferrer">Instagram: @thesolianwolves</a>
-          <a href="https://facebook.com/solianwolves" target="_blank" rel="noopener noreferrer">Facebook: @solianwolves</a>
           <a href="https://tiktok.com/@solianwolves" target="_blank" rel="noopener noreferrer">TikTok: @solianwolves</a>
         </div>
       </div>
