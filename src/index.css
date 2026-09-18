@@ -334,12 +334,13 @@ video.ms-hero-img {
   font-weight: 700;
   letter-spacing: -0.04em;
   margin-bottom: 16px;
-  color: var(--ms-black);
+  color: #ffffff;
 }
 
 .ms-hero-subtitle {
   font-size: 1rem;
   margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Quick Links */

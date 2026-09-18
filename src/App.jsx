@@ -162,7 +162,7 @@ function Hero() {
           <p className="ms-hero-subtitle" style={{ fontSize: '1.2rem', maxWidth: '600px' }}>We architect high-performance software, custom ERPs, and mission-critical business systems tailored for ambitious organisations.</p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Link to="/contact" className="ms-btn ms-btn-primary">Secure Consultation</Link>
-            <Link to="/methodology" className="ms-btn btn-outline" style={{ color: 'var(--ms-text-main)', borderColor: 'var(--ms-text-main)' }}>View Methodology</Link>
+            <Link to="/methodology" className="ms-btn btn-outline" style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.5)' }}>View Methodology</Link>
           </div>
         </div>
       </motion.div>
