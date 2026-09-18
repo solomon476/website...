@@ -11,7 +11,7 @@ import card2Img from './assets/4.jpg';
 import card3Img from './assets/5.jpg';
 import card4Img from './assets/6.jpg';
 import abstractBg from './assets/abstract-bg.jpg';
-import bannerVideo from './assets/9.mp4';
+import bannerImage from './assets/banner-bg.jpg';
 import logoImg from './assets/logo.jpg';
 import noellaImg from './assets/noella.jpg';
 import aliceImg from './assets/alice.jpg';
@@ -244,16 +244,16 @@ function CaseStudies() {
       <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
         <h2 className="ms-section-title">Client Success & Solutions</h2>
         <div className="ms-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-          <div className="ms-card" style={{ background: 'var(--ms-card-bg)' }}>
-            <div className="ms-card-content">
+          <div className="ms-card" style={{ background: 'radial-gradient(circle at top left, rgba(0, 103, 184, 0.08), transparent 60%), var(--ms-card-bg)' }}>
+            <div className="ms-card-content" style={{ padding: '32px' }}>
               <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>FINANCE</span>
               <h3 className="ms-card-title">Scaling Financial Infrastructure</h3>
               <p className="ms-card-desc">How we can migrate legacy records to a secure headless architecture with zero downtime.</p>
               <Link to="/insights" className="ms-card-link">Read full solution ➔</Link>
             </div>
           </div>
-          <div className="ms-card" style={{ background: 'var(--ms-card-bg)' }}>
-            <div className="ms-card-content">
+          <div className="ms-card" style={{ background: 'radial-gradient(circle at top left, rgba(0, 103, 184, 0.08), transparent 60%), var(--ms-card-bg)' }}>
+            <div className="ms-card-content" style={{ padding: '32px' }}>
               <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>EDUCATION</span>
               <h3 className="ms-card-title">The Future of Educational ERPs</h3>
               <p className="ms-card-desc">Partnering with top institutions to build custom modular scaling systems replacing legacy monoliths.</p>
@@ -309,14 +309,10 @@ function CardGrid({ sectionTitle, cards, columns = 4 }) {
 function Banner() {
   return (
     <section className="ms-banner">
-      <video
+      <img
         className="ms-banner-img"
-        src={bannerVideo}
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster={bannerBg}
+        src={bannerImage}
+        alt="Abstract Panoramic Background"
       />
       <div className="ms-banner-content">
         <h2 className="ms-hero-title">Unlock infinite flexibility</h2>
