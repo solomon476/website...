@@ -143,9 +143,6 @@ function useTypewriter(words, speed = 100, deleteSpeed = 50, delay = 2000) {
 }
 
 function Hero() {
-  const phrases = ["Custom Software.", "AI tools & Automation.", "Mobile App development."];
-  const typingText = useTypewriter(phrases);
-
   return (
     <section className="ms-hero">
       <img
@@ -160,10 +157,13 @@ function Hero() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <div className="ms-hero-box">
-          <h1 className="ms-hero-title">Building the Future of<br/> <span style={{ color: 'var(--ms-blue)' }}>{typingText}</span><span className="cursor">|</span></h1>
-          <p className="ms-hero-subtitle">We engineer high-performance software, custom ERPs, and mission-critical business systems tailored for ambitious organisations — from schools to enterprises.</p>
-          <Link to="/contact" className="ms-btn ms-btn-primary">Secure Consultation</Link>
+        <div className="ms-hero-text-container" style={{ maxWidth: '800px' }}>
+          <h1 className="ms-hero-title">Engineering the Future of<br/> <span style={{ color: 'var(--ms-blue)' }}>Enterprise Systems.</span></h1>
+          <p className="ms-hero-subtitle" style={{ fontSize: '1.2rem', maxWidth: '600px' }}>We architect high-performance software, custom ERPs, and mission-critical business systems tailored for ambitious organisations.</p>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <Link to="/contact" className="ms-btn ms-btn-primary">Secure Consultation</Link>
+            <Link to="/methodology" className="ms-btn btn-outline" style={{ color: 'var(--ms-text-main)', borderColor: 'var(--ms-text-main)' }}>View Methodology</Link>
+          </div>
         </div>
       </motion.div>
     </section>
@@ -175,35 +175,35 @@ function QuickLinks() {
     <section className="ms-quick-links">
       <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
-          <path d="M12 20h16M20 12v16" stroke="#0067b8" strokeWidth="2.5" strokeLinecap="round"/>
-          <rect x="14" y="14" width="12" height="12" rx="2" stroke="#0067b8" strokeWidth="2"/>
+          <rect width="40" height="40" rx="4" fill="var(--ms-card-bg)" stroke="var(--ms-border)"/>
+          <path d="M12 20h16M20 12v16" stroke="var(--ms-text-main)" strokeWidth="2.5" strokeLinecap="round"/>
+          <rect x="14" y="14" width="12" height="12" rx="2" stroke="var(--ms-text-main)" strokeWidth="2"/>
         </svg>
         <span>Choose your ERP</span>
       </div>
       <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
-          <path d="M10 28 L20 12 L30 28 Z" stroke="#0067b8" strokeWidth="2" fill="none" strokeLinejoin="round"/>
-          <circle cx="20" cy="22" r="3" fill="#0067b8"/>
+          <rect width="40" height="40" rx="4" fill="var(--ms-card-bg)" stroke="var(--ms-border)"/>
+          <path d="M10 28 L20 12 L30 28 Z" stroke="var(--ms-text-main)" strokeWidth="2" fill="none" strokeLinejoin="round"/>
+          <circle cx="20" cy="22" r="3" fill="var(--ms-text-main)"/>
         </svg>
         <span>School Management</span>
       </div>
       <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
-          <circle cx="20" cy="20" r="8" stroke="#0067b8" strokeWidth="2"/>
-          <path d="M20 12 Q28 16 28 20 Q28 24 20 28 Q12 24 12 20 Q12 16 20 12Z" stroke="#0067b8" strokeWidth="2" fill="none"/>
-          <line x1="12" y1="20" x2="28" y2="20" stroke="#0067b8" strokeWidth="2"/>
+          <rect width="40" height="40" rx="4" fill="var(--ms-card-bg)" stroke="var(--ms-border)"/>
+          <circle cx="20" cy="20" r="8" stroke="var(--ms-text-main)" strokeWidth="2"/>
+          <path d="M20 12 Q28 16 28 20 Q28 24 20 28 Q12 24 12 20 Q12 16 20 12Z" stroke="var(--ms-text-main)" strokeWidth="2" fill="none"/>
+          <line x1="12" y1="20" x2="28" y2="20" stroke="var(--ms-text-main)" strokeWidth="2"/>
         </svg>
         <span>Cloud Architecture</span>
       </div>
       <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="4" fill="#f0f6ff"/>
-          <circle cx="20" cy="20" r="6" stroke="#0067b8" strokeWidth="2"/>
-          <path d="M26 14 L32 8" stroke="#0067b8" strokeWidth="2" strokeLinecap="round"/>
-          <path d="M14 26 L8 32" stroke="#0067b8" strokeWidth="2" strokeLinecap="round"/>
+          <rect width="40" height="40" rx="4" fill="var(--ms-card-bg)" stroke="var(--ms-border)"/>
+          <circle cx="20" cy="20" r="6" stroke="var(--ms-text-main)" strokeWidth="2"/>
+          <path d="M26 14 L32 8" stroke="var(--ms-text-main)" strokeWidth="2" strokeLinecap="round"/>
+          <path d="M14 26 L8 32" stroke="var(--ms-text-main)" strokeWidth="2" strokeLinecap="round"/>
         </svg>
         <span>Technical Audit</span>
       </div>

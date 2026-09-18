@@ -323,15 +323,9 @@ video.ms-hero-img {
   align-items: center;
 }
 
-.ms-hero-box {
-  background-color: var(--ms-card-bg);
-  padding: 48px;
-  max-width: 500px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: var(--ms-glass-blur);
-  -webkit-backdrop-filter: var(--ms-glass-blur);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--ms-border);
+.ms-hero-text-container {
+  padding: 48px 0;
+  max-width: 800px;
 }
 
 .ms-hero-title {
