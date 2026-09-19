@@ -84,7 +84,7 @@
 /* Hero banner on detail pages */
 .page-hero {
   padding: 80px 5% 80px;
-  color: #ffffff;
+  color: var(--ms-text-main);
 }
 
 .page-hero-content {
