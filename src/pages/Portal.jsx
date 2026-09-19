@@ -38,20 +38,20 @@ export default function Portal() {
       <nav className="page-nav">
         <PageNav />
       </nav>
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #242424 0%, #000000 100%)' }}>
+      <div className="page-hero" style={{ background: 'var(--ms-bg-alt)' }}>
         <div className="page-hero-content" style={{ textAlign: 'center', margin: '0 auto' }}>
-          <span className="page-tag" style={{ background: '#0067b8' }}>Client Portal</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Client Portal</span>
           <h1>System Login</h1>
-          <p style={{ margin: '0 auto' }}>Secure access for Solian Wolves clients and partners.</p>
+          <p style={{ margin: '0 auto', color: 'var(--ms-mid-gray)' }}>Secure access for Solian Wolves clients and partners.</p>
         </div>
       </div>
       <div className="page-body" style={{ display: 'flex', justifyContent: 'center', paddingTop: '80px' }}>
-        <div style={{ maxWidth: '400px', width: '100%', padding: '40px', border: '1px solid #e0e0e0', borderRadius: '4px', textAlign: 'left', boxShadow: '0 4px 24px rgba(0,0,0,0.05)' }}>
+        <div className="ms-card" style={{ maxWidth: '400px', width: '100%', padding: '40px', background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-lg)', textAlign: 'left', boxShadow: '0 4px 24px rgba(0,0,0,0.1)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '8px', textAlign: 'center' }}>Sign in</h2>
-          <p style={{ color: '#616161', marginBottom: '24px', textAlign: 'center', fontSize: '0.9rem' }}>Access your Solian Wolves dashboard.</p>
+          <p style={{ color: 'var(--ms-mid-gray)', marginBottom: '24px', textAlign: 'center', fontSize: '0.9rem' }}>Access your Solian Wolves dashboard.</p>
 
           {error && (
-            <div style={{ background: '#fde8e8', border: '1px solid #f5c2c2', borderRadius: '4px', padding: '12px 16px', marginBottom: '16px', color: '#d13438', fontSize: '0.9rem' }}>
+            <div style={{ background: 'rgba(209, 52, 56, 0.1)', border: '1px solid rgba(209, 52, 56, 0.3)', borderRadius: '4px', padding: '12px 16px', marginBottom: '16px', color: '#ff6b6b', fontSize: '0.9rem' }}>
               ⚠️ {error}
             </div>
           )}
@@ -65,7 +65,7 @@ export default function Portal() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                style={{ padding: '10px 14px', border: '1px solid #d1d1d1', borderRadius: '2px', fontSize: '1rem', outline: 'none' }}
+                style={{ padding: '10px 14px', background: 'transparent', color: 'var(--ms-text-main)', border: '1px solid var(--ms-border)', borderRadius: '4px', fontSize: '1rem', outline: 'none' }}
               />
             </div>
 
@@ -78,15 +78,15 @@ export default function Portal() {
                 placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                style={{ padding: '10px 14px', border: '1px solid #d1d1d1', borderRadius: '2px', fontSize: '1rem', outline: 'none' }}
+                style={{ padding: '10px 14px', background: 'transparent', color: 'var(--ms-text-main)', border: '1px solid var(--ms-border)', borderRadius: '4px', fontSize: '1rem', outline: 'none' }}
               />
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '8px' }}>
-              <label style={{ fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
+              <label style={{ fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', color: 'var(--ms-mid-gray)' }}>
                 <input type="checkbox" /> Remember me
               </label>
-              <a href="#forgot" style={{ fontSize: '0.85rem', color: '#0067b8', textDecoration: 'none' }}>Forgot password?</a>
+              <a href="#forgot" style={{ fontSize: '0.85rem', color: 'var(--ms-blue)', textDecoration: 'none' }}>Forgot password?</a>
             </div>
 
             <button
@@ -99,8 +99,8 @@ export default function Portal() {
             </button>
           </form>
 
-          <div style={{ marginTop: '24px', textAlign: 'center', fontSize: '0.85rem', color: '#616161' }}>
-            Don't have an account? <Link to="/contact" style={{ color: '#0067b8', textDecoration: 'none', fontWeight: '600' }}>Request access</Link>
+          <div style={{ marginTop: '24px', textAlign: 'center', fontSize: '0.85rem', color: 'var(--ms-mid-gray)' }}>
+            Don't have an account? <Link to="/contact" style={{ color: 'var(--ms-blue)', textDecoration: 'none', fontWeight: '600' }}>Request access</Link>
           </div>
         </div>
       </div>

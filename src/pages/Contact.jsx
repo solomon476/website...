@@ -46,11 +46,11 @@ export default function Contact() {
       </nav>
 
       {/* Hero */}
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #0067b8 0%, #242424 100%)', minHeight: '320px' }}>
+      <div className="page-hero" style={{ background: 'var(--ms-bg-alt)', minHeight: '320px' }}>
         <div className="page-hero-content">
-          <span className="page-tag">Get in Touch</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Get in Touch</span>
           <h1>Secure Your Consultation</h1>
-          <p>Tell us about your project and one of our senior team members will reach out within 24 hours.</p>
+          <p style={{ color: 'var(--ms-mid-gray)' }}>Tell us about your project and one of our senior team members will reach out within 24 hours.</p>
         </div>
       </div>
 
@@ -59,7 +59,7 @@ export default function Contact() {
           <div className="contact-success" style={{ textAlign: 'center', padding: '80px 20px' }}>
             <div style={{ fontSize: '3rem', marginBottom: '16px' }}>✅</div>
             <h2 style={{ marginBottom: '12px' }}>Thank you — we've received your enquiry!</h2>
-            <p style={{ color: '#616161', marginBottom: '32px' }}>A senior member of our team will reach out to you within 24 hours to discuss your project.</p>
+            <p style={{ color: 'var(--ms-mid-gray)', marginBottom: '32px' }}>A senior member of our team will reach out to you within 24 hours to discuss your project.</p>
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link to="/" className="ms-btn ms-btn-primary">Back to Home</Link>
               <a href="https://wa.me/254714729996" target="_blank" rel="noopener noreferrer" className="ms-btn" style={{ background: '#25D366', color: '#fff', border: 'none' }}>
@@ -76,33 +76,33 @@ export default function Contact() {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
-                  <div style={{ fontWeight: 700, marginBottom: '4px', color: '#0f1115' }}>📧 Email</div>
-                  <a href="mailto:solianwolves@gmail.com" style={{ color: '#0067b8' }}>solianwolves@gmail.com</a>
+                  <div style={{ fontWeight: 700, marginBottom: '4px', color: 'var(--ms-text-main)' }}>📧 Email</div>
+                  <a href="mailto:solianwolves@gmail.com" style={{ color: 'var(--ms-blue)' }}>solianwolves@gmail.com</a>
                 </div>
                 <div>
-                  <div style={{ fontWeight: 700, marginBottom: '4px', color: '#0f1115' }}>💬 WhatsApp</div>
+                  <div style={{ fontWeight: 700, marginBottom: '4px', color: 'var(--ms-text-main)' }}>💬 WhatsApp</div>
                   <a href="https://wa.me/254714729996" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 600 }}>Chat with us directly →</a>
                 </div>
                 <div>
-                  <div style={{ fontWeight: 700, marginBottom: '8px', color: '#0f1115' }}>🌍 Global Offices</div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem', color: '#616161' }}>
+                  <div style={{ fontWeight: 700, marginBottom: '8px', color: 'var(--ms-text-main)' }}>🌍 Global Offices</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem', color: 'var(--ms-mid-gray)' }}>
                     <span>🇰🇪 Nairobi, Kenya — HQ</span>
                     <span>🇬🇧 London, United Kingdom</span>
                     <span>🇦🇪 Dubai, UAE</span>
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontWeight: 700, marginBottom: '8px', color: '#0f1115' }}>🌐 Social Media</div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem', color: '#616161' }}>
-                    <a href="https://x.com/solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>X: @solianwolves</a>
-                    <a href="https://instagram.com/thesolianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>Instagram: @thesolianwolves</a>
-                    <a href="https://facebook.com/solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>Facebook: @solianwolves</a>
-                    <a href="https://tiktok.com/@solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: '#0067b8', textDecoration: 'none' }}>TikTok: @solianwolves</a>
+                  <div style={{ fontWeight: 700, marginBottom: '8px', color: 'var(--ms-text-main)' }}>🌐 Social Media</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem', color: 'var(--ms-mid-gray)' }}>
+                    <a href="https://x.com/solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ms-blue)', textDecoration: 'none' }}>X: @solianwolves</a>
+                    <a href="https://instagram.com/thesolianwolves" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ms-blue)', textDecoration: 'none' }}>Instagram: @thesolianwolves</a>
+                    <a href="https://facebook.com/solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ms-blue)', textDecoration: 'none' }}>Facebook: @solianwolves</a>
+                    <a href="https://tiktok.com/@solianwolves" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ms-blue)', textDecoration: 'none' }}>TikTok: @solianwolves</a>
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontWeight: 700, marginBottom: '4px', color: '#0f1115' }}>⏱ Response Time</div>
-                  <span style={{ fontSize: '0.9rem', color: '#616161' }}>Within 24 business hours</span>
+                  <div style={{ fontWeight: 700, marginBottom: '4px', color: 'var(--ms-text-main)' }}>⏱ Response Time</div>
+                  <span style={{ fontSize: '0.9rem', color: 'var(--ms-mid-gray)' }}>Within 24 business hours</span>
                 </div>
               </div>
 
@@ -126,9 +126,9 @@ export default function Contact() {
             </div>
 
             {/* Right: Form */}
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form" onSubmit={handleSubmit} style={{ background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', padding: '32px', borderRadius: 'var(--radius-lg)' }}>
               <h2 style={{ fontSize: '1.5rem', marginBottom: '24px' }}>Send an Enquiry</h2>
-              {error && <div style={{ color: '#d13438', marginBottom: '16px', fontWeight: 'bold', padding: '12px', background: '#fff0f0', borderRadius: '6px', border: '1px solid #ffcccc' }}>{error}</div>}
+              {error && <div style={{ color: '#ff6b6b', marginBottom: '16px', fontWeight: 'bold', padding: '12px', background: 'rgba(209, 52, 56, 0.1)', borderRadius: '6px', border: '1px solid rgba(209, 52, 56, 0.3)' }}>{error}</div>}
 
               <div className="form-row">
                 <div className="form-group">
@@ -191,7 +191,7 @@ export default function Contact() {
                 {isSubmitting ? 'Sending...' : 'Send Enquiry →'}
               </button>
 
-              <p style={{ fontSize: '0.8rem', color: '#999', marginTop: '12px', textAlign: 'center' }}>
+              <p style={{ fontSize: '0.8rem', color: 'var(--ms-mid-gray)', marginTop: '12px', textAlign: 'center' }}>
                 We respond within 24 hours. All enquiries are treated with strict confidentiality.
               </p>
             </form>
