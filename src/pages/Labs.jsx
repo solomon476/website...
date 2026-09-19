@@ -71,16 +71,16 @@ export default function Labs() {
       </nav>
 
       {/* Hero */}
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #4c1d95 0%, #2e1065 100%)', minHeight: '380px' }}>
+      <div className="page-hero" style={{ background: 'var(--ms-bg-alt)', minHeight: '380px' }}>
         <div className="page-hero-content" style={{ textAlign: 'center', margin: '0 auto', maxWidth: '700px' }}>
-          <span className="page-tag" style={{ background: '#8b5cf6' }}>R&D Division</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)' }}>R&D Division</span>
           <h1>Alpha Labs</h1>
-          <p style={{ margin: '0 auto' }}>Where we explore the bleeding edge of AI, automation, and distributed systems — building tomorrow's infrastructure before it becomes mainstream.</p>
+          <p style={{ margin: '0 auto', color: 'var(--ms-mid-gray)' }}>Where we explore the bleeding edge of AI, automation, and distributed systems — building tomorrow's infrastructure before it becomes mainstream.</p>
         </div>
       </div>
 
       {/* Stats */}
-      <div style={{ background: '#2e1065', padding: '40px 5%' }}>
+      <div style={{ background: 'var(--ms-card-bg)', borderTop: '1px solid var(--ms-border)', borderBottom: '1px solid var(--ms-border)', padding: '40px 5%' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '32px', textAlign: 'center' }}>
           {[
             { stat: '6', label: 'Active Experiments' },
@@ -89,8 +89,8 @@ export default function Labs() {
             { stat: '∞', label: 'Curiosity' },
           ].map(({ stat, label }) => (
             <div key={label}>
-              <div style={{ fontSize: '2.2rem', fontWeight: 700, color: '#c4b5fd' }}>{stat}</div>
-              <div style={{ fontSize: '0.85rem', color: '#a78bfa', marginTop: '4px' }}>{label}</div>
+              <div style={{ fontSize: '2.2rem', fontWeight: 700, color: 'var(--ms-blue)' }}>{stat}</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--ms-mid-gray)', marginTop: '4px' }}>{label}</div>
             </div>
           ))}
         </div>
@@ -106,18 +106,18 @@ export default function Labs() {
         </section>
 
         {/* Active Experiments */}
-        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '12px', padding: '48px' }}>
+        <section className="page-section ms-card" style={{ background: 'var(--ms-bg-alt)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-lg)', padding: '48px' }}>
           <h2 style={{ marginBottom: '8px' }}>Active Experiments</h2>
-          <p style={{ color: '#616161', marginBottom: '32px' }}>Projects currently running inside Alpha Labs:</p>
+          <p style={{ color: 'var(--ms-mid-gray)', marginBottom: '32px' }}>Projects currently running inside Alpha Labs:</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
             {experiments.map((exp, i) => (
-              <div key={i} style={{ background: '#fff', border: '1px solid #e0e0e0', borderRadius: '10px', padding: '28px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <div key={i} className="ms-card" style={{ background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-md)', padding: '28px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <span style={{ fontSize: '0.75rem', fontWeight: 700, color: exp.tagColor, letterSpacing: '0.05em' }}>{exp.tag}</span>
                   <span style={{ fontSize: '0.75rem', fontWeight: 600, color: exp.statusColor, background: `${exp.statusColor}18`, padding: '4px 10px', borderRadius: '20px' }}>{exp.status}</span>
                 </div>
-                <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#0f1115', lineHeight: 1.3 }}>{exp.title}</h3>
-                <p style={{ fontSize: '0.88rem', color: '#616161', lineHeight: 1.7, flexGrow: 1 }}>{exp.desc}</p>
+                <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--ms-text-main)', lineHeight: 1.3 }}>{exp.title}</h3>
+                <p style={{ fontSize: '0.88rem', color: 'var(--ms-mid-gray)', lineHeight: 1.7, flexGrow: 1 }}>{exp.desc}</p>
               </div>
             ))}
           </div>
@@ -126,23 +126,23 @@ export default function Labs() {
         {/* Research Areas */}
         <section className="page-section">
           <h2 style={{ marginBottom: '8px' }}>Research Focus Areas</h2>
-          <p style={{ color: '#616161', marginBottom: '32px' }}>The six domains driving our long-term R&D agenda:</p>
+          <p style={{ color: 'var(--ms-mid-gray)', marginBottom: '32px' }}>The six domains driving our long-term R&D agenda:</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             {researchAreas.map(({ icon, title, desc }) => (
-              <div key={title} style={{ padding: '28px', border: '1px solid #e0e0e0', borderRadius: '10px', borderTop: '3px solid #8b5cf6' }}>
+              <div key={title} className="ms-card" style={{ padding: '28px', background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-md)', borderTop: '3px solid var(--ms-blue)' }}>
                 <div style={{ fontSize: '2rem', marginBottom: '12px' }}>{icon}</div>
-                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '8px', color: '#0f1115' }}>{title}</h3>
-                <p style={{ fontSize: '0.88rem', color: '#616161', lineHeight: 1.7 }}>{desc}</p>
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '8px', color: 'var(--ms-text-main)' }}>{title}</h3>
+                <p style={{ fontSize: '0.88rem', color: 'var(--ms-mid-gray)', lineHeight: 1.7 }}>{desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Collaborate */}
-        <section className="page-section" style={{ background: 'linear-gradient(135deg, #4c1d95 0%, #2e1065 100%)', borderRadius: '12px', padding: '56px', textAlign: 'center', color: '#fff' }}>
-          <h2 style={{ color: '#fff', marginBottom: '16px' }}>Collaborate with Alpha Labs</h2>
-          <p style={{ color: '#c4b5fd', marginBottom: '32px', maxWidth: '560px', margin: '0 auto 32px' }}>Are you a researcher, university, or enterprise with a problem that sits on the frontier of technology? We are open to collaborative research partnerships.</p>
-          <Link to="/contact" className="ms-btn" style={{ background: '#fff', color: '#4c1d95', fontWeight: 700, padding: '14px 32px' }}>Get in Touch →</Link>
+        <section className="page-section ms-card" style={{ background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-lg)', padding: '56px', textAlign: 'center', color: 'var(--ms-text-main)' }}>
+          <h2 style={{ color: 'var(--ms-text-main)', marginBottom: '16px' }}>Collaborate with Alpha Labs</h2>
+          <p style={{ color: 'var(--ms-mid-gray)', marginBottom: '32px', maxWidth: '560px', margin: '0 auto 32px' }}>Are you a researcher, university, or enterprise with a problem that sits on the frontier of technology? We are open to collaborative research partnerships.</p>
+          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ fontWeight: 700, padding: '14px 32px' }}>Get in Touch →</Link>
         </section>
 
       </div>
