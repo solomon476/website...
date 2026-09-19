@@ -35,6 +35,23 @@ export default function SEO({
       <meta name="twitter:title" content={seoTitle} />
       <meta name="twitter:description" content={seoDescription} />
       <meta name="twitter:image" content={image} />
+
+      {/* JSON-LD Organization Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Solian Wolves",
+          "url": "https://solianwolves.com",
+          "logo": "https://solianwolves.com/logo.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/company/145206557/",
+            "https://x.com/solianwolves",
+            "https://www.youtube.com/@thesolianwolves",
+            "https://www.reddit.com/user/The_Solian_Wolves/"
+          ]
+        })}
+      </script>
     </Helmet>
   );
 }
