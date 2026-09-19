@@ -90,6 +90,26 @@ function Navbar() {
                 </div>
               </div>
             </div>
+            <div className="ms-nav-dropdown">
+              <span className="ms-nav-dropdown-toggle">Products ▾</span>
+              <div className="ms-nav-dropdown-menu mega-menu" style={{ minWidth: '350px' }}>
+                <div className="mega-menu-grid" style={{ gridTemplateColumns: '1fr' }}>
+                  <a href="https://somobloom.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                    <h4 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--ms-blue)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                        <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                        <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                        <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                        <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                      </svg>
+                      SomoBloom ↗
+                    </h4>
+                    <p>The definitive enterprise school management system.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
             <Link to="/insights">Insights</Link>
             {/* Show Sign In link on mobile inside the menu since the top-right button is hidden */}
             <Link to="/portal" className="ms-mobile-signin" style={{ color: '#0067b8', fontWeight: 'bold' }}>Portal Sign in ➔</Link>
@@ -283,6 +303,44 @@ function Card({ image, title, description, linkText, to, portrait }) {
         }
       </div>
     </div>
+  );
+}
+
+function FeaturedProducts() {
+  return (
+    <motion.section 
+      className="ms-section"
+      initial={{ opacity: 0, y: 30 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      style={{ marginTop: '24px' }}
+    >
+      <div className="ms-grid" style={{ gridTemplateColumns: '1fr' }}>
+        <a href="https://somobloom.com" target="_blank" rel="noopener noreferrer" className="ms-card" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', padding: '40px', gap: '32px', background: 'radial-gradient(circle at right, rgba(0, 103, 184, 0.1), transparent 50%), var(--ms-card-bg)' }}>
+          <div style={{ background: 'var(--ms-bg-main)', padding: '24px', borderRadius: '16px', border: '1px solid var(--ms-border)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ms-blue)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+              <line x1="12" y1="22" x2="12" y2="15.5"></line>
+              <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+              <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+              <line x1="12" y1="2" x2="12" y2="8.5"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 style={{ fontSize: '2rem', marginBottom: '8px', color: 'var(--ms-text-main)' }}>SomoBloom</h3>
+            <p style={{ fontSize: '1.1rem', color: 'var(--ms-mid-gray)', margin: 0, maxWidth: '600px' }}>Build and ship faster with our premium enterprise school management system — the definitive educational ERP.</p>
+            <div style={{ marginTop: '16px', color: 'var(--ms-text-main)', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              Explore SomoBloom 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </motion.section>
   );
 }
 
@@ -482,7 +540,8 @@ function App() {
       <div className="ms-container">
         <QuickLinks />
         <TechPartners />
-        <CardGrid cards={serviceCards} />
+        <FeaturedProducts />
+        <CardGrid cards={serviceCards} sectionTitle="Engineering Services" />
       </div>
       <Banner />
       <CaseStudies />
