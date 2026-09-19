@@ -15,7 +15,7 @@ export default function Ian() {
           <img src={ianImg} alt="Ian Momanyi Nyakundi" className="bio-portrait" />
         </div>
         <div className="bio-content-col">
-          <span className="page-tag" style={{ background: '#0067b8' }}>Chief Executive Officer</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Executive Officer</span>
           <h1>Ian Momanyi Nyakundi</h1>
           <p className="bio-lead">Provides overall corporate vision, strategic leadership, and executive direction for the company.</p>
           <div className="bio-body">

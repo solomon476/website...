@@ -15,7 +15,7 @@ export default function Hillary() {
           <img src={hillaryImg} alt="Hillary Onchwati Isaiah" className="bio-portrait" />
         </div>
         <div className="bio-content-col">
-          <span className="page-tag" style={{ background: '#0067b8' }}>Chief Operating Officer</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Operating Officer</span>
           <h1>Hillary Onchwati Isaiah</h1>
           <p className="bio-lead">Oversees day-to-day internal business operations and service delivery logistics.</p>
           <div className="bio-body">

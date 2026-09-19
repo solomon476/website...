@@ -11,11 +11,11 @@ export default function About() {
       </nav>
 
       {/* Hero */}
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #001427 0%, #0067b8 60%, #003f6e 100%)', minHeight: '400px' }}>
+      <div className="page-hero" style={{ background: 'var(--ms-bg-alt)', minHeight: '400px' }}>
         <div className="page-hero-content" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <span className="page-tag" style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.3)' }}>Our Story</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Our Story</span>
           <h1 style={{ fontSize: '3rem', lineHeight: 1.2 }}>Built to Engineer the Future</h1>
-          <p style={{ fontSize: '1.15rem', opacity: 0.9 }}>
+          <p style={{ fontSize: '1.15rem', color: 'var(--ms-mid-gray)' }}>
             Solian Wolves is a global technology firm on a mission to help institutions, enterprises, and founders build the next generation of world-class digital infrastructure.
           </p>
         </div>
@@ -27,28 +27,28 @@ export default function About() {
         <section className="page-section" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center', paddingBottom: '64px' }}>
           <div>
             <h2 style={{ fontSize: '2rem', marginBottom: '16px' }}>Our Mission</h2>
-            <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: '#444' }}>
+            <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--ms-mid-gray)' }}>
               To engineer high-performance, globally scalable software systems that transform how organisations operate. We exist at the intersection of strategic vision and technical excellence — turning complex problems into elegant, reliable digital solutions.
             </p>
           </div>
-          <div style={{ background: '#f0f6ff', borderRadius: '8px', padding: '32px', borderLeft: '4px solid #0067b8' }}>
+          <div className="ms-card" style={{ background: 'var(--ms-card-bg)', borderRadius: 'var(--radius-lg)', padding: '32px', borderLeft: '4px solid var(--ms-blue)', border: '1px solid var(--ms-border)' }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '16px' }}>Our Vision</h2>
-            <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: '#444' }}>
+            <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--ms-mid-gray)' }}>
               To be the definitive technology partner for institutions across Africa and the world — a firm that is synonymous with engineering integrity, scale, and executive-level craftsmanship.
             </p>
           </div>
         </section>
 
         {/* Our Story */}
-        <section className="page-section" style={{ background: 'var(--ms-bg-alt)', borderRadius: '8px', padding: '48px', marginBottom: '48px' }}>
+        <section className="page-section ms-card" style={{ background: 'var(--ms-card-bg)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--ms-border)', padding: '48px', marginBottom: '48px' }}>
           <h2 style={{ fontSize: '1.75rem', marginBottom: '24px' }}>Our Story</h2>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'center' }}>
             <div>
-              <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#444' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: 'var(--ms-mid-gray)' }}>
                 Solian Wolves was founded with a clear conviction: that there was a gap between the quality of software being built and the ambition of institutions trying to grow. We saw schools struggling with outdated management systems, enterprises drowning in technical debt, and brilliant startups with no reliable engineering partner to help them scale.
               </p>
-              <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: '#444', marginTop: '16px' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.9, color: 'var(--ms-mid-gray)', marginTop: '16px' }}>
                 We assembled a team of senior architects, product engineers, and C-suite advisors who shared one belief — that elite software engineering should not be a privilege of the Fortune 500. Today, we operate across Nairobi, London, and Dubai, delivering world-class digital infrastructure to institutions that demand the best.
               </p>
             </div>
@@ -71,21 +71,21 @@ export default function About() {
         <section className="page-section">
           <h2 style={{ fontSize: '1.75rem', marginBottom: '32px', textAlign: 'center' }}>Core Values</h2>
           <div className="page-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px' }}>
-            <div className="page-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+            <div className="page-card ms-card" style={{ textAlign: 'center', padding: '32px 24px', background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)' }}>
               <h3>Excellence</h3>
-              <p>We hold every line of code, every design decision, and every client interaction to the highest possible standard.</p>
+              <p style={{ color: 'var(--ms-mid-gray)' }}>We hold every line of code, every design decision, and every client interaction to the highest possible standard.</p>
             </div>
-            <div className="page-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+            <div className="page-card ms-card" style={{ textAlign: 'center', padding: '32px 24px', background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)' }}>
               <h3>Integrity</h3>
-              <p>We say what we mean, deliver what we promise, and never cut corners — even when no one is watching.</p>
+              <p style={{ color: 'var(--ms-mid-gray)' }}>We say what we mean, deliver what we promise, and never cut corners — even when no one is watching.</p>
             </div>
-            <div className="page-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+            <div className="page-card ms-card" style={{ textAlign: 'center', padding: '32px 24px', background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)' }}>
               <h3>Innovation</h3>
-              <p>We stay at the vanguard of technology — constantly learning, adapting, and pushing the boundaries of what software can do.</p>
+              <p style={{ color: 'var(--ms-mid-gray)' }}>We stay at the vanguard of technology — constantly learning, adapting, and pushing the boundaries of what software can do.</p>
             </div>
-            <div className="page-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+            <div className="page-card ms-card" style={{ textAlign: 'center', padding: '32px 24px', background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)' }}>
               <h3>Global Partnership</h3>
-              <p>We are not just vendors — we are long-term strategic partners embedded in our clients' vision and growth.</p>
+              <p style={{ color: 'var(--ms-mid-gray)' }}>We are not just vendors — we are long-term strategic partners embedded in our clients' vision and growth.</p>
             </div>
           </div>
         </section>
@@ -94,17 +94,17 @@ export default function About() {
         <section className="page-section" style={{ marginTop: '48px' }}>
           <h2 style={{ fontSize: '1.75rem', marginBottom: '32px', textAlign: 'center' }}>Global Presence</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px', maxWidth: '700px', margin: '0 auto' }}>
-            <div style={{ background: '#f0f6ff', borderRadius: '8px', padding: '28px', textAlign: 'center' }}>
+            <div className="ms-card" style={{ background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-lg)', padding: '28px', textAlign: 'center' }}>
               <h3 style={{ margin: '0 0 4px' }}>Nairobi, Kenya</h3>
-              <p style={{ fontSize: '0.85rem', color: '#616161', margin: 0 }}>Africa Headquarters</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--ms-mid-gray)', margin: 0 }}>Africa Headquarters</p>
             </div>
-            <div style={{ background: '#f0f6ff', borderRadius: '8px', padding: '28px', textAlign: 'center' }}>
+            <div className="ms-card" style={{ background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-lg)', padding: '28px', textAlign: 'center' }}>
               <h3 style={{ margin: '0 0 4px' }}>London, UK</h3>
-              <p style={{ fontSize: '0.85rem', color: '#616161', margin: 0 }}>Europe Office</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--ms-mid-gray)', margin: 0 }}>Europe Office</p>
             </div>
-            <div style={{ background: '#f0f6ff', borderRadius: '8px', padding: '28px', textAlign: 'center' }}>
+            <div className="ms-card" style={{ background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-lg)', padding: '28px', textAlign: 'center' }}>
               <h3 style={{ margin: '0 0 4px' }}>Dubai, UAE</h3>
-              <p style={{ fontSize: '0.85rem', color: '#616161', margin: 0 }}>MENA Office</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--ms-mid-gray)', margin: 0 }}>MENA Office</p>
             </div>
           </div>
         </section>

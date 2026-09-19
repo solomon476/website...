@@ -15,7 +15,7 @@ export default function Solomon() {
           <img src={solomonImg} alt="Solomon Nyangweso Omwenga" className="bio-portrait" />
         </div>
         <div className="bio-content-col">
-          <span className="page-tag" style={{ background: '#0067b8' }}>Chief Technology Officer</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Technology Officer</span>
           <h1>Solomon Nyangweso Omwenga</h1>
           <p className="bio-lead">Directs technical architecture, enterprise software engineering, infrastructure development, and innovation.</p>
           <div className="bio-body">

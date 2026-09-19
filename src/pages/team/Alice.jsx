@@ -15,7 +15,7 @@ export default function Alice() {
           <img src={aliceImg} alt="Alice Moraa Nyakundi" className="bio-portrait" />
         </div>
         <div className="bio-content-col">
-          <span className="page-tag" style={{ background: '#0067b8' }}>Chief Financial Officer</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Financial Officer</span>
           <h1>Alice Moraa Nyakundi</h1>
           <p className="bio-lead">Oversees financial planning, budgeting, accounting practices, and financial reporting.</p>
           <div className="bio-body">

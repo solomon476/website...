@@ -15,7 +15,7 @@ export default function Noella() {
           <img src={noellaImg} alt="Noella Maraka Kaatho" className="bio-portrait" />
         </div>
         <div className="bio-content-col">
-          <span className="page-tag" style={{ background: '#0067b8' }}>Executive Director / Finance &amp; Admin</span>
+          <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Executive Director / Finance & Admin</span>
           <h1>Noella Maraka Kaatho</h1>
           <p className="bio-lead">Supports financial operations, budget tracking, and corporate administrative management.</p>
           <div className="bio-body">
