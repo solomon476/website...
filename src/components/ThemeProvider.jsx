@@ -15,7 +15,7 @@ export function ThemeProvider({ children }) {
     root.classList.remove('light', 'dark');
 
     if (theme === 'system') {
-      root.classList.add('light');
+      root.classList.add('dark');
       return;
     }
 
