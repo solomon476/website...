@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ThemeToggle from './components/ThemeToggle.jsx';
@@ -21,6 +22,7 @@ import ianImg from './assets/ian-new-cropped.jpg';
 import hillaryImg from './assets/hillary.jpg';
 
 function Navbar() {
+  const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = React.useState(false);
   return (
     <nav className="ms-navbar">
@@ -32,7 +34,7 @@ function Navbar() {
           </Link>
           <div className={`ms-nav-links ${menuOpen ? 'open' : ''}`}>
             <div className="ms-nav-dropdown">
-              <span className="ms-nav-dropdown-toggle">Company ▾</span>
+              <span className="ms-nav-dropdown-toggle">{t('nav.company')} ▾</span>
               <div className="ms-nav-dropdown-menu mega-menu">
                 <div className="mega-menu-grid">
                   <Link to="/about">
@@ -55,7 +57,7 @@ function Navbar() {
               </div>
             </div>
             <div className="ms-nav-dropdown">
-              <span className="ms-nav-dropdown-toggle">Solutions ▾</span>
+              <span className="ms-nav-dropdown-toggle">{t('nav.solutions')} ▾</span>
               <div className="ms-nav-dropdown-menu mega-menu">
                 <div className="mega-menu-grid">
                   <Link to="/services/full-cycle-development">
@@ -92,7 +94,7 @@ function Navbar() {
               </div>
             </div>
             <div className="ms-nav-dropdown">
-              <span className="ms-nav-dropdown-toggle">Products ▾</span>
+              <span className="ms-nav-dropdown-toggle">{t('nav.products')} ▾</span>
               <div className="ms-nav-dropdown-menu mega-menu" style={{ minWidth: '350px' }}>
                 <div className="mega-menu-grid" style={{ gridTemplateColumns: '1fr' }}>
                   <a href="https://somobloom.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
@@ -111,15 +113,15 @@ function Navbar() {
                 </div>
               </div>
             </div>
-            <Link to="/insights">Insights</Link>
+            <Link to="/insights">{t('nav.insights')}</Link>
             {/* Show Sign In link on mobile inside the menu since the top-right button is hidden */}
-            <Link to="/portal" className="ms-mobile-signin" style={{ color: '#0067b8', fontWeight: 'bold' }}>Portal Sign in ➔</Link>
+            <Link to="/portal" className="ms-mobile-signin" style={{ color: '#0067b8', fontWeight: 'bold' }}>{t('nav.signin')} ➔</Link>
           </div>
         </div>
         <div className="ms-navbar-right" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <LanguageSwitcher direction="down" />
           <ThemeToggle />
-          <Link to="/portal" className="ms-nav-item">Sign in</Link>
+          <Link to="/portal" className="ms-nav-item">{t('nav.signin')}</Link>
         </div>
         <div className="ms-mobile-controls">
           <div className="ms-mobile-theme">
@@ -165,6 +167,7 @@ function useTypewriter(words, speed = 100, deleteSpeed = 50, delay = 2000) {
 }
 
 function Hero() {
+  const { t } = useTranslation();
   return (
     <section className="ms-hero">
       <img
@@ -180,11 +183,11 @@ function Hero() {
         transition={{ duration: 0.8 }}
       >
         <div className="ms-hero-text-container" style={{ maxWidth: '800px' }}>
-          <h1 className="ms-hero-title">Engineering the Future of<br/> <span style={{ color: 'var(--ms-blue)' }}>Enterprise Systems.</span></h1>
-          <p className="ms-hero-subtitle" style={{ fontSize: '1.2rem', maxWidth: '600px' }}>We architect high-performance software, custom ERPs, and mission-critical business systems tailored for ambitious organisations.</p>
+          <h1 className="ms-hero-title">{t('hero.title')}<br/> <span style={{ color: 'var(--ms-blue)' }}>{t('hero.title_highlight')}.</span></h1>
+          <p className="ms-hero-subtitle" style={{ fontSize: '1.2rem', maxWidth: '600px' }}>{t('hero.subtitle')}</p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="ms-btn ms-btn-primary">Secure Consultation</Link>
-            <Link to="/methodology" className="ms-btn btn-outline" style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.5)' }}>View Methodology</Link>
+            <Link to="/contact" className="ms-btn ms-btn-primary">{t('hero.cta_primary')}</Link>
+            <Link to="/methodology" className="ms-btn btn-outline" style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.5)' }}>{t('hero.cta_secondary')}</Link>
           </div>
         </div>
       </motion.div>
@@ -309,6 +312,7 @@ function Card({ image, title, description, linkText, to, portrait }) {
 }
 
 function FeaturedProducts() {
+  const { t } = useTranslation();
   return (
     <motion.section 
       className="ms-section"
@@ -330,14 +334,10 @@ function FeaturedProducts() {
             </svg>
           </div>
           <div>
-            <h3 style={{ fontSize: '2rem', marginBottom: '8px', color: 'var(--ms-text-main)' }}>SomoBloom</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--ms-mid-gray)', margin: 0, maxWidth: '600px' }}>Build and ship faster with our premium enterprise school management system — the definitive educational ERP.</p>
+            <h3 style={{ fontSize: '2rem', marginBottom: '8px', color: 'var(--ms-text-main)' }}>{t('featured.product_name')}</h3>
+            <p style={{ fontSize: '1.1rem', color: 'var(--ms-mid-gray)', margin: 0, maxWidth: '600px' }}>{t('featured.product_desc')}</p>
             <div style={{ marginTop: '16px', color: 'var(--ms-text-main)', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              Explore SomoBloom 
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
+              {t('featured.cta')}
             </div>
           </div>
         </a>
@@ -384,58 +384,44 @@ function Banner() {
 }
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="ms-footer">
       <div className="ms-footer-links">
         <div className="ms-footer-col">
-          <h4>Enterprise Solutions</h4>
-          <Link to="/services/full-cycle-development">Custom ERP Development</Link>
-          <Link to="/services/full-cycle-development">School Management Systems</Link>
-          <Link to="/services/full-cycle-development">Financial Software</Link>
-          <Link to="/services/full-cycle-development">Healthcare Logistics</Link>
+          <h4>{t('footer.enterprise')}</h4>
+          <Link to="/services/full-cycle-development">{t('footer.e1')}</Link>
+          <Link to="/services/full-cycle-development">{t('footer.e2')}</Link>
+          <Link to="/services/full-cycle-development">{t('footer.e3')}</Link>
+          <Link to="/services/full-cycle-development">{t('footer.e4')}</Link>
         </div>
         <div className="ms-footer-col">
-          <h4>Cloud & Infrastructure</h4>
-          <Link to="/services/architectural-scaling">Serverless Architecture</Link>
-          <Link to="/services/architectural-scaling">Database Migration</Link>
-          <Link to="/services/architectural-scaling">AWS / Azure Integration</Link>
-          <Link to="/services/architectural-scaling">Scalability Audits</Link>
+          <h4>{t('footer.cloud')}</h4>
+          <Link to="/services/architectural-scaling">{t('footer.c1')}</Link>
+          <Link to="/services/architectural-scaling">{t('footer.c2')}</Link>
+          <Link to="/services/architectural-scaling">{t('footer.c3')}</Link>
+          <Link to="/services/architectural-scaling">{t('footer.c4')}</Link>
         </div>
         <div className="ms-footer-col">
-          <h4>Consulting & Advisory</h4>
-          <Link to="/services/white-collar-partner">Fractional CTO</Link>
-          <Link to="/services/white-collar-partner">IT Strategy</Link>
-          <Link to="/services/surgical-audit">Technical Debt Rescue</Link>
-          <Link to="/services/surgical-audit">Security Audits</Link>
+          <h4>{t('footer.advisory')}</h4>
+          <Link to="/services/white-collar-partner">{t('footer.a1')}</Link>
+          <Link to="/services/white-collar-partner">{t('footer.a2')}</Link>
+          <Link to="/services/surgical-audit">{t('footer.a3')}</Link>
+          <Link to="/services/surgical-audit">{t('footer.a4')}</Link>
         </div>
         <div className="ms-footer-col">
-          <h4>Insights & Research</h4>
-          <Link to="/insights">The Solian Wolves Blog</Link>
-          <Link to="/insights">Whitepapers</Link>
-          <Link to="/insights">Case Studies</Link>
-          <Link to="/insights">Engineering Metrics</Link>
+          <h4>{t('footer.company')}</h4>
+          <Link to="/careers">{t('footer.co4')}</Link>
+          <Link to="/about">{t('footer.co1')}</Link>
+          <Link to="/insights">{t('nav.insights')}</Link>
+          <Link to="/contact">{t('legal.contact')}</Link>
         </div>
         <div className="ms-footer-col">
-          <h4>Company</h4>
-          <Link to="/careers">Careers</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/insights">Newsroom</Link>
-          <Link to="/contact">Investor Relations</Link>
-        </div>
-        <div className="ms-footer-col">
-          <h4>Global Offices</h4>
-          <span className="footer-static">Nairobi, KE</span>
-          <span className="footer-static">London, UK</span>
-          <span className="footer-static">Dubai, UAE</span>
-        </div>
-        <div className="ms-footer-col">
-          <h4>Follow Us</h4>
+          <h4>{t('footer.connect')}</h4>
           <a href="https://x.com/solianwolves" target="_blank" rel="noopener noreferrer">X: @solianwolves</a>
-          <a href="https://www.linkedin.com/company/145206557/" target="_blank" rel="noopener noreferrer">LinkedIn: Solian Wolves</a>
-          <a href="https://www.youtube.com/@thesolianwolves" target="_blank" rel="noopener noreferrer">YouTube: @thesolianwolves</a>
-          <a href="https://www.reddit.com/user/The_Solian_Wolves/" target="_blank" rel="noopener noreferrer">Reddit: u/The_Solian_Wolves</a>
-          <a href="https://instagram.com/thesolianwolves" target="_blank" rel="noopener noreferrer">Instagram: @thesolianwolves</a>
-          <a href="https://tiktok.com/@solianwolves" target="_blank" rel="noopener noreferrer">TikTok: @solianwolves</a>
+          <a href="https://www.linkedin.com/company/145206557/" target="_blank" rel="noopener noreferrer">{t('footer.con1')}</a>
+          <a href="https://www.youtube.com/@thesolianwolves" target="_blank" rel="noopener noreferrer">{t('footer.con3')}</a>
+          <a href="https://www.reddit.com/user/The_Solian_Wolves/" target="_blank" rel="noopener noreferrer">{t('footer.con2')}</a>
         </div>
       </div>
       <div className="ms-footer-bottom">
@@ -443,13 +429,13 @@ function Footer() {
           <LanguageSwitcher direction="up" />
         </div>
         <div className="ms-footer-legal">
-          <Link to="/">Sitemap</Link>
-          <Link to="/contact">Contact Solian Wolves</Link>
-          <Link to="/">Privacy Policy</Link>
-          <Link to="/">Terms of Service</Link>
-          <Link to="/">Cookie Policy</Link>
-          <Link to="/">Trademarks</Link>
-          <Link to="/">Accessibility</Link>
+          <Link to="/">{t('legal.sitemap')}</Link>
+          <Link to="/contact">{t('legal.contact')}</Link>
+          <Link to="/">{t('legal.privacy')}</Link>
+          <Link to="/">{t('legal.terms')}</Link>
+          <Link to="/">{t('legal.cookies')}</Link>
+          <Link to="/">{t('legal.trademarks')}</Link>
+          <Link to="/">{t('legal.accessibility')}</Link>
           <span className="copyright">&copy; Solian Wolves 2026</span>
         </div>
       </div>

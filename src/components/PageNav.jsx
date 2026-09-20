@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import LanguageSwitcher from './LanguageSwitcher.jsx';
 
@@ -10,6 +11,7 @@ import LanguageSwitcher from './LanguageSwitcher.jsx';
  */
 export default function PageNav({ label = '← Solian Wolves', dark = false, fallback = '/' }) {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   function handleBack() {
     // If there's browser history beyond the current page, go back; otherwise go to fallback
@@ -33,7 +35,7 @@ export default function PageNav({ label = '← Solian Wolves', dark = false, fal
       </div>
       <div className="page-nav-right" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
         <LanguageSwitcher direction="down" />
-        <Link to="/portal" className="page-nav-link">Client Portal</Link>
+        <Link to="/portal" className="page-nav-link">{t('nav.portal', 'Client Portal')}</Link>
       </div>
     </nav>
   );

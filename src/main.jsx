@@ -4,8 +4,9 @@ import { createBrowserRouter, RouterProvider, Outlet, ScrollRestoration } from '
 import { ThemeProvider } from './components/ThemeProvider.jsx'
 import { HelmetProvider } from 'react-helmet-async'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
-import './index.css'
-import App from './App.jsx'
+import './index.css';
+import './i18n';
+import App from './App.jsx';
 import FullCycleDevelopment from './pages/FullCycleDevelopment.jsx'
 import SurgicalAudit from './pages/SurgicalAudit.jsx'
 import ArchitecturalScaling from './pages/ArchitecturalScaling.jsx'

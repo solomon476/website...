@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "company": "Company",
+    "solutions": "Solutions",
+    "products": "Products",
+    "insights": "Insights",
+    "portal": "Client Portal",
+    "signin": "Sign in"
+  },
+  "hero": {
+    "title": "Engineering the Future of",
+    "title_highlight": "Enterprise Systems",
+    "subtitle": "We architect high-performance software, custom ERPs, and mission-critical business systems tailored for ambitious organisations.",
+    "cta_primary": "Secure Consultation",
+    "cta_secondary": "View Methodology"
+  },
+  "trusted": {
+    "title": "TRUSTED BY AMBITIOUS TEAMS BUILDING THE FUTURE"
+  },
+  "capabilities": {
+    "title": "Core Capabilities",
+    "subtitle": "The architecture for digital scale.",
+    "c1_title": "Enterprise Applications",
+    "c1_desc": "Engineering robust platforms capable of handling millions of concurrent operations seamlessly.",
+    "c2_title": "Cloud & Infrastructure",
+    "c2_desc": "Designing resilient, highly available architectures on AWS, Azure, and Google Cloud.",
+    "c3_title": "Software Auditing",
+    "c3_desc": "Technical deep-dives into existing codebases to identify security risks and performance bottlenecks."
+  },
+  "featured": {
+    "title": "FEATURED PRODUCTS",
+    "product_name": "SomoBloom",
+    "product_desc": "Transform education administration with the only modular ERP designed exclusively for African schools. Handle admissions, fee tracking, academic reporting, and parent communication in one secure platform.",
+    "cta": "View SomoBloom →"
+  },
+  "cta_section": {
+    "title": "Ready to Scale?",
+    "subtitle": "The world's fastest-growing organisations rely on our infrastructure.",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "enterprise": "Enterprise Solutions",
+    "e1": "Custom ERP Development",
+    "e2": "School Management Systems",
+    "e3": "Financial Software",
+    "e4": "Healthcare Logistics",
+    "cloud": "Cloud & Infrastructure",
+    "c1": "Serverless Architecture",
+    "c2": "Database Migration",
+    "c3": "AWS / Azure Integration",
+    "c4": "Scalability Audits",
+    "advisory": "Consulting & Advisory",
+    "a1": "Fractional CTO",
+    "a2": "Technical Due Diligence",
+    "a3": "Agile Transformation",
+    "a4": "Security Assessments",
+    "company": "Company",
+    "co1": "About Solian Wolves",
+    "co2": "Our Methodology",
+    "co3": "Alpha Labs",
+    "co4": "Careers",
+    "connect": "Connect",
+    "con1": "LinkedIn",
+    "con2": "Reddit",
+    "con3": "YouTube",
+    "con4": "Contact Sales",
+    "lang_en": "English (Global)",
+    "lang_fr": "Français",
+    "lang_sw": "Kiswahili",
+    "lang_ar": "العربية",
+    "lang_zh": "中文"
+  },
+  "legal": {
+    "sitemap": "Sitemap",
+    "contact": "Contact Solian Wolves",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "trademarks": "Trademarks",
+    "accessibility": "Accessibility"
+  }
+}

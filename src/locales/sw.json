@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "company": "Kampuni",
+    "solutions": "Suluhisho",
+    "products": "Bidhaa",
+    "insights": "Maarifa",
+    "portal": "Lango la Mteja",
+    "signin": "Ingia"
+  },
+  "hero": {
+    "title": "Kujenga Mustakabali wa",
+    "title_highlight": "Mifumo ya Biashara",
+    "subtitle": "Tunasanifu programu za utendaji wa juu, ERP maalum, na mifumo muhimu ya kibiashara iliyoundwa kwa mashirika yenye malengo makubwa.",
+    "cta_primary": "Pata Ushauri Safi",
+    "cta_secondary": "Tazama Mbinu Zetu"
+  },
+  "trusted": {
+    "title": "TUNAAMINIWA NA TIMU ZENYE MALENGO MAKUBWA ZINAZOJENGA MUSTAKABALI"
+  },
+  "capabilities": {
+    "title": "Uwezo Wetu Mkuu",
+    "subtitle": "Usanifu wa ukuaji wa kidijitali.",
+    "c1_title": "Programu za Biashara",
+    "c1_desc": "Uhandisi wa majukwaa thabiti yenye uwezo wa kushughulikia mamilioni ya shughuli kwa wakati mmoja bila matatizo.",
+    "c2_title": "Wingu na Miundombinu",
+    "c2_desc": "Kusanifu mifumo thabiti, inayopatikana kwa urahisi kwenye AWS, Azure, na Google Cloud.",
+    "c3_title": "Ukaguzi wa Programu",
+    "c3_desc": "Uchambuzi wa kina wa kiufundi katika kanuni za programu zilizopo ili kutambua hatari za kiusalama na vikwazo vya utendaji."
+  },
+  "featured": {
+    "title": "BIDHAA ZILIZOANGAZIWA",
+    "product_name": "SomoBloom",
+    "product_desc": "Badilisha usimamizi wa elimu kwa mfumo pekee wa ERP wa msimu iliyoundwa pekee kwa shule za Afrika. Dhibiti udahili, ufuatiliaji wa ada, ripoti za kitaaluma, na mawasiliano ya wazazi katika jukwaa moja salama.",
+    "cta": "Tazama SomoBloom →"
+  },
+  "cta_section": {
+    "title": "Uko Tayari Kukua?",
+    "subtitle": "Mashirika yanayokua kwa kasi zaidi duniani yanategemea miundombinu yetu.",
+    "button": "Wasiliana Nasi"
+  },
+  "footer": {
+    "enterprise": "Suluhisho za Biashara",
+    "e1": "Uendelezaji wa ERP Maalum",
+    "e2": "Mifumo ya Usimamizi wa Shule",
+    "e3": "Programu za Kifedha",
+    "e4": "Vifaa vya Afya",
+    "cloud": "Wingu na Miundombinu",
+    "c1": "Usanifu Bila Seva",
+    "c2": "Uhamishaji wa Hifadhidata",
+    "c3": "Ushirikiano wa AWS / Azure",
+    "c4": "Ukaguzi wa Ukuaji",
+    "advisory": "Ushauri na Mikakati",
+    "a1": "CTO wa Sehemu (Fractional CTO)",
+    "a2": "Uchunguzi wa Kina wa Kiufundi",
+    "a3": "Mabadiliko ya Agile",
+    "a4": "Tathmini za Usalama",
+    "company": "Kampuni",
+    "co1": "Kuhusu Solian Wolves",
+    "co2": "Mbinu Zetu",
+    "co3": "Alpha Labs",
+    "co4": "Ajira",
+    "connect": "Ungana Nasi",
+    "con1": "LinkedIn",
+    "con2": "Reddit",
+    "con3": "YouTube",
+    "con4": "Wasiliana na Mauzo",
+    "lang_en": "English (Global)",
+    "lang_fr": "Français",
+    "lang_sw": "Kiswahili",
+    "lang_ar": "العربية",
+    "lang_zh": "中文"
+  },
+  "legal": {
+    "sitemap": "Ramani ya Tovuti",
+    "contact": "Wasiliana na Solian Wolves",
+    "privacy": "Sera ya Faragha",
+    "terms": "Masharti ya Huduma",
+    "cookies": "Sera ya Vidakuzi",
+    "trademarks": "Alama za Biashara",
+    "accessibility": "Ufikivu"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "company": "Entreprise",
+    "solutions": "Solutions",
+    "products": "Produits",
+    "insights": "Perspectives",
+    "portal": "Portail Client",
+    "signin": "Se connecter"
+  },
+  "hero": {
+    "title": "L'Ingénierie de l'Avenir des",
+    "title_highlight": "Systèmes d'Entreprise",
+    "subtitle": "Nous concevons des logiciels haute performance, des ERP sur mesure et des systèmes stratégiques adaptés aux organisations ambitieuses.",
+    "cta_primary": "Consultation Sécurisée",
+    "cta_secondary": "Voir la Méthodologie"
+  },
+  "trusted": {
+    "title": "APPROUVÉ PAR LES ÉQUIPES AMBITIEUSES BÂTISSANT L'AVENIR"
+  },
+  "capabilities": {
+    "title": "Capacités Principales",
+    "subtitle": "L'architecture à l'échelle numérique.",
+    "c1_title": "Applications d'Entreprise",
+    "c1_desc": "Conception de plateformes robustes capables de gérer des millions d'opérations simultanées sans interruption.",
+    "c2_title": "Cloud & Infrastructure",
+    "c2_desc": "Création d'architectures résilientes et hautement disponibles sur AWS, Azure et Google Cloud.",
+    "c3_title": "Audit Logiciel",
+    "c3_desc": "Analyses techniques approfondies des bases de code existantes pour identifier les risques de sécurité et les goulots d'étranglement."
+  },
+  "featured": {
+    "title": "PRODUITS PHARES",
+    "product_name": "SomoBloom",
+    "product_desc": "Transformez l'administration scolaire avec le seul ERP modulaire conçu exclusivement pour les écoles africaines. Gérez les admissions, le suivi des frais, les rapports académiques et la communication avec les parents sur une plateforme sécurisée.",
+    "cta": "Découvrir SomoBloom →"
+  },
+  "cta_section": {
+    "title": "Prêt à évoluer ?",
+    "subtitle": "Les organisations à la croissance la plus rapide au monde s'appuient sur notre infrastructure.",
+    "button": "Nous Contacter"
+  },
+  "footer": {
+    "enterprise": "Solutions d'Entreprise",
+    "e1": "Développement ERP Sur Mesure",
+    "e2": "Systèmes de Gestion Scolaire",
+    "e3": "Logiciels Financiers",
+    "e4": "Logistique de Santé",
+    "cloud": "Cloud & Infrastructure",
+    "c1": "Architecture Sans Serveur",
+    "c2": "Migration de Base de Données",
+    "c3": "Intégration AWS / Azure",
+    "c4": "Audits d'Évolutivité",
+    "advisory": "Conseil & Stratégie",
+    "a1": "Directeur Technique à Temps Partagé",
+    "a2": "Diligence Raisonnable Technique",
+    "a3": "Transformation Agile",
+    "a4": "Évaluations de Sécurité",
+    "company": "Entreprise",
+    "co1": "À Propos de Solian Wolves",
+    "co2": "Notre Méthodologie",
+    "co3": "Alpha Labs",
+    "co4": "Carrières",
+    "connect": "Connecter",
+    "con1": "LinkedIn",
+    "con2": "Reddit",
+    "con3": "YouTube",
+    "con4": "Contacter les Ventes",
+    "lang_en": "English (Global)",
+    "lang_fr": "Français",
+    "lang_sw": "Kiswahili",
+    "lang_ar": "العربية",
+    "lang_zh": "中文"
+  },
+  "legal": {
+    "sitemap": "Plan du Site",
+    "contact": "Contacter Solian Wolves",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "cookies": "Politique des Cookies",
+    "trademarks": "Marques Déposées",
+    "accessibility": "Accessibilité"
+  }
+}

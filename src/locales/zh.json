@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "company": "公司",
+    "solutions": "解决方案",
+    "products": "产品",
+    "insights": "洞察",
+    "portal": "客户门户",
+    "signin": "登录"
+  },
+  "hero": {
+    "title": "构建企业系统的",
+    "title_highlight": "未来",
+    "subtitle": "我们为雄心勃勃的组织量身定制高性能软件、定制 ERP 和关键业务系统。",
+    "cta_primary": "获取咨询",
+    "cta_secondary": "查看方法论"
+  },
+  "trusted": {
+    "title": "深受构建未来的雄心勃勃团队的信任"
+  },
+  "capabilities": {
+    "title": "核心能力",
+    "subtitle": "数字规模的架构。",
+    "c1_title": "企业应用程序",
+    "c1_desc": "构建强大的平台，能够无缝处理数百万次并发操作。",
+    "c2_title": "云与基础设施",
+    "c2_desc": "在 AWS、Azure 和 Google Cloud 上设计具有弹性且高度可用的架构。",
+    "c3_title": "软件审计",
+    "c3_desc": "对现有代码库进行技术深度剖析，以识别安全风险和性能瓶颈。"
+  },
+  "featured": {
+    "title": "特色产品",
+    "product_name": "SomoBloom",
+    "product_desc": "通过专为非洲学校设计的唯一模块化 ERP 转型教育管理。在一个安全的平台上处理招生、费用跟踪、学术报告和家长沟通。",
+    "cta": "查看 SomoBloom →"
+  },
+  "cta_section": {
+    "title": "准备好扩展了吗？",
+    "subtitle": "世界上发展最快的组织都依赖我们的基础设施。",
+    "button": "联系我们"
+  },
+  "footer": {
+    "enterprise": "企业解决方案",
+    "e1": "定制 ERP 开发",
+    "e2": "学校管理系统",
+    "e3": "金融软件",
+    "e4": "医疗物流",
+    "cloud": "云与基础设施",
+    "c1": "无服务器架构",
+    "c2": "数据库迁移",
+    "c3": "AWS / Azure 集成",
+    "c4": "可扩展性审计",
+    "advisory": "咨询与顾问",
+    "a1": "兼职 CTO (Fractional CTO)",
+    "a2": "技术尽职调查",
+    "a3": "敏捷转型",
+    "a4": "安全评估",
+    "company": "公司",
+    "co1": "关于 Solian Wolves",
+    "co2": "我们的方法论",
+    "co3": "Alpha Labs",
+    "co4": "招贤纳士",
+    "connect": "联系方式",
+    "con1": "领英 (LinkedIn)",
+    "con2": "Reddit",
+    "con3": "YouTube",
+    "con4": "联系销售",
+    "lang_en": "English (Global)",
+    "lang_fr": "Français",
+    "lang_sw": "Kiswahili",
+    "lang_ar": "العربية",
+    "lang_zh": "中文"
+  },
+  "legal": {
+    "sitemap": "网站地图",
+    "contact": "联系 Solian Wolves",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie 政策",
+    "trademarks": "商标",
+    "accessibility": "无障碍"
+  }
+}
