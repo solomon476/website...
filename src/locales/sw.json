@@ -78,5 +78,54 @@
     "cookies": "Sera ya Vidakuzi",
     "trademarks": "Alama za Biashara",
     "accessibility": "Ufikivu"
+  },
+  "quicklinks": {
+    "ql1": "Chagua ERP Yako",
+    "ql2": "Usimamizi wa Shule",
+    "ql3": "Miundombinu ya Wingu",
+    "ql4": "Ukaguzi wa Kiufundi"
+  },
+  "tech": {
+    "title": "Teknolojia na Ushirikiano"
+  },
+  "services": {
+    "title": "Huduma za Uhandisi",
+    "s1_title": "Maendeleo ya Kina (Full-Cycle)",
+    "s1_desc": "Jenga tovuti zenye utendaji wa juu, zinazoweza kukua kimataifa na muundo thabiti na wa kisasa.",
+    "s1_link": "Tazama Mtiririko wa Maendeleo",
+    "s2_title": "Ukaguzi Maalum (Surgical Audit)",
+    "s2_desc": "Uchambuzi wa kina wa utendaji na uzoefu wa mtumiaji (UX). Tunatatua matatizo ya data kabla ya ujenzi.",
+    "s2_link": "Gundua Mbinu ya Ukaguzi",
+    "s3_title": "Ukuaji wa Miundombinu",
+    "s3_desc": "Usanifu maalum wa headless. Tunajenga programu zinazoweza kubadilishwa iliyoundwa kwa unyumbufu usio na mwisho.",
+    "s3_link": "Tazama Upeo wa Uhandisi",
+    "s4_title": "Mshirika Mkakati (White Collar)",
+    "s4_desc": "Ushauri wa kimkakati wa ngazi ya juu. Usaidizi wa CTO wa muda unaounganisha uongozi wetu kwenye biashara yako.",
+    "s4_link": "Gundua Ushirikiano"
+  },
+  "banner": {
+    "title": "Fungua Unyumbufu Usio na Mwisho",
+    "subtitle": "Gundua usanifu wetu maalum wa headless ulioundwa kwa mitandao mikubwa ya elimu.",
+    "cta": "Gundua Upeo wa Uhandisi"
+  },
+  "casestudies": {
+    "title": "Mafanikio na Suluhisho za Wateja",
+    "cat1": "FEDHA",
+    "cs1_title": "Kukuza Miundombinu ya Kifedha",
+    "cs1_desc": "Jinsi tunavyoweza kuhamisha rekodi za zamani hadi mfumo salama wa headless bila kukatika kwa huduma.",
+    "cs1_link": "Soma suluhisho kamili ➔",
+    "cat2": "ELIMU",
+    "cs2_title": "Mustakabali wa ERP za Elimu",
+    "cs2_desc": "Kushirikiana na taasisi za juu kujenga mifumo mipya inayokua kwa urahisi ili kuchukua nafasi ya mifumo ya zamani.",
+    "cs2_link": "Tazama maarifa ➔"
+  },
+  "team": {
+    "title": "Timu Yetu ya Uongozi",
+    "link": "Soma wasifu",
+    "t1_desc": "Afisa Mtendaji Mkuu (CEO). Hutoa maono ya jumla ya shirika, uongozi wa kimkakati, na mwelekeo wa utendaji.",
+    "t2_desc": "Afisa Uendeshaji Mkuu (COO). Husimamia shughuli za ndani za kila siku, utoaji wa huduma, na mipango ya kimkakati.",
+    "t3_desc": "Afisa Mkuu wa Fedha (CFO). Husimamia mipango ya kifedha, bajeti, mbinu za uhasibu, na mapato.",
+    "t4_desc": "Mkurugenzi Mtendaji / Fedha na Utawala. Husaidia shughuli za kifedha, ufuatiliaji wa bajeti, na usimamizi wa rasilimali watu (HR).",
+    "t5_desc": "Afisa Mkuu wa Teknolojia (CTO). Huelekeza usanifu wa kiufundi, uhandisi wa programu za biashara, na maendeleo ya miundombinu."
   }
 }

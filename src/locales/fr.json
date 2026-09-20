@@ -78,5 +78,54 @@
     "cookies": "Politique des Cookies",
     "trademarks": "Marques Déposées",
     "accessibility": "Accessibilité"
+  },
+  "quicklinks": {
+    "ql1": "Choisissez votre ERP",
+    "ql2": "Gestion Scolaire",
+    "ql3": "Architecture Cloud",
+    "ql4": "Audit Technique"
+  },
+  "tech": {
+    "title": "Technologies & Partenariats"
+  },
+  "services": {
+    "title": "Services d'Ingénierie",
+    "s1_title": "Développement Complet",
+    "s1_desc": "Créez des sites Web performants et évolutifs à l'échelle mondiale, alliant architecture conceptuelle et design premium.",
+    "s1_link": "Voir le Processus de Développement",
+    "s2_title": "L'Audit Chirurgical",
+    "s2_desc": "Analyse approfondie des performances et de l'UX. Nous éliminons les silos de données et la dette technique avant de construire.",
+    "s2_link": "Explorer la Méthodologie d'Audit",
+    "s3_title": "Mise à l'Échelle Architecturale",
+    "s3_desc": "Architectures headless sur mesure. Nous concevons des applications modulaires conçues pour une flexibilité infinie.",
+    "s3_link": "Voir la Portée de l'Ingénierie",
+    "s4_title": "Partenaire Stratégique",
+    "s4_desc": "Conseil stratégique au niveau de la direction. Soutien de CTO à temps partagé intégrant notre direction à votre entreprise.",
+    "s4_link": "Explorer le Partenariat"
+  },
+  "banner": {
+    "title": "Débloquez une flexibilité infinie",
+    "subtitle": "Découvrez notre architecture headless sur mesure adaptée aux vastes réseaux éducatifs.",
+    "cta": "Explorer la Portée de l'Ingénierie"
+  },
+  "casestudies": {
+    "title": "Succès Clients & Solutions",
+    "cat1": "FINANCE",
+    "cs1_title": "Mise à l'Échelle de l'Infrastructure Financière",
+    "cs1_desc": "Comment migrer des archives obsolètes vers une architecture headless sécurisée sans interruption.",
+    "cs1_link": "Lire la solution complète ➔",
+    "cat2": "ÉDUCATION",
+    "cs2_title": "L'Avenir des ERP Éducatifs",
+    "cs2_desc": "Partenariat avec des institutions de premier plan pour concevoir des systèmes modulaires remplaçant les monolithes obsolètes.",
+    "cs2_link": "Voir les perspectives ➔"
+  },
+  "team": {
+    "title": "Notre Équipe de Direction",
+    "link": "Lire la bio",
+    "t1_desc": "Président-Directeur Général. Fournit la vision globale, le leadership stratégique et la direction exécutive.",
+    "t2_desc": "Directeur des Opérations. Supervise les opérations internes quotidiennes, la prestation de services et la planification.",
+    "t3_desc": "Directrice Financière. Gère la planification financière, la budgétisation, la comptabilité et les flux de revenus.",
+    "t4_desc": "Directrice Exécutive / Finance et Admin. Soutient les opérations financières, le suivi budgétaire et les RH.",
+    "t5_desc": "Directeur Technique (CTO). Dirige l'architecture technique, l'ingénierie logicielle d'entreprise et l'infrastructure."
   }
 }

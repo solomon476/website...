@@ -196,6 +196,7 @@ function Hero() {
 }
 
 function QuickLinks() {
+  const { t } = useTranslation();
   return (
     <section className="ms-quick-links">
       <div className="ms-quick-link">
@@ -204,7 +205,7 @@ function QuickLinks() {
           <path d="M12 20h16M20 12v16" stroke="var(--ms-text-main)" strokeWidth="2.5" strokeLinecap="round"/>
           <rect x="14" y="14" width="12" height="12" rx="2" stroke="var(--ms-text-main)" strokeWidth="2"/>
         </svg>
-        <span>Choose your ERP</span>
+        <span>{t('quicklinks.ql1')}</span>
       </div>
       <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -212,7 +213,7 @@ function QuickLinks() {
           <path d="M10 28 L20 12 L30 28 Z" stroke="var(--ms-text-main)" strokeWidth="2" fill="none" strokeLinejoin="round"/>
           <circle cx="20" cy="22" r="3" fill="var(--ms-text-main)"/>
         </svg>
-        <span>School Management</span>
+        <span>{t('quicklinks.ql2')}</span>
       </div>
       <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +222,7 @@ function QuickLinks() {
           <path d="M20 12 Q28 16 28 20 Q28 24 20 28 Q12 24 12 20 Q12 16 20 12Z" stroke="var(--ms-text-main)" strokeWidth="2" fill="none"/>
           <line x1="12" y1="20" x2="28" y2="20" stroke="var(--ms-text-main)" strokeWidth="2"/>
         </svg>
-        <span>Cloud Architecture</span>
+        <span>{t('quicklinks.ql3')}</span>
       </div>
       <div className="ms-quick-link">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,13 +231,14 @@ function QuickLinks() {
           <path d="M26 14 L32 8" stroke="var(--ms-text-main)" strokeWidth="2" strokeLinecap="round"/>
           <path d="M14 26 L8 32" stroke="var(--ms-text-main)" strokeWidth="2" strokeLinecap="round"/>
         </svg>
-        <span>Technical Audit</span>
+        <span>{t('quicklinks.ql4')}</span>
       </div>
     </section>
   );
 }
 
 function TechPartners() {
+  const { t } = useTranslation();
   const partners = [
     "AWS Advanced Partner", "Microsoft Azure Certified", "React & React Native", 
     "Node.js Enterprise", "Python / Django", "PostgreSQL", "Docker & Kubernetes", "Vercel",
@@ -244,7 +246,7 @@ function TechPartners() {
   ];
   return (
     <section className="ms-tech-section">
-      <h3 className="ms-tech-title">Technologies & Partnerships</h3>
+      <h3 className="ms-tech-title">{t('tech.title')}</h3>
       <div className="marquee-container">
         <div className="marquee-content">
           {[...partners, ...partners].map((p, index) => (
@@ -257,6 +259,7 @@ function TechPartners() {
 }
 
 function CaseStudies() {
+  const { t } = useTranslation();
   return (
     <motion.section 
       className="ms-section" 
@@ -267,22 +270,22 @@ function CaseStudies() {
       transition={{ duration: 0.8 }}
     >
       <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
-        <h2 className="ms-section-title">Client Success & Solutions</h2>
+        <h2 className="ms-section-title">{t('casestudies.title')}</h2>
         <div className="ms-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
           <div className="ms-card" style={{ background: 'radial-gradient(circle at top left, rgba(0, 103, 184, 0.08), transparent 60%), var(--ms-card-bg)' }}>
             <div className="ms-card-content" style={{ padding: '32px' }}>
-              <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>FINANCE</span>
-              <h3 className="ms-card-title">Scaling Financial Infrastructure</h3>
-              <p className="ms-card-desc">How we can migrate legacy records to a secure headless architecture with zero downtime.</p>
-              <Link to="/insights" className="ms-card-link">Read full solution ➔</Link>
+              <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>{t('casestudies.cat1')}</span>
+              <h3 className="ms-card-title">{t('casestudies.cs1_title')}</h3>
+              <p className="ms-card-desc">{t('casestudies.cs1_desc')}</p>
+              <Link to="/insights" className="ms-card-link">{t('casestudies.cs1_link')}</Link>
             </div>
           </div>
           <div className="ms-card" style={{ background: 'radial-gradient(circle at top left, rgba(0, 103, 184, 0.08), transparent 60%), var(--ms-card-bg)' }}>
             <div className="ms-card-content" style={{ padding: '32px' }}>
-              <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>EDUCATION</span>
-              <h3 className="ms-card-title">The Future of Educational ERPs</h3>
-              <p className="ms-card-desc">Partnering with top institutions to build custom modular scaling systems replacing legacy monoliths.</p>
-              <Link to="/insights" className="ms-card-link">View insights ➔</Link>
+              <span style={{ fontSize: '0.8rem', color: 'var(--ms-blue)', fontWeight: 'bold' }}>{t('casestudies.cat2')}</span>
+              <h3 className="ms-card-title">{t('casestudies.cs2_title')}</h3>
+              <p className="ms-card-desc">{t('casestudies.cs2_desc')}</p>
+              <Link to="/insights" className="ms-card-link">{t('casestudies.cs2_link')}</Link>
             </div>
           </div>
         </div>
@@ -367,6 +370,7 @@ function CardGrid({ sectionTitle, cards, columns = 4 }) {
 }
 
 function Banner() {
+  const { t } = useTranslation();
   return (
     <section className="ms-banner">
       <img
@@ -375,9 +379,9 @@ function Banner() {
         alt="Abstract Panoramic Background"
       />
       <div className="ms-banner-content">
-        <h2 className="ms-hero-title">Unlock infinite flexibility</h2>
-        <p className="ms-hero-subtitle">Discover our bespoke headless architecture tailored for massive educational networks.</p>
-        <Link to="/contact" className="ms-btn ms-btn-primary">Explore Engineering Scope</Link>
+        <h2 className="ms-hero-title">{t('banner.title')}</h2>
+        <p className="ms-hero-subtitle">{t('banner.subtitle')}</p>
+        <Link to="/contact" className="ms-btn ms-btn-primary">{t('banner.cta')}</Link>
       </div>
     </section>
   );
@@ -444,77 +448,77 @@ function Footer() {
 }
 
 function App() {
+  const { t } = useTranslation();
+  
   const serviceCards = [
     {
       image: card1Img,
-      title: "Full-Cycle Development",
-      description: "Build high-performance, globally scalable websites blending conceptual architecture with premium design.",
-      linkText: "View Development Flow",
+      title: t('services.s1_title'),
+      description: t('services.s1_desc'),
+      linkText: t('services.s1_link'),
       to: "/services/full-cycle-development"
     },
     {
       image: card2Img,
-      title: "The Surgical Audit",
-      description: "Deep-dive performance and UX analysis. We fix data silos and eliminate technical debt before building.",
-      linkText: "Explore Audit Methodology",
+      title: t('services.s2_title'),
+      description: t('services.s2_desc'),
+      linkText: t('services.s2_link'),
       to: "/services/surgical-audit"
     },
     {
       image: card3Img,
-      title: "Architectural Scaling",
-      description: "Bespoke headless architectures. We engineer modular applications designed for infinite flexibility.",
-      linkText: "View Engineering Scope",
+      title: t('services.s3_title'),
+      description: t('services.s3_desc'),
+      linkText: t('services.s3_link'),
       to: "/services/architectural-scaling"
     },
     {
       image: card4Img,
-      title: "White Collar Partner",
-      description: "C-suite level strategic advisory. Fractional CTO support embedding our senior leadership into your business.",
-      linkText: "Explore Partnership",
+      title: t('services.s4_title'),
+      description: t('services.s4_desc'),
+      linkText: t('services.s4_link'),
       to: "/services/white-collar-partner"
     }
   ];
-
-
 
   const teamCards = [
     {
       image: ianImg,
       title: "Ian Momanyi Nyakundi",
-      description: "Chief Executive Officer. Provides overall corporate vision, strategic leadership, and executive direction.",
-      linkText: "Read bio",
+      description: t('team.t1_desc'),
+      linkText: t('team.link'),
       to: "/team/ian",
       portrait: true
     },
     {
       image: hillaryImg,
       title: "Hillary Onchwati Isaiah",
-      description: "Chief Operating Officer. Oversees day-to-day internal business operations, service delivery, and strategic planning.",
-      linkText: "Read bio",
+      description: t('team.t2_desc'),
+      linkText: t('team.link'),
       to: "/team/hillary",
       portrait: true
     },
     {
       image: aliceImg,
       title: "Alice Moraa Nyakundi",
-      description: "Chief Financial Officer. Oversees financial planning, budgeting, accounting practices, and revenue pipelines.",
-      linkText: "Read bio",
+      description: t('team.t3_desc'),
+      linkText: t('team.link'),
       to: "/team/alice",
       portrait: true
     },
     {
       image: noellaImg,
       title: "Noella Maraka Kaatho",
-      description: "Executive Director / Finance & Admin. Supports financial operations, budget tracking, and HR workflow execution.",
-      linkText: "Read bio",
+      description: t('team.t4_desc'),
+      linkText: t('team.link'),
       to: "/team/noella",
       portrait: true
     },
     {
       image: solomonImg,
       title: "Solomon Nyangweso Omwenga",
-      description: "Chief Technology Officer. Directs technical architecture, enterprise software engineering, and infrastructure development.",
-      linkText: "Read bio",
+      description: t('team.t5_desc'),
+      linkText: t('team.link'),
       to: "/team/solomon",
       portrait: true
     }
@@ -529,12 +533,12 @@ function App() {
         <QuickLinks />
         <TechPartners />
         <FeaturedProducts />
-        <CardGrid cards={serviceCards} sectionTitle="Engineering Services" />
+        <CardGrid cards={serviceCards} sectionTitle={t('services.title')} />
       </div>
       <Banner />
       <CaseStudies />
       <div className="ms-container">
-        <CardGrid sectionTitle="Our Leadership Team" cards={teamCards} columns={5} />
+        <CardGrid sectionTitle={t('team.title')} cards={teamCards} columns={5} />
       </div>
       <Footer />
     </div>

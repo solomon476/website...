@@ -78,5 +78,54 @@
     "cookies": "Cookie Policy",
     "trademarks": "Trademarks",
     "accessibility": "Accessibility"
+  },
+  "quicklinks": {
+    "ql1": "Choose your ERP",
+    "ql2": "School Management",
+    "ql3": "Cloud Architecture",
+    "ql4": "Technical Audit"
+  },
+  "tech": {
+    "title": "Technologies & Partnerships"
+  },
+  "services": {
+    "title": "Engineering Services",
+    "s1_title": "Full-Cycle Development",
+    "s1_desc": "Build high-performance, globally scalable websites blending conceptual architecture with premium design.",
+    "s1_link": "View Development Flow",
+    "s2_title": "The Surgical Audit",
+    "s2_desc": "Deep-dive performance and UX analysis. We fix data silos and eliminate technical debt before building.",
+    "s2_link": "Explore Audit Methodology",
+    "s3_title": "Architectural Scaling",
+    "s3_desc": "Bespoke headless architectures. We engineer modular applications designed for infinite flexibility.",
+    "s3_link": "View Engineering Scope",
+    "s4_title": "White Collar Partner",
+    "s4_desc": "C-suite level strategic advisory. Fractional CTO support embedding our senior leadership into your business.",
+    "s4_link": "Explore Partnership"
+  },
+  "banner": {
+    "title": "Unlock infinite flexibility",
+    "subtitle": "Discover our bespoke headless architecture tailored for massive educational networks.",
+    "cta": "Explore Engineering Scope"
+  },
+  "casestudies": {
+    "title": "Client Success & Solutions",
+    "cat1": "FINANCE",
+    "cs1_title": "Scaling Financial Infrastructure",
+    "cs1_desc": "How we can migrate legacy records to a secure headless architecture with zero downtime.",
+    "cs1_link": "Read full solution ➔",
+    "cat2": "EDUCATION",
+    "cs2_title": "The Future of Educational ERPs",
+    "cs2_desc": "Partnering with top institutions to build custom modular scaling systems replacing legacy monoliths.",
+    "cs2_link": "View insights ➔"
+  },
+  "team": {
+    "title": "Our Leadership Team",
+    "link": "Read bio",
+    "t1_desc": "Chief Executive Officer. Provides overall corporate vision, strategic leadership, and executive direction.",
+    "t2_desc": "Chief Operating Officer. Oversees day-to-day internal business operations, service delivery, and strategic planning.",
+    "t3_desc": "Chief Financial Officer. Oversees financial planning, budgeting, accounting practices, and revenue pipelines.",
+    "t4_desc": "Executive Director / Finance & Admin. Supports financial operations, budget tracking, and HR workflow execution.",
+    "t5_desc": "Chief Technology Officer. Directs technical architecture, enterprise software engineering, and infrastructure development."
   }
 }
