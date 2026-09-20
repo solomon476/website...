@@ -1,63 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PageNav from '../components/PageNav.jsx';
 import '../pages.css';
 
-const articles = [
-  {
-    tag: 'WHITEPAPER',
-    tagColor: '#0067b8',
-    title: 'The Future of Educational ERPs in Africa',
-    desc: 'Why monolithic school management systems are failing and how modular, headless architecture fixes scalability, reporting, and student data integrity at scale.',
-    readTime: '8 min read',
-    date: 'August 2026',
-  },
-  {
-    tag: 'SOLUTION',
-    tagColor: '#006400',
-    title: 'Scaling Financial Infrastructure Without Downtime',
-    desc: 'How we migrate legacy financial records to secure, cloud-native architectures using blue-green deployments, data replication, and incremental traffic shifting — zero downtime guaranteed.',
-    readTime: '6 min read',
-    date: 'August 2026',
-  },
-  {
-    tag: 'ENGINEERING',
-    tagColor: '#7b2d8b',
-    title: 'PostgreSQL Optimization for High-Frequency Ledgers',
-    desc: 'Advanced indexing strategies, query plan analysis, and caching architectures for financial applications processing thousands of transactions per second.',
-    readTime: '10 min read',
-    date: 'July 2026',
-  },
-  {
-    tag: 'STRATEGY',
-    tagColor: '#b85c00',
-    title: 'When to Hire a Fractional CTO vs. a Full-Time CTO',
-    desc: 'A practical framework for SME founders and school administrators to decide when internal technical leadership makes sense and when a fractional model delivers more ROI.',
-    readTime: '5 min read',
-    date: 'July 2026',
-  },
-  {
-    tag: 'SECURITY',
-    tagColor: '#c0392b',
-    title: 'The Top 10 Security Vulnerabilities We Find in Every Audit',
-    desc: 'After auditing dozens of systems across education, healthcare, and finance — these are the security gaps that appear most consistently, and how to close them before they are exploited.',
-    readTime: '7 min read',
-    date: 'June 2026',
-  },
-  {
-    tag: 'ENGINEERING',
-    tagColor: '#7b2d8b',
-    title: 'Microservices vs. Monolith: The Real Tradeoffs in 2026',
-    desc: 'A grounded, non-hype analysis of when you actually need microservices, when a well-structured monolith is the better choice, and how to make the transition safely.',
-    readTime: '9 min read',
-    date: 'June 2026',
-  },
-];
+import articles from '../data/articles.json';
 
 export default function Insights() {
   const [filter, setFilter] = useState('ALL');
-  const tags = ['ALL', 'WHITEPAPER', 'SOLUTION', 'ENGINEERING', 'STRATEGY', 'SECURITY'];
+  const tags = ['ALL', ...new Set(articles.map(a => a.tag))];
   const filtered = filter === 'ALL' ? articles : articles.filter(a => a.tag === filter);
+  const navigate = useNavigate();
 
   return (
     <div className="page-wrapper">
@@ -106,6 +58,7 @@ export default function Insights() {
               <div key={i} className="ms-card" style={{ padding: '28px', background: 'var(--ms-card-bg)', border: '1px solid var(--ms-border)', borderRadius: 'var(--radius-md)', display: 'flex', flexDirection: 'column', gap: '12px', transition: 'border-color 0.2s, transform 0.2s', cursor: 'pointer' }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--ms-blue)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--ms-border)'; e.currentTarget.style.transform = 'none'; }}
+                onClick={() => navigate(`/insights/${article.slug}`)}
               >
                 <span style={{ fontSize: '0.75rem', color: article.tagColor, fontWeight: 700, letterSpacing: '0.05em' }}>{article.tag}</span>
                 <h3 style={{ fontSize: '1.1rem', fontWeight: 700, lineHeight: 1.4, color: 'var(--ms-text-main)' }}>{article.title}</h3>

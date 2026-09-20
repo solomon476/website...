@@ -25,6 +25,7 @@ import ClientDashboard from './pages/ClientDashboard.jsx'
 import Methodology from './pages/Methodology.jsx'
 import Industries from './pages/Industries.jsx'
 import Labs from './pages/Labs.jsx'
+import Article from './pages/Article.jsx'
 
 const RootLayout = () => {
   return (
@@ -55,6 +56,7 @@ const router = createBrowserRouter([
       { path: '/team/solomon', element: <Solomon /> },
       { path: '/portal', element: <Portal /> },
       { path: '/insights', element: <Insights /> },
+      { path: '/insights/:slug', element: <Article /> },
       { path: '/careers', element: <Careers /> },
       { path: '/about', element: <About /> },
       { path: '/dashboard', element: <ClientDashboard /> },

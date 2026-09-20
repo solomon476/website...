@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "future-of-educational-erps",
+    "tag": "WHITEPAPER",
+    "tagColor": "#0067b8",
+    "title": "The Future of Educational ERPs in Africa",
+    "desc": "Why monolithic school management systems are failing and how modular, headless architecture fixes scalability, reporting, and student data integrity at scale.",
+    "content": "Education in Africa is scaling at an unprecedented rate, but the technology supporting it is not. Most institutions are running on monolithic architectures that cannot handle rapid student growth, inter-campus data synchronization, or dynamic reporting.\n\nIn this whitepaper, we explore why a headless architecture is the only sustainable path forward for educational ERPs. By decoupling the frontend user interfaces (for parents, teachers, and admins) from the backend data services, schools can achieve infinite flexibility and zero-downtime deployments.",
+    "readTime": "8 min read",
+    "date": "August 2026",
+    "author": "Solomon Nyangweso Omwenga"
+  },
+  {
+    "slug": "scaling-financial-infrastructure",
+    "tag": "SOLUTION",
+    "tagColor": "#006400",
+    "title": "Scaling Financial Infrastructure Without Downtime",
+    "desc": "How we migrate legacy financial records to secure, cloud-native architectures using blue-green deployments, data replication, and incremental traffic shifting — zero downtime guaranteed.",
+    "content": "For financial institutions, downtime is not an inconvenience—it is a critical failure. When upgrading core banking systems or ledgers, the migration strategy is just as important as the code itself.\n\nAt Solian Wolves, we utilize Blue-Green deployments and dual-write data replication to ensure seamless transitions. In this deep-dive, we break down our methodology for migrating high-frequency ledgers safely.",
+    "readTime": "6 min read",
+    "date": "August 2026",
+    "author": "Ian Momanyi Nyakundi"
+  },
+  {
+    "slug": "fractional-cto-vs-fulltime",
+    "tag": "STRATEGY",
+    "tagColor": "#b85c00",
+    "title": "When to Hire a Fractional CTO vs. a Full-Time CTO",
+    "desc": "A practical framework for SME founders and school administrators to decide when internal technical leadership makes sense and when a fractional model delivers more ROI.",
+    "content": "The technology landscape is increasingly complex, and many SMEs find themselves needing high-level strategic direction without the budget for a $200k/year executive.\n\nEnter the Fractional CTO. \n\nBy embedding senior engineering leadership into your business on a part-time basis, you gain the architectural vision and team management required to scale, without the full-time overhead.",
+    "readTime": "5 min read",
+    "date": "July 2026",
+    "author": "Hillary Onchwati Isaiah"
+  }
+]
