@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
 import solomonImg from '../../assets/solomon-mirror-cropped.jpg';
 
 export default function Solomon() {
+  const { t } = useTranslation();
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
@@ -19,10 +21,9 @@ export default function Solomon() {
           <h1>Solomon Nyangweso Omwenga</h1>
           
           <div className="bio-tags">
-            <span className="bio-tag">Enterprise Architecture</span>
-            <span className="bio-tag">Cloud Infrastructure</span>
-            <span className="bio-tag">Cybersecurity</span>
-            <span className="bio-tag">Full-Stack Engineering</span>
+            <span className="bio-tag">{t('bios.solomon.exp1', 'Enterprise Architecture')}</span>
+            <span className="bio-tag">{t('bios.solomon.exp2', 'Cloud Infrastructure')}</span>
+            <span className="bio-tag">{t('bios.solomon.exp3', 'Cybersecurity')}</span>
           </div>
 
           <div className="bio-socials">
@@ -43,20 +44,17 @@ export default function Solomon() {
             </a>
           </div>
 
-          <p className="bio-lead">Directs technical architecture, enterprise software engineering, infrastructure development, and innovation.</p>
           <div className="bio-body">
-            <p>Solomon is the Chief Technology Officer of Solian Wolves, responsible for the technical vision and execution across all software products — both internal platforms and client-facing systems.</p>
-            <p>He oversees system engineering, cybersecurity protocols, and development deployments. He manages technical team workflows, quality assurance processes, and ongoing product updates to ensure every system Solian Wolves ships meets the highest standard.</p>
-            <p>When engagements involve outsourcing, Solomon leads and manages the outsourced team and project, maintaining Solian Wolves' quality standards regardless of where the engineering takes place.</p>
+            <p>{t('bios.solomon.bio')}</p>
           </div>
-          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>Work with us</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
 
           <div className="bio-projects">
-            <h3>Notable Projects</h3>
+            <h3>{t('bio_labels.projects', 'Notable Projects')}</h3>
             <a href="https://somobloom.com" target="_blank" rel="noopener noreferrer" className="project-card">
               <div className="project-card-info">
-                <h4>SomoBloom</h4>
-                <p>Enterprise school management system.</p>
+                <h4>{t('featured.product_name', 'SomoBloom')}</h4>
+                <p>{t('footer.e2', 'Enterprise school management system.')}</p>
               </div>
               <div className="project-card-arrow">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

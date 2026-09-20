@@ -118,7 +118,7 @@ function Navbar() {
             <Link to="/portal" className="ms-mobile-signin" style={{ color: '#0067b8', fontWeight: 'bold' }}>{t('nav.signin')} ➔</Link>
           </div>
         </div>
-        <div className="ms-navbar-right" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <div className="ms-navbar-right">
           <LanguageSwitcher direction="down" />
           <ThemeToggle />
           <Link to="/portal" className="ms-nav-item">{t('nav.signin')}</Link>

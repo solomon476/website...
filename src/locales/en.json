@@ -127,5 +127,41 @@
     "t3_desc": "Chief Financial Officer. Oversees financial planning, budgeting, accounting practices, and revenue pipelines.",
     "t4_desc": "Executive Director / Finance & Admin. Supports financial operations, budget tracking, and HR workflow execution.",
     "t5_desc": "Chief Technology Officer. Directs technical architecture, enterprise software engineering, and infrastructure development."
+  },
+  "bios": {
+    "solomon": {
+      "bio": "Solomon Nyangweso Omwenga is a visionary software engineer and the Chief Technology Officer (CTO) of Solian Wolves. He leads the engineering division, architecting high-performance enterprise systems and scalable cloud infrastructures.",
+      "exp1": "Full-Stack Enterprise Development",
+      "exp2": "Cloud Infrastructure (AWS, Azure)",
+      "exp3": "Systems Architecture & Design"
+    },
+    "ian": {
+      "bio": "Ian Momanyi Nyakundi is the Chief Executive Officer (CEO) of Solian Wolves. He provides the overall corporate vision, strategic leadership, and executive direction for the company's global operations.",
+      "exp1": "Corporate Strategy",
+      "exp2": "Executive Leadership",
+      "exp3": "Global Operations"
+    },
+    "hillary": {
+      "bio": "Hillary Onchwati Isaiah is the Chief Operating Officer (COO). He oversees day-to-day internal business operations, service delivery, and strategic planning across all departments.",
+      "exp1": "Operations Management",
+      "exp2": "Strategic Planning",
+      "exp3": "Service Delivery"
+    },
+    "alice": {
+      "bio": "Alice Moraa Nyakundi is the Chief Financial Officer (CFO). She oversees financial planning, budgeting, accounting practices, and the strategic management of revenue pipelines.",
+      "exp1": "Financial Planning",
+      "exp2": "Budgeting & Accounting",
+      "exp3": "Revenue Management"
+    },
+    "noella": {
+      "bio": "Noella Maraka Kaatho is the Executive Director of Finance & Admin. She supports financial operations, budget tracking, and human resources workflow execution.",
+      "exp1": "Financial Operations",
+      "exp2": "Budget Tracking",
+      "exp3": "HR & Administration"
+    }
+  },
+  "bio_labels": {
+    "title": "Team Bio",
+    "areas": "Core Areas of Expertise"
   }
 }

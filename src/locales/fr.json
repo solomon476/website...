@@ -127,5 +127,41 @@
     "t3_desc": "Directrice Financière. Gère la planification financière, la budgétisation, la comptabilité et les flux de revenus.",
     "t4_desc": "Directrice Exécutive / Finance et Admin. Soutient les opérations financières, le suivi budgétaire et les RH.",
     "t5_desc": "Directeur Technique (CTO). Dirige l'architecture technique, l'ingénierie logicielle d'entreprise et l'infrastructure."
+  },
+  "bios": {
+    "solomon": {
+      "bio": "Solomon Nyangweso Omwenga est un ingénieur logiciel visionnaire et le directeur technique (CTO) de Solian Wolves. Il dirige la division d'ingénierie, concevant des systèmes d'entreprise haute performance et des infrastructures cloud évolutives.",
+      "exp1": "Développement d'Entreprise Full-Stack",
+      "exp2": "Infrastructure Cloud (AWS, Azure)",
+      "exp3": "Architecture et Conception de Systèmes"
+    },
+    "ian": {
+      "bio": "Ian Momanyi Nyakundi est le président-directeur général (CEO) de Solian Wolves. Il définit la vision globale de l'entreprise, le leadership stratégique et la direction exécutive des opérations mondiales.",
+      "exp1": "Stratégie d'Entreprise",
+      "exp2": "Leadership Exécutif",
+      "exp3": "Opérations Mondiales"
+    },
+    "hillary": {
+      "bio": "Hillary Onchwati Isaiah est le directeur des opérations (COO). Il supervise les opérations internes quotidiennes, la prestation de services et la planification stratégique de tous les départements.",
+      "exp1": "Gestion des Opérations",
+      "exp2": "Planification Stratégique",
+      "exp3": "Prestation de Services"
+    },
+    "alice": {
+      "bio": "Alice Moraa Nyakundi est la directrice financière (CFO). Elle supervise la planification financière, la budgétisation, la comptabilité et la gestion stratégique des revenus.",
+      "exp1": "Planification Financière",
+      "exp2": "Budgétisation et Comptabilité",
+      "exp3": "Gestion des Revenus"
+    },
+    "noella": {
+      "bio": "Noella Maraka Kaatho est la directrice exécutive des finances et de l'administration. Elle soutient les opérations financières, le suivi budgétaire et l'exécution des flux de travail des ressources humaines.",
+      "exp1": "Opérations Financières",
+      "exp2": "Suivi Budgétaire",
+      "exp3": "RH et Administration"
+    }
+  },
+  "bio_labels": {
+    "title": "Bio de l'équipe",
+    "areas": "Domaines d'expertise clés"
   }
 }

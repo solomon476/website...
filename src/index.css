@@ -241,7 +241,8 @@ a:hover {
 
 .ms-navbar-right {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 16px;
 }
 
 .ms-nav-item {

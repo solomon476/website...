@@ -127,5 +127,41 @@
     "t3_desc": "Afisa Mkuu wa Fedha (CFO). Husimamia mipango ya kifedha, bajeti, mbinu za uhasibu, na mapato.",
     "t4_desc": "Mkurugenzi Mtendaji / Fedha na Utawala. Husaidia shughuli za kifedha, ufuatiliaji wa bajeti, na usimamizi wa rasilimali watu (HR).",
     "t5_desc": "Afisa Mkuu wa Teknolojia (CTO). Huelekeza usanifu wa kiufundi, uhandisi wa programu za biashara, na maendeleo ya miundombinu."
+  },
+  "bios": {
+    "solomon": {
+      "bio": "Solomon Nyangweso Omwenga ni mhandisi wa programu na Afisa Mkuu wa Teknolojia (CTO) wa Solian Wolves. Anaongoza idara ya uhandisi, akibuni mifumo thabiti ya biashara na miundombinu ya wingu inayoweza kukua.",
+      "exp1": "Maendeleo ya Programu za Biashara",
+      "exp2": "Miundombinu ya Wingu (AWS, Azure)",
+      "exp3": "Usanifu na Ubunifu wa Mifumo"
+    },
+    "ian": {
+      "bio": "Ian Momanyi Nyakundi ni Afisa Mtendaji Mkuu (CEO) wa Solian Wolves. Hutoa maono ya jumla ya shirika, uongozi wa kimkakati, na mwelekeo wa utendaji kwa shughuli za kimataifa za kampuni.",
+      "exp1": "Mkakati wa Shirika",
+      "exp2": "Uongozi wa Utendaji",
+      "exp3": "Shughuli za Kimataifa"
+    },
+    "hillary": {
+      "bio": "Hillary Onchwati Isaiah ni Afisa Uendeshaji Mkuu (COO). Husimamia shughuli za ndani za biashara za kila siku, utoaji wa huduma, na mipango ya kimkakati katika idara zote.",
+      "exp1": "Usimamizi wa Uendeshaji",
+      "exp2": "Mipango ya Kimkakati",
+      "exp3": "Utoaji wa Huduma"
+    },
+    "alice": {
+      "bio": "Alice Moraa Nyakundi ni Afisa Mkuu wa Fedha (CFO). Husimamia mipango ya kifedha, bajeti, mbinu za uhasibu, na usimamizi wa kimkakati wa mapato.",
+      "exp1": "Mipango ya Kifedha",
+      "exp2": "Bajeti na Uhasibu",
+      "exp3": "Usimamizi wa Mapato"
+    },
+    "noella": {
+      "bio": "Noella Maraka Kaatho ni Mkurugenzi Mtendaji wa Fedha na Utawala. Husaidia shughuli za kifedha, ufuatiliaji wa bajeti, na usimamizi wa rasilimali watu.",
+      "exp1": "Shughuli za Kifedha",
+      "exp2": "Ufuatiliaji wa Bajeti",
+      "exp3": "Rasilimali Watu na Utawala"
+    }
+  },
+  "bio_labels": {
+    "title": "Wasifu wa Timu",
+    "areas": "Maeneo Muhimu ya Utaalam"
   }
 }

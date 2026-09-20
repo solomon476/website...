@@ -9,7 +9,7 @@ import LanguageSwitcher from './LanguageSwitcher.jsx';
  * Goes back in browser history if available, otherwise goes home.
  * Pass dark={true} for pages with a dark/black background.
  */
-export default function PageNav({ label = '← Solian Wolves', dark = false, fallback = '/' }) {
+export default function PageNav({ label, dark = false, fallback = '/' }) {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
@@ -30,7 +30,7 @@ export default function PageNav({ label = '← Solian Wolves', dark = false, fal
           className="page-nav-logo"
           aria-label="Go back"
         >
-          {label}
+          {label || `← ${t('footer.company', 'Solian Wolves')}`}
         </button>
       </div>
       <div className="page-nav-right" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
