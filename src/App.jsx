@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ThemeToggle from './components/ThemeToggle.jsx';
+import LanguageSwitcher from './components/LanguageSwitcher.jsx';
 import SEO from './components/SEO.jsx';
 import './App.css';
 import heroBg from './assets/1.jpg';
@@ -115,7 +116,8 @@ function Navbar() {
             <Link to="/portal" className="ms-mobile-signin" style={{ color: '#0067b8', fontWeight: 'bold' }}>Portal Sign in ➔</Link>
           </div>
         </div>
-        <div className="ms-navbar-right">
+        <div className="ms-navbar-right" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <LanguageSwitcher direction="down" />
           <ThemeToggle />
           <Link to="/portal" className="ms-nav-item">Sign in</Link>
         </div>
@@ -438,7 +440,7 @@ function Footer() {
       </div>
       <div className="ms-footer-bottom">
         <div className="ms-footer-locale">
-          <span>&#127758; English (Global)</span>
+          <LanguageSwitcher direction="up" />
         </div>
         <div className="ms-footer-legal">
           <Link to="/">Sitemap</Link>

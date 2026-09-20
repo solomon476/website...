@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
+import LanguageSwitcher from './LanguageSwitcher.jsx';
+
 /**
  * Shared page navigation bar with a smart back button.
  * Goes back in browser history if available, otherwise goes home.
@@ -29,7 +31,8 @@ export default function PageNav({ label = '← Solian Wolves', dark = false, fal
           {label}
         </button>
       </div>
-      <div className="page-nav-right">
+      <div className="page-nav-right" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <LanguageSwitcher direction="down" />
         <Link to="/portal" className="page-nav-link">Client Portal</Link>
       </div>
     </nav>
