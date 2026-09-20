@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
 import hillaryImg from '../../assets/hillary.jpg';
 
 export default function Hillary() {
+  const { t } = useTranslation();
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
@@ -13,16 +15,24 @@ export default function Hillary() {
       <div className="bio-page">
         <div className="bio-image-col">
           <img src={hillaryImg} alt="Hillary Onchwati Isaiah" className="bio-portrait" />
+          <div className="bio-projects">
+            <h3>{t('bio_labels.projects', 'Notable Projects')}</h3>
+            <a href="https://somobloom.com" target="_blank" rel="noopener noreferrer" className="project-card">
+              <div className="project-card-info">
+                <h4>{t('featured.product_name', 'SomoBloom')}</h4>
+                <p>{t('footer.e2', 'Enterprise school management system.')}</p>
+              </div>
+            </a>
+          </div>
         </div>
         <div className="bio-content-col">
           <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Operating Officer</span>
           <h1>Hillary Onchwati Isaiah</h1>
           
           <div className="bio-tags">
-            <span className="bio-tag">Operations Management</span>
-            <span className="bio-tag">Service Delivery</span>
-            <span className="bio-tag">Strategic Planning</span>
-            <span className="bio-tag">Process Optimization</span>
+            <span className="bio-tag">{t('bios.hillary.exp1', 'Operations Management')}</span>
+            <span className="bio-tag">{t('bios.hillary.exp2', 'Strategic Planning')}</span>
+            <span className="bio-tag">{t('bios.hillary.exp3', 'Service Delivery')}</span>
           </div>
 
           <div className="bio-socials">
@@ -37,13 +47,10 @@ export default function Hillary() {
               </svg>
             </a>
           </div>
-          <p className="bio-lead">Oversees day-to-day internal business operations and service delivery logistics.</p>
           <div className="bio-body">
-            <p>Hillary serves as Chief Operating Officer, ensuring that Solian Wolves runs with maximum operational efficiency at every level. He is responsible for workflow optimisation, client onboarding execution, and project SLA compliance.</p>
-            <p>He coordinates inter-departmental operations and maintains seamless alignment between the technical and sales teams. As a co-founder, Hillary also operates directly below the CEO on strategic matters, applying his business management expertise to advise and support the leadership team.</p>
-            <p>His dual role as both operations lead and strategic advisor makes him a cornerstone of Solian Wolves' day-to-day execution and long-term direction.</p>
+            <p>{t('bios.hillary.bio')}</p>
           </div>
-          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>Work with us</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
         </div>
       </div>
     </div>

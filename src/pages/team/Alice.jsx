@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
 import aliceImg from '../../assets/alice.jpg';
 
 export default function Alice() {
+  const { t } = useTranslation();
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
@@ -19,10 +21,9 @@ export default function Alice() {
           <h1>Alice Moraa Nyakundi</h1>
           
           <div className="bio-tags">
-            <span className="bio-tag">Financial Planning</span>
-            <span className="bio-tag">Corporate Finance</span>
-            <span className="bio-tag">Revenue Strategy</span>
-            <span className="bio-tag">Budgeting</span>
+            <span className="bio-tag">{t('bios.alice.exp1', 'Financial Planning')}</span>
+            <span className="bio-tag">{t('bios.alice.exp2', 'Budgeting & Accounting')}</span>
+            <span className="bio-tag">{t('bios.alice.exp3', 'Revenue Management')}</span>
           </div>
 
           <div className="bio-socials">
@@ -37,13 +38,10 @@ export default function Alice() {
               </svg>
             </a>
           </div>
-          <p className="bio-lead">Oversees financial planning, budgeting, accounting practices, and financial reporting.</p>
           <div className="bio-body">
-            <p>Alice leads all financial operations at Solian Wolves. She is responsible for the company's financial planning, budgeting, accounting practices, and financial reporting — ensuring the firm operates with fiscal discipline and transparency.</p>
-            <p>She manages tax filings, compliance, treasury management, and corporate financial auditing. All financial strategies and decisions involving significant capital allocations are under her oversight.</p>
-            <p>Alice's grip on revenue pipelines, profit allocation, and capital expenditure controls ensures Solian Wolves maintains a strong, sustainable financial foundation as it scales.</p>
+            <p>{t('bios.alice.bio')}</p>
           </div>
-          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>Work with us</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
         </div>
       </div>
     </div>

@@ -124,6 +124,7 @@ function Navbar() {
           <Link to="/portal" className="ms-nav-item">{t('nav.signin')}</Link>
         </div>
         <div className="ms-mobile-controls">
+          <LanguageSwitcher direction="down" />
           <div className="ms-mobile-theme">
             <ThemeToggle />
           </div>

@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
 import ianImg from '../../assets/ian-new-cropped.jpg';
 
 export default function Ian() {
+  const { t } = useTranslation();
   return (
     <div className="page-wrapper">
       <nav className="page-nav">
@@ -19,10 +21,9 @@ export default function Ian() {
           <h1>Ian Momanyi Nyakundi</h1>
           
           <div className="bio-tags">
-            <span className="bio-tag">Strategic Leadership</span>
-            <span className="bio-tag">Business Development</span>
-            <span className="bio-tag">Corporate Governance</span>
-            <span className="bio-tag">Product Vision</span>
+            <span className="bio-tag">{t('bios.ian.exp1', 'Corporate Strategy')}</span>
+            <span className="bio-tag">{t('bios.ian.exp2', 'Executive Leadership')}</span>
+            <span className="bio-tag">{t('bios.ian.exp3', 'Global Operations')}</span>
           </div>
 
           <div className="bio-socials">
@@ -38,20 +39,17 @@ export default function Ian() {
             </a>
           </div>
 
-          <p className="bio-lead">Provides overall corporate vision, strategic leadership, and executive direction for the company.</p>
           <div className="bio-body">
-            <p>Ian is the founding CEO of Solian Wolves Software Company, responsible for setting the strategic direction of the firm and driving high-level growth across all verticals.</p>
-            <p>He leads business development, high-level client relations, legal compliance, and strategic partnerships. He presides over Board and leadership meetings and oversees executive officer operations.</p>
-            <p>Under his leadership, Solian Wolves has positioned itself as a mission-critical software engineering firm serving ambitious organisations across multiple industries.</p>
+            <p>{t('bios.ian.bio')}</p>
           </div>
-          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>Work with us</Link>
+          <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
 
           <div className="bio-projects">
-            <h3>Notable Projects</h3>
+            <h3>{t('bio_labels.projects', 'Notable Projects')}</h3>
             <a href="https://somobloom.com" target="_blank" rel="noopener noreferrer" className="project-card">
               <div className="project-card-info">
-                <h4>SomoBloom</h4>
-                <p>Enterprise school management system.</p>
+                <h4>{t('featured.product_name', 'SomoBloom')}</h4>
+                <p>{t('footer.e2', 'Enterprise school management system.')}</p>
               </div>
               <div className="project-card-arrow">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
