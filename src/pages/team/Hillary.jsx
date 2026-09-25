@@ -29,14 +29,16 @@ export default function Hillary() {
           <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Operating Officer</span>
           <h1>Hillary Onchwati Isaiah</h1>
           
+          <p className="bio-lead">{t('bios.hillary.lead')}</p>
           <div className="bio-tags">
-            <span className="bio-tag">{t('bios.hillary.exp1', 'Operations Management')}</span>
-            <span className="bio-tag">{t('bios.hillary.exp2', 'Strategic Planning')}</span>
-            <span className="bio-tag">{t('bios.hillary.exp3', 'Service Delivery')}</span>
+            <span className="bio-tag">{t('bios.hillary.exp1')}</span>
+            <span className="bio-tag">{t('bios.hillary.exp2')}</span>
+            <span className="bio-tag">{t('bios.hillary.exp3')}</span>
           </div>
-
           <div className="bio-body">
-            <p>{t('bios.hillary.bio')}</p>
+            <p>{t('bios.hillary.bio1')}</p>
+            <p>{t('bios.hillary.bio2')}</p>
+            <p>{t('bios.hillary.bio3')}</p>
           </div>
           <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
         </div>

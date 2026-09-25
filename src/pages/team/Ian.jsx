@@ -20,14 +20,16 @@ export default function Ian() {
           <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Executive Officer</span>
           <h1>Ian Momanyi Nyakundi</h1>
           
+          <p className="bio-lead">{t('bios.ian.lead')}</p>
           <div className="bio-tags">
-            <span className="bio-tag">{t('bios.ian.exp1', 'Corporate Strategy')}</span>
-            <span className="bio-tag">{t('bios.ian.exp2', 'Executive Leadership')}</span>
-            <span className="bio-tag">{t('bios.ian.exp3', 'Global Operations')}</span>
+            <span className="bio-tag">{t('bios.ian.exp1')}</span>
+            <span className="bio-tag">{t('bios.ian.exp2')}</span>
+            <span className="bio-tag">{t('bios.ian.exp3')}</span>
           </div>
-
           <div className="bio-body">
-            <p>{t('bios.ian.bio')}</p>
+            <p>{t('bios.ian.bio1')}</p>
+            <p>{t('bios.ian.bio2')}</p>
+            <p>{t('bios.ian.bio3')}</p>
           </div>
           <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
 

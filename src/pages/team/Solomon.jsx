@@ -20,14 +20,16 @@ export default function Solomon() {
           <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Technology Officer</span>
           <h1>Solomon Nyangweso Omwenga</h1>
           
+          <p className="bio-lead">{t('bios.solomon.lead')}</p>
           <div className="bio-tags">
-            <span className="bio-tag">{t('bios.solomon.exp1', 'Enterprise Architecture')}</span>
-            <span className="bio-tag">{t('bios.solomon.exp2', 'Cloud Infrastructure')}</span>
-            <span className="bio-tag">{t('bios.solomon.exp3', 'Cybersecurity')}</span>
+            <span className="bio-tag">{t('bios.solomon.exp1')}</span>
+            <span className="bio-tag">{t('bios.solomon.exp2')}</span>
+            <span className="bio-tag">{t('bios.solomon.exp3')}</span>
           </div>
-
           <div className="bio-body">
-            <p>{t('bios.solomon.bio')}</p>
+            <p>{t('bios.solomon.bio1')}</p>
+            <p>{t('bios.solomon.bio2')}</p>
+            <p>{t('bios.solomon.bio3')}</p>
           </div>
           <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
 

@@ -20,14 +20,16 @@ export default function Alice() {
           <span className="page-tag" style={{ background: 'var(--ms-blue)', color: '#ffffff' }}>Chief Financial Officer</span>
           <h1>Alice Moraa Nyakundi</h1>
           
+          <p className="bio-lead">{t('bios.alice.lead')}</p>
           <div className="bio-tags">
-            <span className="bio-tag">{t('bios.alice.exp1', 'Financial Planning')}</span>
-            <span className="bio-tag">{t('bios.alice.exp2', 'Budgeting & Accounting')}</span>
-            <span className="bio-tag">{t('bios.alice.exp3', 'Revenue Management')}</span>
+            <span className="bio-tag">{t('bios.alice.exp1')}</span>
+            <span className="bio-tag">{t('bios.alice.exp2')}</span>
+            <span className="bio-tag">{t('bios.alice.exp3')}</span>
           </div>
-
           <div className="bio-body">
-            <p>{t('bios.alice.bio')}</p>
+            <p>{t('bios.alice.bio1')}</p>
+            <p>{t('bios.alice.bio2')}</p>
+            <p>{t('bios.alice.bio3')}</p>
           </div>
           <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
         </div>

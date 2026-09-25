@@ -130,34 +130,49 @@
   },
   "bios": {
     "solomon": {
-      "bio": "Solomon Nyangweso Omwenga is a visionary software engineer and the Chief Technology Officer (CTO) of Solian Wolves. He leads the engineering division, architecting high-performance enterprise systems and scalable cloud infrastructures.",
       "exp1": "Full-Stack Enterprise Development",
       "exp2": "Cloud Infrastructure (AWS, Azure)",
-      "exp3": "Systems Architecture & Design"
+      "exp3": "Systems Architecture & Design",
+      "lead": "Directs technical architecture, enterprise software engineering, infrastructure development, and innovation.",
+      "bio1": "Solomon is the Chief Technology Officer of Solian Wolves, responsible for the technical vision and execution across all software products — both internal platforms and client-facing systems.",
+      "bio2": "He oversees system engineering, cybersecurity protocols, and development deployments. He manages technical team workflows, quality assurance processes, and ongoing product updates to ensure every system Solian Wolves ships meets the highest standard.",
+      "bio3": "When engagements involve outsourcing, Solomon leads and manages the outsourced team and project, maintaining Solian Wolves' quality standards regardless of where the engineering takes place."
     },
     "ian": {
-      "bio": "Ian Momanyi Nyakundi is the Chief Executive Officer (CEO) of Solian Wolves. He provides the overall corporate vision, strategic leadership, and executive direction for the company's global operations.",
       "exp1": "Corporate Strategy",
       "exp2": "Executive Leadership",
-      "exp3": "Global Operations"
+      "exp3": "Global Operations",
+      "lead": "Provides overall corporate vision, strategic leadership, and executive direction for the company.",
+      "bio1": "Ian is the founding CEO of Solian Wolves Software Company, responsible for setting the strategic direction of the firm and driving high-level growth across all verticals.",
+      "bio2": "He leads business development, high-level client relations, legal compliance, and strategic partnerships. He presides over Board and leadership meetings and oversees executive officer operations.",
+      "bio3": "Under his leadership, Solian Wolves has positioned itself as a mission-critical software engineering firm serving ambitious organisations across multiple industries."
     },
     "hillary": {
-      "bio": "Hillary Onchwati Isaiah is the Chief Operating Officer (COO). He oversees day-to-day internal business operations, service delivery, and strategic planning across all departments.",
       "exp1": "Operations Management",
       "exp2": "Strategic Planning",
-      "exp3": "Service Delivery"
+      "exp3": "Service Delivery",
+      "lead": "Oversees day-to-day internal business operations and service delivery logistics.",
+      "bio1": "Hillary serves as Chief Operating Officer, ensuring that Solian Wolves runs with maximum operational efficiency at every level. He is responsible for workflow optimisation, client onboarding execution, and project SLA compliance.",
+      "bio2": "He coordinates inter-departmental operations and maintains seamless alignment between the technical and sales teams. As a co-founder, Hillary also operates directly below the CEO on strategic matters, applying his business management expertise to advise and support the leadership team.",
+      "bio3": "His dual role as both operations lead and strategic advisor makes him a cornerstone of Solian Wolves' day-to-day execution and long-term direction."
     },
     "alice": {
-      "bio": "Alice Moraa Nyakundi is the Chief Financial Officer (CFO). She oversees financial planning, budgeting, accounting practices, and the strategic management of revenue pipelines.",
       "exp1": "Financial Planning",
       "exp2": "Budgeting & Accounting",
-      "exp3": "Revenue Management"
+      "exp3": "Revenue Management",
+      "lead": "Oversees financial planning, budgeting, accounting practices, and financial reporting.",
+      "bio1": "Alice leads all financial operations at Solian Wolves. She is responsible for the company's financial planning, budgeting, accounting practices, and financial reporting — ensuring the firm operates with fiscal discipline and transparency.",
+      "bio2": "She manages tax filings, compliance, treasury management, and corporate financial auditing. All financial strategies and decisions involving significant capital allocations are under her oversight.",
+      "bio3": "Alice's grip on revenue pipelines, profit allocation, and capital expenditure controls ensures Solian Wolves maintains a strong, sustainable financial foundation as it scales."
     },
     "noella": {
-      "bio": "Noella Maraka Kaatho is the Executive Director of Finance & Admin. She supports financial operations, budget tracking, and human resources workflow execution.",
       "exp1": "Financial Operations",
       "exp2": "Budget Tracking",
-      "exp3": "HR & Administration"
+      "exp3": "HR & Administration",
+      "lead": "Supports financial operations, budget tracking, and corporate administrative management.",
+      "bio1": "Noella serves as Executive Director overseeing Finance and Administration at Solian Wolves. She plays a critical role in supporting the financial team and ensuring the company's administrative infrastructure runs smoothly.",
+      "bio2": "She assists in internal compliance control, asset tracking, and HR and payroll workflow execution. Her work ensures that every internal process is properly documented, compliant, and efficiently executed.",
+      "bio3": "Noella collaborates closely with executive leadership on administrative policies and corporate governance, serving as a key link between the operational and financial arms of the organisation."
     }
   },
   "bio_labels": {
