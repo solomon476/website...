@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import PageNav from '../../components/PageNav.jsx';
 import '../../pages.css';
-import solomonImg from '../../assets/solomon-mirror-cropped.jpg';
+import solomonImg from '../../assets/solomon-new.jpg';
 
 export default function Solomon() {
   const { t } = useTranslation();
