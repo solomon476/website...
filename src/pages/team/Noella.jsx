@@ -28,7 +28,9 @@ export default function Noella() {
 
           <p className="bio-lead">Supports financial operations, budget tracking, and corporate administrative management.</p>
           <div className="bio-body">
-            <p>{t('bios.noella.bio')}</p>
+            <p>{t('bios.noella.bio1')}</p>
+            <p>{t('bios.noella.bio2')}</p>
+            <p>{t('bios.noella.bio3')}</p>
           </div>
           <Link to="/contact" className="ms-btn ms-btn-primary" style={{ marginTop: '32px', display: 'inline-block' }}>{t('cta_section.button', 'Work with us')}</Link>
         </div>
